@@ -1,0 +1,52 @@
+FormKey: 38C75F:DeviousFollowers.esp
+EditorID: DFR_Events
+VirtualMachineAdapter:
+  Scripts:
+  - Name: DFR_Events
+    Properties:
+    - MutagenObjectType: ScriptObjectProperty
+      Name: EventContext
+      Object: 406068:DeviousFollowers.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: RelManager
+      Object: 38C70D:DeviousFollowers.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: tool
+      Object: 01210D:DeviousFollowers.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Forced
+      Object: 406066:DeviousFollowers.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: FollowerAlias
+      Object: 000D62:DeviousFollowers.esp
+      Alias: 1
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Rules
+      Object: 41F61A:DeviousFollowers.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: DealController
+      Object: 01C86D:DeviousFollowers.esp
+  FileName: ''
+  Aliases:
+  - Property:
+      Name: ''
+      Object: 38C75F:DeviousFollowers.esp
+      Alias: 0
+    Scripts:
+    - Name: DFR_Events_PlayerAlias
+Flags:
+- StartGameEnabled
+- 0x10
+- RunOnce
+Priority: 100
+NextAliasID: 2
+Aliases:
+- Name: Player
+  Flags: []
+  ForcedReference: 000014:Skyrim.esm
+  VoiceTypes: Null
+- ID: 1
+  Name: Master
+  Flags:
+  - Optional
+  VoiceTypes: Null

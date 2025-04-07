@@ -1,0 +1,340 @@
+name: Core
+quest: DFR_Pack
+events:
+  # RULES
+  - name: Amulet
+    global: DFR_Rule_Amulet
+    desc: You must wear an special amulet.
+    severity: 1
+    tags: [type:rule, path:accessory, subtype:service]
+    keywords: 
+      - _DFWornDealAmulet
+    conflicts: 
+      - type: wear
+        slots: 
+          - 35
+  - name: Anal Plug
+    global: DFR_Rule_AnalPlug
+    desc: You must wear an anal plug.
+    severity: 3
+    tags: [type:rule, path:whore, subtype:service]
+    conflicts: 
+      - type: wear
+        slots: 
+          - 48
+  - name: Armor
+    global: DFR_Rule_Armor
+    desc: You must wear the armour your follower provides when outside of towns.
+    severity: 2
+    tags: [type:rule, path:whore, skimpy, subtype:service]
+    conflicts:
+      - type: outfit
+        exclusive: true
+        loc:
+          - outside
+  - name: Blindfold
+    global: DFR_Rule_Blindfold
+    desc: You must wear a blindfold in towns.
+    severity: 3
+    tags: [type:rule, path:bondage, subtype:service]
+    conflicts: 
+      - type: wear
+        slots: 
+          - 55
+  - name: Boots
+    global: DFR_Rule_Boots
+    desc: You must wear boots.
+    severity: 2
+    tags: [type:rule, path:bondage, subtype:service]
+    conflicts: 
+      - type: wear
+        slots: 
+          - 37
+  - name: Bound in Town
+    global: DFR_Rule_BoundInTown
+    desc: Your follower will bind your arms in town.
+    severity: 4
+    tags: [type:rule, path:bondage, subtype:service]
+    conflicts: 
+      - type: wear
+        slots:
+          - 46
+        loc: town
+      - type: heavybondage
+        loc: town
+  - name: Chastity
+    global: DFR_Rule_Chastity
+    desc: You must wear a chastity belt.
+    severity: 4
+    tags: [type:rule, path:ownership, subtype:service]
+    conflicts: 
+      - type: wear
+        slots:
+          - 49
+        loc: town
+  - name: Circlet
+    global: DFR_Rule_Circlet
+    desc: You must wear an special circlet.
+    severity: 1
+    tags: [type:rule, path:accessory, subtype:service]
+    keywords: 
+      - _DFWornDealCirclet
+    conflicts: 
+      - type: wear
+        slots: 
+          - 42
+  - name: Collar
+    global: DFR_Rule_Collar
+    desc: You must wear a collar
+    severity: 3
+    tags: [type:rule, path:ownership, subtype:service]
+    conflicts: 
+      - type: wear
+        slots: 
+          - 45
+  - name: Corset
+    global: DFR_Rule_Corset
+    desc: You must wear a corset
+    severity: 2
+    tags: [type:rule, path:bondage, subtype:service]
+    conflicts: 
+      - type: wear
+        slots: 
+          - 58
+  - name: Crawl in Town
+    global: DFR_Rule_Crawling
+    desc: You must crawl in towns.
+    severity: 4
+    tags: [type:rule, path:humiliation, subtype:service]
+    keywords: 
+      - _DFDealTail
+    conflicts: 
+      - type: wear
+        slots: 
+          - 48
+  - name: Cuffs
+    global: DFR_Rule_Cuffs
+    desc: You must wear leg and arm cuffs.
+    severity: 2
+    tags: [type:rule, path:ownership, subtype:service]
+    conflicts: 
+      - type: wear
+        slots: 
+          - 53
+          - 59
+  - name: Skincare
+    global: DFR_Rule_Skincare
+    desc: You must keep your skin moisturized.
+    severity: 1
+    tags: [type:rule, path:slut, filth, subtype:service]
+  - name: Extend
+    global: DFR_Rule_Extend
+    desc: Your follower will extend a random deal.
+    severity: 1
+    tags: [type:rule]
+  - name: Gag
+    global: DFR_Rule_Gag
+    desc: You must be gagged everywhere except dungeons.
+    severity: 3
+    tags: [type:rule, path:bondage, gag, subtype:service]
+    conflicts: 
+      - type: wear
+        slots:
+          - 44
+  - name: Gloves
+    global: DFR_Rule_Gloves
+    desc: You must wear gloves.
+    severity: 2
+    tags: [type:rule, path:bondage, subtype:service]
+    conflicts: 
+      - type: wear
+        slots:
+          - 33
+  - name: Jacket
+    global: DFR_Rule_Jacket
+    desc: You will be put into a straitjacket in towns.
+    severity: 4
+    tags: [type:rule, path:bondage, subtype:service]
+    conflicts: 
+      - type: wear
+        slots:
+          - 32
+        loc: town
+      - type: heavybondage
+        loc: town
+  - name: Key
+    global: DFR_Rule_Keys
+    desc: You must hand over your keys to your follower.
+    severity: 3
+    tags: [type:rule, path:bondage, subtype:service]
+  - name: Lactacid
+    global: DFR_Rule_Lactacid
+    desc: You must ask for and consume lactaid daily.
+    severity: 3
+    tags: [type:rule, path:cow, subtype:service]
+    requirements:
+      - MilkModNEW.esp
+  - name: Milking
+    global: DFR_Rule_Milking
+    desc: You must give your follower your milk.
+    severity: 4
+    tags: [type:rule, path:cow, subtype:service]
+    requirements:
+      - MilkModNEW.esp
+  - name: Naked in Town
+    global: DFR_Rule_NakedInTown
+    desc: You must be naked in towns.
+    severity: 4
+    tags: [type:rule, path:slut, naked, subtype:service]
+    conflicts:
+      - type: naked
+        loc: town
+  - name: Naked
+    global: DFR_Rule_Naked
+    desc: You must be naked everywhere
+    severity: 5
+    tags: [type:rule, path:slut, naked, subtype:service]
+    conflicts:
+      - type: naked
+  - name: Nipple Piercing
+    global: DFR_Rule_NipplePiercings
+    desc: You must wear nipple piercings.
+    severity: 3
+    tags: [type:rule, path:piercings, subtype:service]
+    conflicts: 
+      - type: wear
+        slots: 
+          - 51
+  - name: Petsuit in Town
+    global: DFR_Rule_Petsuit
+    desc: You will be put into a petsuit in towns.
+    severity: 4
+    tags: [type:rule, path:bondage, subtype:service]
+    conflicts: 
+      - type: wear
+        slots: 
+          - 46
+        loc: town
+      - type: heavybondage
+        loc: town
+  - name: Ring
+    global: DFR_Rule_Ring
+    desc: You must wear a special ring.
+    severity: 1
+    tags: [type:rule, path:accessory, subtype:service]
+    keywords: 
+      - _DFWornDealRing
+    conflicts: 
+      - type: wear
+        slots:
+          - 36
+  - name: Sex
+    global: DFR_Rule_Sex
+    desc: You must offer sex daily.
+    severity: 4
+    tags: [type:rule, path:slut]
+  - name: Skooma
+    global: DFR_Rule_Skooma
+    desc: You must consume skooma daily.
+    severity: 3
+    tags: [type:rule, path:humiliation, subtype:service]
+    requirements:
+      - SexLabSkoomaWhore.esp
+  - name: Slut
+    global: DFR_Rule_Slut
+    desc: You must degrade yourself during conversations.
+    severity: 3
+    tags: [type:rule, path:slut, subtype:service]
+  - name: Spanking
+    global: DFR_Rule_Spanking
+    desc: You must beg for spanks daily
+    severity: 3
+    tags: [type:rule, path:humiliation, subtype:service]
+  - name: Vaginal Piercing
+    global: DFR_Rule_VaginalPiercings
+    desc: You must wear vaginal piercings.
+    severity: 3
+    tags: [type:rule, path:piercings, subtype:service]
+    conflicts: 
+      - type: wear
+        slots: 
+          - 50
+  - name: Whore (Tattoo)
+    global: DFR_Rule_WhoreTattoo
+    desc: Your follower will whore you out. 
+    severity: 4
+    tags: [type:rule, path:whore, requires:skimpy|naked, subtype:service]
+    requirements:
+      - SlaveTats.esp
+  - name: Innkeeper
+    global: DFR_Rule_Innkeeper
+    desc: Your follower will offer you to innkeepers.
+    severity: 4
+    tags: [type:rule, path:whore]
+  - name: Merchant
+    global: DFR_Rule_Merchant
+    desc: Your follower will offer you to merchants.
+    severity: 4
+    tags: [type:rule, path:whore]
+
+  # EVENTS
+  - name: Food
+    global: DFR_Event_Food
+    severity: 1
+    tags: [type:event, subtype:service]
+    conditions:
+      - GetGlobalValue DFR_LocType == 2
+  - name: Potions
+    global: DFR_Event_Potions
+    severity: 1
+    tags: [type:event, subtype:service]
+    conditions:
+      - GetGlobalValue DFR_LocType == 2
+  - name: Sharpen
+    global: DFR_Event_Sharpen
+    severity: 1
+    tags: [type:event, subtype:service]
+    conditions:
+      - GetGlobalValue DFR_LocType == 2
+  - name: Arrows
+    global: DFR_Event_Arrows
+    severity: 1
+    tags: [type:event, subtype:service]
+    conditions:
+      - GetGlobalValue DFR_LocType == 2
+  - name: Hunger
+    global: DFR_Event_Hunger
+    severity: 2
+    tags: [type:event, subtype:service]
+    conditions:
+      - GetGlobalValue DFR_LocType != 2
+  - name: Sex Event
+    global: DFR_Event_Sex
+    severity: 3
+    tags: [type:event, subtype:service, subtype:punishment]
+    exclusive: true
+    conditions:
+      - GetGlobalValue DFR_Rule_Sex != Adv_Status_Active
+  - name: Spanking Event
+    global: DFR_Event_Spanking
+    severity: 3
+    tags: [type:event, subtype:service, subtype:punishment]
+    exclusive: true
+    conditions:
+      - GetGlobalValue DFR_Rule_Spanking != Adv_Status_Active
+  - name: Tattoos
+    global: DFR_Event_Tattoos
+    severity: 5
+    tags: [type:event, subtype:service, subtype:punishment]
+    exclusive: true
+
+  # JOBS
+  - name: Bandit Bounty
+    global: DFR_Job_BanditBounty
+    severity: 1
+    exclusive: true
+    tags: [type:event, subtype:job, combat]
+    exp: true
+    conditions:
+    - GetStage BQ01 < 10
+    - GetQuestRunning BQ01 == 1

@@ -1,0 +1,38 @@
+- id: 0xB9988|Skyrim.esm
+  traits:
+    - id: Profiteer
+  data:
+    combatStyle: heavy
+    playerCombatPref: light
+- id: 0x656E2|Skyrim.esm
+  traits:
+    - id: Profiteer
+  data:
+    combatStyle: light
+    playerCombatPref: heavy
+- id: 0xE1BA9|Skyrim.esm
+  traits:
+    - id: Profiteer
+  data:
+    combatStyle: light
+    playerCombatPref: heavy
+- id: 0xB9986|Skyrim.esm
+  traits:
+    - id: Profiteer
+  data:
+    combatStyle: magic
+    playerCombatPref: light
+- id: 0xB998C|Skyrim.esm
+  traits:
+    - id: Profiteer
+    - id: Brute
+  data:
+    combatStyle: heavy
+    playerCombatPref: magic
+- id: 0xB9984|Skyrim.esm
+  traits:
+    - id: Profiteer
+  data:
+    combatStyle: heavy
+    playerCombatPref: light
+    

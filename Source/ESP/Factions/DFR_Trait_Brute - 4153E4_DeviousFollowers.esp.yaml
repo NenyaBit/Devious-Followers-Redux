@@ -1,0 +1,6 @@
+FormKey: 4153E4:DeviousFollowers.esp
+EditorID: DFR_Trait_Brute
+CrimeValues:
+  Arrest: True
+  AttackOnSight: True
+VendorValues: {}
