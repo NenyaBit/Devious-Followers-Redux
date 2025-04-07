@@ -18,7 +18,7 @@
 - UI Extensions
 
 A repo containing headlined sources to all of these mods can be found here:
-<link>
+[Sources](https://github.com/MissCorruption/DFR-SOURCES)
 
 ## Tools
 
