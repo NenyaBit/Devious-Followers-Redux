@@ -1,3 +1,7 @@
+
+# DISCLAIMER
+# THIS IS NOT IN A PLAYABLE STATE. THERE ARE A LOT OF SCRIPTS FAILING TO COMPILE
+
 # Compiling requirements
 
 ## Mod Sources
