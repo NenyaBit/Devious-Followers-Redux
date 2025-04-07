@@ -1,0 +1,58 @@
+<?xml version='1.0'?><!-- Game is either sse, tesv, or fo4 -->
+<PapyrusProject xmlns="PapyrusProject.xsd" 
+    Flags="TESV_Papyrus_Flags.flg"
+    Game="sse" 
+    Output="..\..\Scripts"
+    Optimize="true" 
+    Anonymize="true"
+    Zip="false">
+    <Variables>
+        <Variable Name="ModName" Value="Devious Followers Redux"/>
+        <Variable Name="ThisProject" Value="."/>
+        <Variable Name="Rel" Value="..\..\.release"/>
+        <Variable Name="MO2" Value="F:\Modding\MO2\mods\"/>
+        <Variable Name="Ver" Value="V.0.4.5"/>
+    </Variables>
+    <Imports>
+        <!-- <Import>@ThisProject\Scripts\Source</Import> -->
+        <Import>@ThisProject</Import>
+        <!-- Ressources -->
+        <Import>@MO2\Skyrim Script Extender (SKSE64) - 1.6.1170\Source\Scripts</Import>
+        <Import>@MO2\JContainers SE - 1.6.1170\Source\Scripts</Import>
+        <Import>@MO2\Acheron - Death Alternative\Source\Scripts</Import>
+        <Import>@MO2\Scrab's Papyrus Extender\Source\Scripts</Import>
+        <!-- Headlines Sources -->
+        <Import>@MO2\SRC_AF\Source\Scripts</Import>
+        <Import>@MO2\SRC_DD\Source\Scripts</Import>
+        <Import>@MO2\SRC_DC\Source\Scripts</Import>
+        <Import>@MO2\SRC_EFF\Source\Scripts</Import>
+        <Import>@MO2\SRC_HH\Source\Scripts</Import>
+        <Import>@MO2\SRC_MME\Source\Scripts</Import>
+        <Import>@MO2\SRC_PAPUTIL\Source\Scripts</Import>
+        <Import>@MO2\SRC_PDR\Source\Scripts</Import>
+        <Import>@MO2\SRC_PO3\Source\Scripts</Import>
+        <Import>@MO2\SRC_SKYUI\Source\Scripts</Import>
+        <Import>@MO2\SRC_SLA\Source\Scripts</Import>
+        <Import>@MO2\SRC_STA\Source\Scripts</Import>
+        <Import>@MO2\SRC_SXL\Source\Scripts</Import>
+        <Import>@MO2\SRC_UIEXT\Source\Scripts</Import>
+        <!-- Stock Game -->
+        <Import>F:\Modding\MO2\Game Root\Data\Source\Scripts</Import>
+    </Imports>
+    <Folders>
+        <Folder>@ThisProject</Folder>
+    </Folders>
+    <ZipFiles Output="@Rel">
+        <ZipFile Name="@ModName - @Ver" RootDir="..\..\@ThisProject" Compression="deflate">
+            <Include>*.esp</Include>
+            <!-- <Include>Meshes</Include> -->
+            <Include>Interface</Include>
+            <Include>Scripts</Include>
+            <Include>Source</Include>
+            <Include>Interface</Include>
+            <Include>SEQ</Include>
+            <!-- <Include>Sound</Include> -->
+            <Include>Textures</Include>
+        </ZipFile>
+    </ZipFiles>
+</PapyrusProject>
