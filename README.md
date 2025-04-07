@@ -31,7 +31,7 @@ A repo containing headlined sources to all of these mods can be found here:
 
 ```
 # Cloning the repo
-git clone https://github.com/MissCorruption/DeviousFollowersRedux
+git clone https://github.com/MissCorruption/Devious-Followers-Redux
 cd DeviousFollowersRedux
 
 # Building the ESP File
