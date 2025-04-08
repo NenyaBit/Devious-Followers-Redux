@@ -27,7 +27,7 @@ A repo containing headlined sources to all of these mods can be found here:
 ## Tools
 
 * Your favorite papyrus compiler
-	* In my testing [Caprica](https://github.com/Orvid/Caprica), assumingly due to the amount of scripts
+	* In my testing [Caprica](https://github.com/Orvid/Caprica) did not work, assumingly due to the amount of scripts
 * [Spriggit](https://github.com/Mutagen-Modding/Spriggit)
 	* Instructions on usage below
 
@@ -68,18 +68,18 @@ Below is a table of scripts that will not compile, the reason why and which scri
 | DFR__TIF__0A38C760.psc | Missing function: `Prep` | `DFR_Events.psc` |
 | DFR__TIF__0A38C726.psc | Missing function: `AcceptSlaveryRule()` | `QF__DflowDealController_0A01C86D.psc` |
 | DFR__TIF__0A38C767.psc | Missing function: `Prep` | `DFR_Events.psc` |
-| DFR_EnslavementIntro_0A38C70F.psc | Missing functions: `NextSlaveryRule()`, `FinishSlaverySetup()` | QF__Gift_09000D62 |
+| DFR_EnslavementIntro_0A38C70F.psc | Missing functions: `NextSlaveryRule()`, `FinishSlaverySetup()` | `QF__Gift_09000D62.psc` |
 | DFR__TIF__0A391876.psc | Missing function: `AcceptPun()` | `DFR_Events.psc` |
 | DFR__TIF__0A38C729.psc | Missing function: `RejectSlaveryRule()` | `QF__DflowDealController_0A01C86D.psc` |
 | DFR__TIF__0A38C724.psc | Missing function: `AcceptSlaveryRule()` | `QF__DflowDealController_0A01C86D.psc` |
 | DFR__TIF__0A391870.psc | Missing function: `SelectApology()` | `DFR_Events.psc` |
 | DFR__TIF__0A39186E.psc | Missing function: `SelectApology()` | `DFR_Events.psc` |
 | DFR__TIF__0A39187D.psc | Missing function: `AcceptPun()` | `DFR_Events.psc` |
-| DFR__TIF__0A400F6A.psc | Logic error: `cannot convert to unknown type dfr_outfitmanager` | `DFR_OutfitManager` |
-| DFR__TIF__0A400F6B.psc | Logic error: `cannot convert to unknown type dfr_outfitmanager` | `DFR_OutfitManager` |
-| DFR__TIF__0A400F6C.psc | Logic error: `cannot convert to unknown type dfr_outfitmanager` | `DFR_OutfitManager` |
-| DFR__TIF__0A39187F.psc | Logic error: `type mismatch on parameter 1` | `_DFGoldConQScript` |
-| DFR__TIF__0A400F6E.psc | Logic error: `cannot convert to unknown type dfr_outfitmanager` | `DFR_OutfitManager` |
+| DFR__TIF__0A400F6A.psc | Logic error: `cannot convert to unknown type dfr_outfitmanager` | `DFR_OutfitManager.psc` |
+| DFR__TIF__0A400F6B.psc | Logic error: `cannot convert to unknown type dfr_outfitmanager` | `DFR_OutfitManager.psc` |
+| DFR__TIF__0A400F6C.psc | Logic error: `cannot convert to unknown type dfr_outfitmanager` | `DFR_OutfitManager.psc` |
+| DFR__TIF__0A39187F.psc | Logic error: `type mismatch on parameter 1` | `_DFGoldConQScript.psc` |
+| DFR__TIF__0A400F6E.psc | Logic error: `cannot convert to unknown type dfr_outfitmanager` | `DFR_OutfitManager.psc` |
 | DFR__TIF__0A391887.psc | Missing function: `GiveGold()` | `_DFGoldConQScript.psc` |
 | DFR__TIF__0A391892.psc | Missing function: `Delay` | `DFR_Events.psc` |
 | DFR__TIF__0A39188C.psc | Missing function: `Prep` | `DFR_Events.psc` |
