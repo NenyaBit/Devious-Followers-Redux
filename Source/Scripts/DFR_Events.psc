@@ -183,3 +183,8 @@ endFunction
 string function IncreasesFavour(string asId)
     return StorageUtil.GetStringValue(self, "DFR_EventContext_" + asId, -1)
 endFunction
+
+;legacy fix - krzp
+function Prep(bool abForced = false, string asType)
+    Setup(Utility.CreateStringArray(1, asType), 0, abForced, abForced)
+endFunction
