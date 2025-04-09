@@ -87,7 +87,6 @@ Below is a table of scripts that will not compile, the reason why and which scri
 | DFR__TIF__0A41F61F.psc | Missing function: `StopRule()` | `DFR_Rules.psc` |
 | DFR__TIF__0A3E7A40.psc | Missing function: `AcceptJob()` | `DFR_Events.psc` |
 | DFR__TIF__0A429836.psc | Missing function: `StopRule()` | `DFR_Rules.psc` |
-| TIF_Dflow_0810FCDD.psc | Missing function: `GiveWhoreArmor()` | `_DFTools.psc` |
 | DFR__TIF__0A429833.psc | Missing function: `StopRule()` | `DFR_Rules.psc` |
 | DFR__TIF__0A3E7A43.psc | Missing function: `AcceptJob()` | `DFR_Events.psc` |
 | DFR__TIF__0A42983C.psc | Missing function: `StopRule()` | `DFR_Rules.psc` |
@@ -112,6 +111,12 @@ Due to the lack of sources and lots of missing functions I'll be attempting to a
 
 
 # Fixed Errors (may or may not be hacky)
+
+- `GiveWhoreArmor()` function fixed, it exists but not in `_DFTools.psc`
+
+| Failing to compile | Reason | Script at fault |
+|--------------------|--------|-----------------|
+| TIF_Dflow_0810FCDD.psc | Missing function: `GiveWhoreArmor()` | `_DFTools.psc` |
 
 
 - `Prep()` function missing from `DFR_Events.psc` was fixed by krzp

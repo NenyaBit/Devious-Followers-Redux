@@ -6,7 +6,7 @@ Scriptname TIF_Dflow_0810FCDD Extends TopicInfo Hidden
 Function Fragment_0(ObjectReference akSpeakerRef)
 Actor akSpeaker = akSpeakerRef as Actor
 ;BEGIN CODE
-Tool.GiveWhoreArmor(True);
+(GetOwningQuest() as DFR_Outfits).GiveWhoreArmor()
 ;END CODE
 EndFunction
 ;END FRAGMENT
