@@ -1,11 +1,12 @@
-<?xml version='1.0'?><!-- Game is either sse, tesv, or fo4 -->
-<PapyrusProject xmlns="PapyrusProject.xsd" 
+<?xml version='1.0'?>
+<!-- Game is either sse, tesv, or fo4 -->
+<PapyrusProject xmlns="PapyrusProject.xsd"
     Flags="TESV_Papyrus_Flags.flg"
-    Game="sse" 
+    Game="sse"
     Output="..\..\Scripts"
-    Optimize="true" 
+    Optimize="true"
     Anonymize="true"
-    Zip="false">
+    Zip="true">
     <Variables>
         <Variable Name="ModName" Value="Devious Followers Redux"/>
         <Variable Name="ThisProject" Value="."/>
@@ -14,9 +15,8 @@
         <Variable Name="Ver" Value="V.0.4.5"/>
     </Variables>
     <Imports>
-        <!-- <Import>@ThisProject\Scripts\Source</Import> -->
+        <!-- Project and Resources -->
         <Import>@ThisProject</Import>
-        <!-- Ressources -->
         <Import>@MO2\Skyrim Script Extender (SKSE64) - 1.6.1170\Source\Scripts</Import>
         <Import>@MO2\JContainers SE - 1.6.1170\Source\Scripts</Import>
         <Import>@MO2\Acheron - Death Alternative\Source\Scripts</Import>
@@ -42,17 +42,19 @@
     <Folders>
         <Folder>@ThisProject</Folder>
     </Folders>
+    <PreBuildEvent Description="Deserialize the ESP file" UseInBuild="true">
+        <Command>Spriggit.CLI.exe deserialize --InputPath .\..\ESP --OutputPath .\..\..\DeviousFollowers.esp</Command>
+    </PreBuildEvent>
     <ZipFiles Output="@Rel">
         <ZipFile Name="@ModName - @Ver" RootDir="..\..\@ThisProject" Compression="deflate">
-            <Include>*.esp</Include>
-            <!-- <Include>Meshes</Include> -->
+            <Match>*.esp</Match>
             <Include>Interface</Include>
             <Include>Scripts</Include>
-            <Include>Source</Include>
-            <Include>Interface</Include>
+            <Include Path="Source/Scripts">*.psc</Include>
             <Include>SEQ</Include>
-            <!-- <Include>Sound</Include> -->
             <Include>Textures</Include>
+            <!-- <Include>Sound</Include>
+            <Include>Meshes</Include> -->
         </ZipFile>
     </ZipFiles>
 </PapyrusProject>

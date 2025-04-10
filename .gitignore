@@ -1,4 +1,5 @@
 .vscode/
+.release/
 *.pex
 *.esp
 meta.ini
