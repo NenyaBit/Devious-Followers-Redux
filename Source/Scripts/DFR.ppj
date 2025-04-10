@@ -12,7 +12,7 @@
         <Variable Name="ThisProject" Value="."/>
         <Variable Name="Rel" Value="..\..\.release"/>
         <Variable Name="MO2" Value="F:\Modding\MO2\mods\"/>
-        <Variable Name="Ver" Value="V.0.4.5"/>
+        <Variable Name="Ver" Value="V.0.4.5-Debuggable"/>
     </Variables>
     <Imports>
         <!-- Project and Resources -->
