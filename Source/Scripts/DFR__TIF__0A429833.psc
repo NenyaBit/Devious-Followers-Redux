@@ -6,7 +6,8 @@ Scriptname DFR__TIF__0A429833 Extends TopicInfo Hidden
 Function Fragment_0(ObjectReference akSpeakerRef)
 Actor akSpeaker = akSpeakerRef as Actor
 ;BEGIN CODE
-(GetOwningQuest() as DFR_Rules).StopRule("core/armor")
+Debug.MessageBox("StopRule() has been called, [DFR__TIF__0A429833]")
+;(GetOwningQuest() as DFR_Rules).StopRule("core/armor")
 ;END CODE
 EndFunction
 ;END FRAGMENT

@@ -30,7 +30,8 @@ EndFunction
 ;BEGIN FRAGMENT Fragment_7
 Function Fragment_7()
 ;BEGIN CODE
-(GetOwningQuest() as QF__Gift_09000D62).NextSlaveryRule()
+Debug.MessageBox("NextSlaveryRule is called, [DFR_EnslavementIntro_0A38C70F]")
+;(GetOwningQuest() as QF__Gift_09000D62).NextSlaveryRule()
 ;END CODE
 EndFunction
 ;END FRAGMENT
@@ -38,7 +39,8 @@ EndFunction
 ;BEGIN FRAGMENT Fragment_0
 Function Fragment_0()
 ;BEGIN CODE
-(GetOwningQuest() as QF__Gift_09000D62).FinishSlaverySetup()
+Debug.MessageBox("NextSlaveryRule is called, [DFR_EnslavementIntro_0A38C70F]")
+;(GetOwningQuest() as QF__Gift_09000D62).FinishSlaverySetup()
 Game.SetPlayerAIDriven(false)
 ;END CODE
 EndFunction

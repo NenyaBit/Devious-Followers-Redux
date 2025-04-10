@@ -6,7 +6,7 @@ Scriptname DFR__TIF__0A41F61F Extends TopicInfo Hidden
 Function Fragment_0(ObjectReference akSpeakerRef)
 Actor akSpeaker = akSpeakerRef as Actor
 ;BEGIN CODE
-(GetOwningQuest() as DFR_Rules).StopRule("core/gag")
+(GetOwningQuest() as DFR_Rules).Remove("core/gag")
 ;END CODE
 EndFunction
 ;END FRAGMENT

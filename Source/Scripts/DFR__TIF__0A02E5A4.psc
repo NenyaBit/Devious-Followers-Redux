@@ -6,7 +6,8 @@ Scriptname DFR__TIF__0A02E5A4 Extends TopicInfo Hidden
 Function Fragment_0(ObjectReference akSpeakerRef)
 Actor akSpeaker = akSpeakerRef as Actor
 ;BEGIN CODE
-(GetOwningQuest() as HH_Makeup).Done()
+Debug.Trace("DFR - HH_Makeup is Done here, [DFR__TIF__0A02E5A4]")
+;(GetOwningQuest() as HH_Makeup).Done()
 ;END CODE
 EndFunction
 ;END FRAGMENT

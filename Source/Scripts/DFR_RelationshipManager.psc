@@ -116,7 +116,7 @@ endFunction
 
 ; aiMethod: 0 = new follower, 1 = same follower
 function SetupSlavery(Actor akMaster, int aiMethod)
-    DFR_Util.Log("Setup Slavery - " + akMaster + " - " + aiMethod)
+    DFR_Util.Log("Setup Slavery - " + akMaster)
 
     InSlaverySetup = true
 

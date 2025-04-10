@@ -6,7 +6,8 @@ Scriptname DFR__TIF__0A02E354 Extends TopicInfo Hidden
 Function Fragment_0(ObjectReference akSpeakerRef)
 Actor akSpeaker = akSpeakerRef as Actor
 ;BEGIN CODE
-(GetOwningQuest() as HH_Hostler).CheckHorse()
+Debug.MessageBox("DFR - HH_Hostler Check Horse Function Here, [DFR__TIF__0A02E354]")
+; (GetOwningQuest() as HH_Hostler).CheckHorse()
 ;END CODE
 EndFunction
 ;END FRAGMENT

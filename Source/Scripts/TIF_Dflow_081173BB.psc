@@ -6,7 +6,7 @@ Scriptname TIF_Dflow_081173BB Extends TopicInfo Hidden
 Function Fragment_0(ObjectReference akSpeakerRef)
 Actor akSpeaker = akSpeakerRef as Actor
 ;BEGIN CODE
-(GetOwningQuest() as _DFGoldConQScript).IncAgreedGold()
+(GetOwningQuest() as _DFGoldConQScript).IncAgreedGold(500)
 ;END CODE
 EndFunction
 ;END FRAGMENT

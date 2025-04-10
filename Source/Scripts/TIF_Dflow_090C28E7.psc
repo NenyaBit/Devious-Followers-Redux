@@ -6,7 +6,8 @@ Scriptname TIF_Dflow_090C28E7 Extends TopicInfo Hidden
 Function Fragment_1(ObjectReference akSpeakerRef)
 Actor akSpeaker = akSpeakerRef as Actor
 ;BEGIN CODE
-(GetOwningQuest() as QF__DflowGames_0A0110DC).Alias_JarlPetGame.ForceRefTo(akSpeakerRef)
+Debug.MessageBox("AliasJarlPetGame was called, \n maybe it meant AliasJarl? [TIF_Dflow_090C28E7]")
+(GetOwningQuest() as QF__DflowGames_0A0110DC).Alias_Jarl.ForceRefTo(akSpeakerRef)
 
 _DFPlayer.MoveTo(Game.Getplayer(),1000,1000)
 (GetOwningQuest() as QF__DflowGames_0A0110DC).Alias_SceneYou.ForceRefTo(_DFPlayer)

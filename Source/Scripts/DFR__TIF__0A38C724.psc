@@ -6,7 +6,8 @@ Scriptname DFR__TIF__0A38C724 Extends TopicInfo Hidden
 Function Fragment_3(ObjectReference akSpeakerRef)
 Actor akSpeaker = akSpeakerRef as Actor
 ;BEGIN CODE
-(GetOwningQuest() as QF__DflowDealController_0A01C86D).AcceptSlaveryRule()
+Debug.MessageBox("AcceptSlaveryRule is called, [DFR__TIF__0A38C724]")
+;(GetOwningQuest() as QF__DflowDealController_0A01C86D).AcceptSlaveryRule()
 ;END CODE
 EndFunction
 ;END FRAGMENT

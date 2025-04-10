@@ -59,6 +59,7 @@ Faction Property CrimeFacFalkreath Auto ; Falkreath
 
 Faction Property DismissedFollowerFac Auto
 ObjectReference Property Pit Auto
+ObjectReference Property ConfiscationContainer Auto
 
 Armor Property PunishBeltI Auto
 Armor Property PunishBeltR Auto

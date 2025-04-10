@@ -6,7 +6,7 @@ Scriptname DFR__TIF__0A400F6C Extends TopicInfo Hidden
 Function Fragment_1(ObjectReference akSpeakerRef)
 Actor akSpeaker = akSpeakerRef as Actor
 ;BEGIN CODE
-(GetOwningQuest() as DFR_OutfitManager).ChangeType(2)
+(GetOwningQuest() as DFR_Outfits).ChangeArmorType(2)
 ;END CODE
 EndFunction
 ;END FRAGMENT

@@ -6,7 +6,8 @@ Scriptname DFR__TIF__0A391892 Extends TopicInfo Hidden
 Function Fragment_0(ObjectReference akSpeakerRef)
 Actor akSpeaker = akSpeakerRef as Actor
 ;BEGIN CODE
-(GetOwningQuest() as DFR_Events).Delay()
+Debug.MessageBox("DFR_Events Delay is called, [DFR__TIF__0A391892]")
+;(GetOwningQuest() as DFR_Events).Delay()
 ;END CODE
 EndFunction
 ;END FRAGMENT

@@ -6,7 +6,8 @@ Scriptname DFR__TIF__0A39187F Extends TopicInfo Hidden
 Function Fragment_0(ObjectReference akSpeakerRef)
 Actor akSpeaker = akSpeakerRef as Actor
 ;BEGIN CODE
-(GetOwningQuest() as _DFGoldConQScript).IncAgreedGold(false)
+Debug.MessageBox("IncAgreedGold was called, no gold for you \n Why is it called in the first place? \n [DFR__TIF__0A39187F]")
+;(GetOwningQuest() as _DFGoldConQScript).IncAgreedGold(false)
 ;END CODE
 EndFunction
 ;END FRAGMENT

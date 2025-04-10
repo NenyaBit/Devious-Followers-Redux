@@ -6,7 +6,8 @@ Scriptname DFR__TIF__0A39187D Extends TopicInfo Hidden
 Function Fragment_0(ObjectReference akSpeakerRef)
 Actor akSpeaker = akSpeakerRef as Actor
 ;BEGIN CODE
-(GetOwningQuest() as DFR_Events).AcceptPun()
+Debug.MessageBox("AcceptPun is called, [DFR__TIF__0A39187D]")
+;(GetOwningQuest() as DFR_Events).AcceptPun()
 ;END CODE
 EndFunction
 ;END FRAGMENT

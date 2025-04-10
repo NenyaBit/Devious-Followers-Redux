@@ -8,7 +8,8 @@ Scene property EnslavementIntro auto
 int property EnslavementReason = -1 auto hidden conditional
 
 function StartSlaverySetup(Actor akMaster, int aiReason)
-    RelManager.SetStageSlavery(akMaster)
+    RelManager.SetupSlavery(akMaster, aiReason)
+    Debug.MessageBox("RelManager.SetupSlavery was called, was RelManager.SetStageSlavery before, which was missing")
     EnslavementReason = aiReason
 
     EnslavementIntro.Start()

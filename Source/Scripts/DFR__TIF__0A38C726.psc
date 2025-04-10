@@ -16,7 +16,8 @@ EndFunction
 Function Fragment_1(ObjectReference akSpeakerRef)
 Actor akSpeaker = akSpeakerRef as Actor
 ;BEGIN CODE
-(GetOwningQuest() as QF__DflowDealController_0A01C86D).AcceptSlaveryRule(false)
+Debug.MessageBox("AcceptSlaveryRule is called, [DFR__TIF__0A38C726]")
+;(GetOwningQuest() as QF__DflowDealController_0A01C86D).AcceptSlaveryRule(false)
 ;END CODE
 EndFunction
 ;END FRAGMENT

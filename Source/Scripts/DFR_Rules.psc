@@ -136,7 +136,7 @@ function Remove(string asRule)
     NumRules = ActiveRules.Length
     Adversity.StopEvent(asRule)
 
-    Log("Remove - " + asRule + " - " + NumRules)
+    Log("Removed - " + asRule + " - " + NumRules)
 endFunction
 
 bool function Has(string asRule)

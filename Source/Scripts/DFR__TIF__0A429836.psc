@@ -6,7 +6,7 @@ Scriptname DFR__TIF__0A429836 Extends TopicInfo Hidden
 Function Fragment_0(ObjectReference akSpeakerRef)
 Actor akSpeaker = akSpeakerRef as Actor
 ;BEGIN CODE
-(GetOwningQuest() as DFR_Rules).StopRule("core/amulet")
+(GetOwningQuest() as DFR_Rules).Remove("core/amulet")
 ;END CODE
 EndFunction
 ;END FRAGMENT

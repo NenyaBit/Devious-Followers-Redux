@@ -261,12 +261,11 @@ Function RebalanceDebtAndCredit()
 
 EndFunction
 
-
-Function IncAgreedGold(int a)
+Function IncAgreedGold(int iGoldAmount)
 
     If Enabled
-        AgreedGold += a 
-        Game.GetPlayer().AddItem(Gold001, a)
+        AgreedGold += iGoldAmount 
+        Game.GetPlayer().AddItem(Gold001, iGoldAmount)
         ReduceGold2 = AgreedGold * RedGoldMod * 2 
         ReduceGold = AgreedGold * RedGoldMod * 2
         If Decay > 0

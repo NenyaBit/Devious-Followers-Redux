@@ -6,7 +6,8 @@ Scriptname DFR__TIF__0A39186F Extends TopicInfo Hidden
 Function Fragment_0(ObjectReference akSpeakerRef)
 Actor akSpeaker = akSpeakerRef as Actor
 ;BEGIN CODE
-(GetOwningQuest() as DFR_Events).SelectApology()
+Debug.MessageBox("SelectApology is called, [DFR__TIF__0A39186F]")
+;(GetOwningQuest() as DFR_Events).SelectApology()
 ;END CODE
 EndFunction
 ;END FRAGMENT

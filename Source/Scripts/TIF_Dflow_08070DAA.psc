@@ -7,7 +7,8 @@ Function Fragment_0(ObjectReference akSpeakerRef)
 Actor akSpeaker = akSpeakerRef as Actor
 ;BEGIN CODE
 (GetowningQuest() as _DDeal).DelayHr()
-Tool.PGropeFail()
+Debug.MessageBox("PGropeFail has been called, [TIF_Dflow_08070DAA]")
+;Tool.PGropeFail()
 ;END CODE
 EndFunction
 ;END FRAGMENT
