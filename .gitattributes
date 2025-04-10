@@ -1,0 +1,9 @@
+# Set default behavior to automatically normalize line endings
+* text=auto
+
+# Force specific file types to use CRLF line endings
+*.yaml text eol=crlf
+*.md text=auto eol=crlf
+
+# Ensure Markdown files do not trim trailing whitespace
+*.md -trim_trailing_whitespace
