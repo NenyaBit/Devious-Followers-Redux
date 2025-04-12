@@ -985,12 +985,12 @@ Function DoStatsPageMenu()
     ;numServiceRules -= 1
 
     if numServiceRules
-        int i = 0
-        while i < numServiceRules
-            int oid = AddTextOption(Adversity.GetEventName(RuleManager.ActiveRules[i]), "")
-            StorageUtil.SetStringValue(self, "Status_" + oid, RuleManager.ActiveRules[i])
+        int index = 0
+        while index < numServiceRules
+            int oid = AddTextOption(Adversity.GetEventName(RuleManager.ActiveRules[index]), "")
+            StorageUtil.SetStringValue(self, "Status_" + oid, RuleManager.ActiveRules[index])
             offset += 1
-            i += 1
+            index += 1
         endWhile
         
         if Math.LogicalAnd(numServiceRules, 1)

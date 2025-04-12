@@ -13,5 +13,5 @@ endFunction
 
 function OnStop()
     Outfits.StopWhoreArmorRule()
-    return parent.OnStop()
+    parent.OnStop()
 endFunction

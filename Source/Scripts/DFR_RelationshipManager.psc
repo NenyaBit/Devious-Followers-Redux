@@ -398,10 +398,10 @@ string function SelectEvent(string asType, int aiSeverity, bool abRulesOnly, str
         string typeKey = "forced-" + asType + "s"
         string[] forcedEvents = Adversity.GetContextStringList("deviousfollowers", typeKey, Utility.CreateStringArray(0))
 
-        int i = 0
-        while i < forcedEvents.Length
-            forcedEvents[i] = "deviousfollowers/" + forcedEvents[i]
-            i += 1
+        int index = 0
+        while index < forcedEvents.Length
+            forcedEvents[i] = "deviousfollowers/" + forcedEvents[index]
+            index += 1
         endWhile
 
         DFR_Util.Log("SelectEvent - " + typeKey + " 1 = " + forcedEvents)

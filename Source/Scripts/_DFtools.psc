@@ -1667,12 +1667,6 @@ Function EnableSTASpanking()
     EndIf
 EndFunction
 
-Function FixupSpanks(Int assSpanks, Int titSpanks)
-    If HaveSTA()
-        _DFSpankShim.FixupSpanks(assSpanks, titSpanks)
-    EndIf
-EndFunction
-
 Bool Function HaveSTA()
     Return 255 != Game.GetModByName("Spank That Ass.esp")
 EndFunction

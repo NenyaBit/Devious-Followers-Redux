@@ -47,17 +47,6 @@ Int Function GetMasochismStage() Global
 EndFunction
 
 
-; Add bulk spanks and update the pain buff/debuff
-Function FixupSpanks(Int assSpanks, Int titSpanks) Global
-
-    _STA_SpankUtil spanky = Game.GetFormFromFile(0x00000D62, "Spank That Ass.esp") As _STA_SpankUtil
-    If spanky
-        Return spanky.FixupSpanks(assSpanks, titSpanks)
-    EndIf
-
-EndFunction
-
-
 Bool Function SetSpankEnable(Bool enable) Global
 
     _STA_SpankUtil spanky = Game.GetFormFromFile(0x00000D62, "Spank That Ass.esp") As _STA_SpankUtil
