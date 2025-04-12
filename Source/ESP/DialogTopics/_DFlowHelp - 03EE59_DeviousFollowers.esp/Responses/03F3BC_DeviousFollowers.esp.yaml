@@ -7,14 +7,14 @@ VirtualMachineAdapter:
       Name: _DflowRemovalBasePrice
       Object: 03C893:DeviousFollowers.esp
     - MutagenObjectType: ScriptObjectProperty
-      Name: _DFRemoval
-      Object: 0E047A:DeviousFollowers.esp
-    - MutagenObjectType: ScriptObjectProperty
       Name: _DflowRemovalDebtTimes
       Object: 03E8F1:DeviousFollowers.esp
     - MutagenObjectType: ScriptObjectProperty
       Name: _DflowRemovalInc
       Object: 03E8F2:DeviousFollowers.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: _DFRemoval
+      Object: 0E047A:DeviousFollowers.esp
   ScriptFragments:
     MutagenObjectType: ScriptFragments
     FileName: TIF_Dflow_0703F3BC

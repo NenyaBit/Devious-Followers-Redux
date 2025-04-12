@@ -4,28 +4,28 @@ VirtualMachineAdapter:
   - Name: TIF_Dflow_080053A0
     Properties:
     - MutagenObjectType: ScriptObjectProperty
-      Name: q
+      Name: _DMaster
       Object: 000D62:DeviousFollowers.esp
+      Alias: 1
     - MutagenObjectType: ScriptObjectProperty
       Name: Fac
       Object: 015712:DeviousFollowers.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: FS
+      Object: 1ABD14:DeviousFollowers.esp
     - MutagenObjectType: ScriptObjectProperty
       Name: FSFollower
       Object: 1ABD14:DeviousFollowers.esp
       Alias: 1
     - MutagenObjectType: ScriptObjectProperty
-      Name: tool
-      Object: 01210D:DeviousFollowers.esp
-    - MutagenObjectType: ScriptObjectProperty
-      Name: _DMaster
-      Object: 000D62:DeviousFollowers.esp
-      Alias: 1
-    - MutagenObjectType: ScriptObjectProperty
-      Name: FS
-      Object: 1ABD14:DeviousFollowers.esp
-    - MutagenObjectType: ScriptObjectProperty
       Name: GuardScene
       Object: 1B0C5C:DeviousFollowers.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: q
+      Object: 000D62:DeviousFollowers.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: tool
+      Object: 01210D:DeviousFollowers.esp
   ScriptFragments:
     MutagenObjectType: ScriptFragments
     FileName: TIF_Dflow_080053A0

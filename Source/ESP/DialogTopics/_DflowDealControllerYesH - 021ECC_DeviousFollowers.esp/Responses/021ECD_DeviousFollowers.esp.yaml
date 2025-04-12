@@ -4,14 +4,14 @@ VirtualMachineAdapter:
   - Name: TIF_Dflow_0B021ECD
     Properties:
     - MutagenObjectType: ScriptObjectProperty
+      Name: Dealq
+      Object: 01C867:DeviousFollowers.esp
+    - MutagenObjectType: ScriptObjectProperty
       Name: q
       Object: 000D62:DeviousFollowers.esp
     - MutagenObjectType: ScriptObjectProperty
       Name: tool
       Object: 01210D:DeviousFollowers.esp
-    - MutagenObjectType: ScriptObjectProperty
-      Name: Dealq
-      Object: 01C867:DeviousFollowers.esp
   ScriptFragments:
     MutagenObjectType: ScriptFragments
     FileName: TIF_Dflow_0B021ECD

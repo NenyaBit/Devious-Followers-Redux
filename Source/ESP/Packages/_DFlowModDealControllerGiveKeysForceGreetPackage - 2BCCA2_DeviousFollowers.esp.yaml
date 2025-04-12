@@ -49,29 +49,6 @@ Data:
         MutagenObjectType: LocationFallback
         Type: NearPackageStart
       Radius: 150
-- Key: 62
-  Value:
-    MutagenObjectType: PackageDataLocation
-    Location:
-      Target:
-        MutagenObjectType: LocationFallback
-        Type: NearPackageStart
-      Radius: 500
-- Key: 75
-  Value:
-    MutagenObjectType: PackageDataLocation
-    Location:
-      Target:
-        MutagenObjectType: LocationTarget
-        Link: 000014:Skyrim.esm
-      Radius: 300
-- Key: 79
-  Value:
-    MutagenObjectType: PackageDataBool
-- Key: 65
-  Value:
-    MutagenObjectType: PackageDataBool
-    Data: True
 - Key: 17
   Value:
     MutagenObjectType: PackageDataTarget
@@ -88,13 +65,6 @@ Data:
         Link: 000014:Skyrim.esm
       Radius: 5000
 - Key: 26
-  Value:
-    MutagenObjectType: PackageDataBool
-- Key: 81
-  Value:
-    MutagenObjectType: PackageDataBool
-    Data: True
-- Key: 40
   Value:
     MutagenObjectType: PackageDataBool
 - Key: 29
@@ -118,6 +88,21 @@ Data:
 - Key: 36
   Value:
     MutagenObjectType: PackageDataBool
+- Key: 40
+  Value:
+    MutagenObjectType: PackageDataBool
+- Key: 62
+  Value:
+    MutagenObjectType: PackageDataLocation
+    Location:
+      Target:
+        MutagenObjectType: LocationFallback
+        Type: NearPackageStart
+      Radius: 500
+- Key: 65
+  Value:
+    MutagenObjectType: PackageDataBool
+    Data: True
 - Key: 67
   Value:
     MutagenObjectType: PackageDataFloat
@@ -125,6 +110,21 @@ Data:
 - Key: 69
   Value:
     MutagenObjectType: PackageDataBool
+- Key: 75
+  Value:
+    MutagenObjectType: PackageDataLocation
+    Location:
+      Target:
+        MutagenObjectType: LocationTarget
+        Link: 000014:Skyrim.esm
+      Radius: 300
+- Key: 79
+  Value:
+    MutagenObjectType: PackageDataBool
+- Key: 81
+  Value:
+    MutagenObjectType: PackageDataBool
+    Data: True
 XnamMarker: 0x52
 OnBegin:
   Topics:

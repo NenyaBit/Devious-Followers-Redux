@@ -4,17 +4,17 @@ VirtualMachineAdapter:
   - Name: DFRX_TIF_0817062F
     Properties:
     - MutagenObjectType: ScriptObjectProperty
-      Name: libs
-      Object: 00F624:Devious Devices - Integration.esm
-    - MutagenObjectType: ScriptObjectProperty
       Name: _DFlowDealPMsgFail
       Object: 095FE7:DeviousFollowers.esp
     - MutagenObjectType: ScriptObjectProperty
-      Name: tool
-      Object: 01210D:DeviousFollowers.esp
-    - MutagenObjectType: ScriptObjectProperty
       Name: I1
       Object: 093833:DeviousFollowers.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: I2
+      Object: 093831:DeviousFollowers.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: libs
+      Object: 00F624:Devious Devices - Integration.esm
     - MutagenObjectType: ScriptObjectProperty
       Name: R1
       Object: 093834:DeviousFollowers.esp
@@ -22,8 +22,8 @@ VirtualMachineAdapter:
       Name: R2
       Object: 093832:DeviousFollowers.esp
     - MutagenObjectType: ScriptObjectProperty
-      Name: I2
-      Object: 093831:DeviousFollowers.esp
+      Name: tool
+      Object: 01210D:DeviousFollowers.esp
   ScriptFragments:
     MutagenObjectType: ScriptFragments
     FileName: DFRX_TIF_0817062F

@@ -4,21 +4,21 @@ VirtualMachineAdapter:
   - Name: TIF_Dflow_0A0239EF
     Properties:
     - MutagenObjectType: ScriptObjectProperty
-      Name: q
-      Object: 000D62:DeviousFollowers.esp
+      Name: DebugV
+      Object: 0239ED:DeviousFollowers.esp
     - MutagenObjectType: ScriptObjectProperty
       Name: Fac
       Object: 015712:DeviousFollowers.esp
     - MutagenObjectType: ScriptObjectProperty
-      Name: DebugV
-      Object: 0239ED:DeviousFollowers.esp
+      Name: HirelingRecognizeStenvar
+      Object: 104F3C:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: q
+      Object: 000D62:DeviousFollowers.esp
     - MutagenObjectType: ScriptObjectProperty
       Name: ra
       Object: 000D62:DeviousFollowers.esp
       Alias: 1
-    - MutagenObjectType: ScriptObjectProperty
-      Name: HirelingRecognizeStenvar
-      Object: 104F3C:Skyrim.esm
   ScriptFragments:
     MutagenObjectType: ScriptFragments
     FileName: TIF_Dflow_0A0239EF

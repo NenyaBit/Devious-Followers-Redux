@@ -3,7 +3,7 @@ Flags:
   Flags:
   - WalkAway
   - WalkAwayInvisibleInMenu
-PreviousDialog: Null
+PreviousDialog: 03DE2C:DeviousFollowers.esp
 FavorLevel: None
 LinkTo:
 - 01CDD3:DeviousFollowers.esp
@@ -45,7 +45,7 @@ Conditions:
   Data:
     MutagenObjectType: GetVMQuestVariableConditionData
     Quest: 01C86D:DeviousFollowers.esp
-    SecondUnusedIntParameter: -741892512
+    SecondUnusedIntParameter: 8489280
     VariableName: ::Deals_var
   ComparisonValue: 1
 - MutagenObjectType: ConditionFloat

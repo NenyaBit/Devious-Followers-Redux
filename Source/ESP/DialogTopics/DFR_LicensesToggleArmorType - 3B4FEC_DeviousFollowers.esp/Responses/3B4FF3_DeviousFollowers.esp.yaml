@@ -5,7 +5,7 @@ VirtualMachineAdapter:
 Flags:
   Flags:
   - Goodbye
-PreviousDialog: 4102AB:DeviousFollowers.esp
+PreviousDialog: Null
 FavorLevel: None
 Responses:
 - EmotionValue: 50
@@ -24,7 +24,7 @@ Conditions:
   Data:
     MutagenObjectType: GetVMQuestVariableConditionData
     Quest: 3B4FD7:DeviousFollowers.esp
-    SecondUnusedIntParameter: -741779872
+    SecondUnusedIntParameter: 8460864
     VariableName: ::HasGivenLicenses_var
   ComparisonValue: 1
 - MutagenObjectType: ConditionFloat

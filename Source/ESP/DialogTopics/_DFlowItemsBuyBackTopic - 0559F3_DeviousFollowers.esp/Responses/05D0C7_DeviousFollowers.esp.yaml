@@ -4,17 +4,17 @@ VirtualMachineAdapter:
   - Name: TIF_Dflow_0805D0C7
     Properties:
     - MutagenObjectType: ScriptObjectProperty
-      Name: PlayerRef
-      Object: 000014:Skyrim.esm
-    - MutagenObjectType: ScriptObjectProperty
-      Name: tool
-      Object: 01210D:DeviousFollowers.esp
-    - MutagenObjectType: ScriptObjectProperty
       Name: Gold001
       Object: 00000F:Skyrim.esm
     - MutagenObjectType: ScriptObjectProperty
+      Name: PlayerRef
+      Object: 000014:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
       Name: Shop
       Object: 0559F4:DeviousFollowers.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: tool
+      Object: 01210D:DeviousFollowers.esp
   ScriptFragments:
     MutagenObjectType: ScriptFragments
     FileName: TIF_Dflow_0805D0C7
@@ -26,7 +26,7 @@ Flags:
   Flags:
   - Goodbye
   - ForceSubtitle
-PreviousDialog: 05D0C8:DeviousFollowers.esp
+PreviousDialog: Null
 FavorLevel: None
 Responses:
 - EmotionValue: 50

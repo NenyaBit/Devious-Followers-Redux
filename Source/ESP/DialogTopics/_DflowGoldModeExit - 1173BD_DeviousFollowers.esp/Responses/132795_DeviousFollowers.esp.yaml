@@ -16,7 +16,7 @@ VirtualMachineAdapter:
 Flags:
   Flags:
   - Goodbye
-PreviousDialog: 132796:DeviousFollowers.esp
+PreviousDialog: Null
 FavorLevel: None
 Responses:
 - EmotionValue: 50
@@ -36,14 +36,14 @@ Conditions:
   Data:
     MutagenObjectType: GetVMQuestVariableConditionData
     Quest: 01C86D:DeviousFollowers.esp
-    SecondUnusedIntParameter: -741858848
+    SecondUnusedIntParameter: 8521696
     VariableName: ::Deals_var
 - MutagenObjectType: ConditionFloat
   CompareOperator: GreaterThanOrEqualTo
   Data:
     MutagenObjectType: GetVMQuestVariableConditionData
     Quest: 112478:DeviousFollowers.esp
-    SecondUnusedIntParameter: -741858816
+    SecondUnusedIntParameter: 8521728
     VariableName: ::AskForMore_var
   ComparisonValue: 2
 - MutagenObjectType: ConditionFloat
@@ -51,7 +51,7 @@ Conditions:
   Data:
     MutagenObjectType: GetVMQuestVariableConditionData
     Quest: 112478:DeviousFollowers.esp
-    SecondUnusedIntParameter: -741858784
+    SecondUnusedIntParameter: 8521760
     VariableName: ::CredToLeaveBool_var
   ComparisonValue: 1
 - MutagenObjectType: ConditionFloat

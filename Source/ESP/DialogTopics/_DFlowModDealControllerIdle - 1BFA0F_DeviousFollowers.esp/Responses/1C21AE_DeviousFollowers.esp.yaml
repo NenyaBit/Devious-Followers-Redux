@@ -4,6 +4,12 @@ VirtualMachineAdapter:
   - Name: DFRX_TIF_0A4153E2
     Properties:
     - MutagenObjectType: ScriptObjectProperty
+      Name: Gold001
+      Object: 00000F:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: libs
+      Object: 00F624:Devious Devices - Integration.esm
+    - MutagenObjectType: ScriptObjectProperty
       Name: PlayerRef
       Object: 000014:Skyrim.esm
     - MutagenObjectType: ScriptObjectProperty
@@ -12,12 +18,6 @@ VirtualMachineAdapter:
     - MutagenObjectType: ScriptObjectProperty
       Name: tool
       Object: 01210D:DeviousFollowers.esp
-    - MutagenObjectType: ScriptObjectProperty
-      Name: Gold001
-      Object: 00000F:Skyrim.esm
-    - MutagenObjectType: ScriptObjectProperty
-      Name: libs
-      Object: 00F624:Devious Devices - Integration.esm
   ScriptFragments:
     MutagenObjectType: ScriptFragments
     FileName: DFRX_TIF_0A4153E2
@@ -30,7 +30,7 @@ Flags:
   - Random
   - ForceSubtitle
 Topic: 06BE68:DeviousFollowers.esp
-PreviousDialog: 38C73C:DeviousFollowers.esp
+PreviousDialog: 38C73E:DeviousFollowers.esp
 FavorLevel: None
 Responses:
 - EmotionValue: 50
@@ -49,7 +49,7 @@ Conditions:
   Data:
     MutagenObjectType: GetVMQuestVariableConditionData
     Quest: 1BD274:DeviousFollowers.esp
-    SecondUnusedIntParameter: -741836448
+    SecondUnusedIntParameter: 8536192
     VariableName: ::NPRule_var
   ComparisonValue: 2
 - MutagenObjectType: ConditionGlobal
@@ -62,7 +62,7 @@ Conditions:
   Data:
     MutagenObjectType: GetVMQuestVariableConditionData
     Quest: 010617:DeviousFollowers.esp
-    SecondUnusedIntParameter: -741836416
+    SecondUnusedIntParameter: 8536224
     VariableName: ::Suspend_var
 - MutagenObjectType: ConditionFloat
   CompareOperator: NotEqualTo

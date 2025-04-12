@@ -47,6 +47,6 @@ Conditions:
   Data:
     MutagenObjectType: GetVMQuestVariableConditionData
     Quest: 0110DC:DeviousFollowers.esp
-    SecondUnusedIntParameter: -741896448
+    SecondUnusedIntParameter: 8515520
     VariableName: ::CommentTimer_var
   ComparisonValue: 000039:Skyrim.esm

@@ -14,7 +14,7 @@ VirtualMachineAdapter:
       ScriptName: TIF__0D23914A
       FragmentName: Fragment_2
 Flags: {}
-PreviousDialog: 2F483C:DeviousFollowers.esp
+PreviousDialog: Null
 FavorLevel: None
 Responses:
 - EmotionValue: 50

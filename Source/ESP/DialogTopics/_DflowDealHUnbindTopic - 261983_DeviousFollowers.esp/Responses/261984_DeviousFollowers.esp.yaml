@@ -4,17 +4,17 @@ VirtualMachineAdapter:
   - Name: _Dx_TIF__09261984
     Properties:
     - MutagenObjectType: ScriptObjectProperty
-      Name: libs
-      Object: 00F624:Devious Devices - Integration.esm
-    - MutagenObjectType: ScriptObjectProperty
-      Name: tool
-      Object: 01210D:DeviousFollowers.esp
-    - MutagenObjectType: ScriptObjectProperty
       Name: I
       Object: 1930DD:DeviousFollowers.esp
     - MutagenObjectType: ScriptObjectProperty
+      Name: libs
+      Object: 00F624:Devious Devices - Integration.esm
+    - MutagenObjectType: ScriptObjectProperty
       Name: R
       Object: 1930DE:DeviousFollowers.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: tool
+      Object: 01210D:DeviousFollowers.esp
   ScriptFragments:
     MutagenObjectType: ScriptFragments
     FileName: _Dx_TIF__09261984
@@ -131,11 +131,11 @@ Conditions:
   Data:
     MutagenObjectType: GetVMQuestVariableConditionData
     Quest: 010617:DeviousFollowers.esp
-    SecondUnusedIntParameter: -741819200
+    SecondUnusedIntParameter: 8500672
     VariableName: ::Suspend_var
 - MutagenObjectType: ConditionFloat
   Data:
     MutagenObjectType: GetVMQuestVariableConditionData
-    SecondUnusedIntParameter: -741819168
+    SecondUnusedIntParameter: 8500704
     VariableName: ::BoundHands_var
   ComparisonValue: 1

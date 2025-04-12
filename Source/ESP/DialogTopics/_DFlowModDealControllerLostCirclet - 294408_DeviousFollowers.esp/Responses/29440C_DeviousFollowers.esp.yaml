@@ -64,12 +64,12 @@ Conditions:
   Data:
     MutagenObjectType: GetVMQuestVariableConditionData
     Quest: 1BD274:DeviousFollowers.esp
-    SecondUnusedIntParameter: -741816576
+    SecondUnusedIntParameter: 8546208
     VariableName: ::CircletRule_var
   ComparisonValue: 2
 - MutagenObjectType: ConditionFloat
   Data:
     MutagenObjectType: GetVMQuestVariableConditionData
     Quest: 010617:DeviousFollowers.esp
-    SecondUnusedIntParameter: -741816544
+    SecondUnusedIntParameter: 8546240
     VariableName: ::Suspend_var

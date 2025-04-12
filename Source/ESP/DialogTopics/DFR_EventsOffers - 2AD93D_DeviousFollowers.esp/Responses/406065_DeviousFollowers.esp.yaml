@@ -90,7 +90,7 @@ Conditions:
   Data:
     MutagenObjectType: GetVMQuestVariableConditionData
     Quest: 38C75F:DeviousFollowers.esp
-    SecondUnusedIntParameter: -741811264
+    SecondUnusedIntParameter: 8454720
     VariableName: ::Display_var
   ComparisonValue: 1
 WalkAwayTopic: 2AD94A:DeviousFollowers.esp

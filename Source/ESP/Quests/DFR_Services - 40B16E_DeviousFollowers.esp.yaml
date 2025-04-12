@@ -4,9 +4,16 @@ VirtualMachineAdapter:
   Scripts:
   - Name: DFR_Services
     Properties:
-    - MutagenObjectType: ScriptObjectProperty
-      Name: PlayerRef
-      Object: 000014:Skyrim.esm
+    - MutagenObjectType: ScriptObjectListProperty
+      Name: CurrentCounts
+      Objects:
+      - Name: ''
+        Object: 40B179:DeviousFollowers.esp
+      - Name: ''
+        Object: 410292:DeviousFollowers.esp
+      - Name: ''
+      - Name: ''
+        Object: 41029D:DeviousFollowers.esp
     - MutagenObjectType: ScriptObjectListProperty
       Name: DesiredCounts
       Objects:
@@ -18,27 +25,21 @@ VirtualMachineAdapter:
       - Name: ''
         Object: 41029C:DeviousFollowers.esp
     - MutagenObjectType: ScriptObjectProperty
-      Name: variant
-      Object: 410280:DeviousFollowers.esp
+      Name: FollowerAlias
+      Object: 40B16E:DeviousFollowers.esp
+      Alias: 0
+    - MutagenObjectType: ScriptObjectProperty
+      Name: GameDaysPassed
+      Object: 000039:Skyrim.esm
     - MutagenObjectType: ScriptObjectListProperty
-      Name: TownKeywords
+      Name: HealthPotionEffectKwds
       Objects:
       - Name: ''
-        Object: 013166:Skyrim.esm
+        Object: 065A30:Skyrim.esm
       - Name: ''
-        Object: 01CB87:Skyrim.esm
+        Object: 065A31:Skyrim.esm
       - Name: ''
-        Object: 013168:Skyrim.esm
-    - MutagenObjectType: ScriptObjectListProperty
-      Name: CurrentCounts
-      Objects:
-      - Name: ''
-        Object: 40B179:DeviousFollowers.esp
-      - Name: ''
-        Object: 410292:DeviousFollowers.esp
-      - Name: ''
-      - Name: ''
-        Object: 41029D:DeviousFollowers.esp
+        Object: 042503:Skyrim.esm
     - MutagenObjectType: ScriptObjectListProperty
       Name: InventoryFilters
       Objects:
@@ -51,14 +52,17 @@ VirtualMachineAdapter:
       - Name: ''
         Object: 41029E:DeviousFollowers.esp
     - MutagenObjectType: ScriptObjectListProperty
-      Name: HealthPotionEffectKwds
+      Name: MagickaPotionEffectKwds
       Objects:
       - Name: ''
-        Object: 065A30:Skyrim.esm
+        Object: 065A34:Skyrim.esm
       - Name: ''
-        Object: 065A31:Skyrim.esm
+        Object: 065A33:Skyrim.esm
       - Name: ''
-        Object: 042503:Skyrim.esm
+        Object: 042508:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: PlayerRef
+      Object: 000014:Skyrim.esm
     - MutagenObjectType: ScriptObjectProperty
       Name: ServiceEvent
       Object: 1BD274:DeviousFollowers.esp
@@ -76,22 +80,18 @@ VirtualMachineAdapter:
         Object: 065A35:Skyrim.esm
       - Name: ''
         Object: 042504:Skyrim.esm
-    - MutagenObjectType: ScriptObjectProperty
-      Name: FollowerAlias
-      Object: 40B16E:DeviousFollowers.esp
-      Alias: 0
-    - MutagenObjectType: ScriptObjectProperty
-      Name: GameDaysPassed
-      Object: 000039:Skyrim.esm
     - MutagenObjectType: ScriptObjectListProperty
-      Name: MagickaPotionEffectKwds
+      Name: TownKeywords
       Objects:
       - Name: ''
-        Object: 065A34:Skyrim.esm
+        Object: 013166:Skyrim.esm
       - Name: ''
-        Object: 065A33:Skyrim.esm
+        Object: 01CB87:Skyrim.esm
       - Name: ''
-        Object: 042508:Skyrim.esm
+        Object: 013168:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: variant
+      Object: 410280:DeviousFollowers.esp
   FileName: ''
   Aliases:
   - Property:

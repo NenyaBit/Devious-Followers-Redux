@@ -4,11 +4,11 @@ VirtualMachineAdapter:
   - Name: TIF_Dflow_0A01CDDA
     Properties:
     - MutagenObjectType: ScriptObjectProperty
-      Name: q
-      Object: 000D62:DeviousFollowers.esp
-    - MutagenObjectType: ScriptObjectProperty
       Name: _DflowDealBaseDebt
       Object: 03CDFA:DeviousFollowers.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: q
+      Object: 000D62:DeviousFollowers.esp
   ScriptFragments:
     MutagenObjectType: ScriptFragments
     FileName: TIF_Dflow_0A01CDDA

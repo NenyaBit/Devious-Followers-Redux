@@ -19,7 +19,7 @@ Flags:
   - WalkAway
   - WalkAwayInvisibleInMenu
 Topic: 13EDA3:DeviousFollowers.esp
-PreviousDialog: 26BB8B:DeviousFollowers.esp
+PreviousDialog: 150311:DeviousFollowers.esp
 FavorLevel: None
 LinkTo:
 - 150312:DeviousFollowers.esp
@@ -41,7 +41,7 @@ Conditions:
   Data:
     MutagenObjectType: GetVMQuestVariableConditionData
     Quest: 00C545:DeviousFollowers.esp
-    SecondUnusedIntParameter: -741887872
+    SecondUnusedIntParameter: 8503680
     VariableName: ::_DFAnimalCont_var
   ComparisonValue: 1
 - MutagenObjectType: ConditionFloat
@@ -49,7 +49,7 @@ Conditions:
   Data:
     MutagenObjectType: GetVMQuestVariableConditionData
     Quest: 01C868:DeviousFollowers.esp
-    SecondUnusedIntParameter: -741887840
+    SecondUnusedIntParameter: 8503712
     VariableName: ::Stat_var
   ComparisonValue: 100
 - MutagenObjectType: ConditionFloat

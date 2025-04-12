@@ -4,14 +4,14 @@ VirtualMachineAdapter:
   - Name: DFRX_TIF_0A4153E5
     Properties:
     - MutagenObjectType: ScriptObjectProperty
-      Name: PlayerRef
-      Object: 000014:Skyrim.esm
+      Name: _DFlowJarlGame
+      Object: 0E0485:DeviousFollowers.esp
     - MutagenObjectType: ScriptObjectProperty
       Name: d
       Object: 039C7D:Devious Devices - Expansion.esm
     - MutagenObjectType: ScriptObjectProperty
-      Name: _DFlowJarlGame
-      Object: 0E0485:DeviousFollowers.esp
+      Name: DE
+      Object: 02D9E1:Devious Devices - Expansion.esm
     - MutagenObjectType: ScriptObjectProperty
       Name: GameQ
       Object: 0110DC:DeviousFollowers.esp
@@ -19,8 +19,8 @@ VirtualMachineAdapter:
       Name: libs
       Object: 00F624:Devious Devices - Integration.esm
     - MutagenObjectType: ScriptObjectProperty
-      Name: DE
-      Object: 02D9E1:Devious Devices - Expansion.esm
+      Name: PlayerRef
+      Object: 000014:Skyrim.esm
   ScriptFragments:
     MutagenObjectType: ScriptFragments
     FileName: DFRX_TIF_0A4153E5
@@ -32,7 +32,7 @@ Flags:
   Flags:
   - Random
   - ForceSubtitle
-PreviousDialog: 4153E6:DeviousFollowers.esp
+PreviousDialog: 26BB94:DeviousFollowers.esp
 FavorLevel: None
 Responses:
 - EmotionValue: 50

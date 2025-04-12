@@ -7,14 +7,14 @@ VirtualMachineAdapter:
       Name: _DflowDebtPerDay
       Object: 00C547:DeviousFollowers.esp
     - MutagenObjectType: ScriptObjectProperty
-      Name: q
-      Object: 000D62:DeviousFollowers.esp
+      Name: _DflowEnslaveDebt
+      Object: 00C548:DeviousFollowers.esp
     - MutagenObjectType: ScriptObjectProperty
       Name: _DflowForcedStartMessage
       Object: 1B3401:DeviousFollowers.esp
     - MutagenObjectType: ScriptObjectProperty
-      Name: _DflowEnslaveDebt
-      Object: 00C548:DeviousFollowers.esp
+      Name: q
+      Object: 000D62:DeviousFollowers.esp
   ScriptFragments:
     MutagenObjectType: ScriptFragments
     FileName: DFRX_TIF_081B33FF

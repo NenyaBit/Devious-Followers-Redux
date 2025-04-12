@@ -4,26 +4,26 @@ VirtualMachineAdapter:
   - Name: DFRX_TIF_081D862E
     Properties:
     - MutagenObjectType: ScriptObjectProperty
-      Name: PlayerRef
-      Object: 000014:Skyrim.esm
-    - MutagenObjectType: ScriptObjectProperty
       Name: Gold001
       Object: 00000F:Skyrim.esm
-    - MutagenObjectType: ScriptObjectProperty
-      Name: tool
-      Object: 01210D:DeviousFollowers.esp
-    - MutagenObjectType: ScriptObjectProperty
-      Name: R
-      Object: 1930DE:DeviousFollowers.esp
-    - MutagenObjectType: ScriptObjectProperty
-      Name: kw
-      Object: 003894:Devious Devices - Assets.esm
     - MutagenObjectType: ScriptObjectProperty
       Name: I
       Object: 1930DD:DeviousFollowers.esp
     - MutagenObjectType: ScriptObjectProperty
+      Name: kw
+      Object: 003894:Devious Devices - Assets.esm
+    - MutagenObjectType: ScriptObjectProperty
       Name: libs
       Object: 00F624:Devious Devices - Integration.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: PlayerRef
+      Object: 000014:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: R
+      Object: 1930DE:DeviousFollowers.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: tool
+      Object: 01210D:DeviousFollowers.esp
   ScriptFragments:
     MutagenObjectType: ScriptFragments
     FileName: DFRX_TIF_081D862E
@@ -35,7 +35,7 @@ Flags:
   Flags:
   - Random
   - ForceSubtitle
-PreviousDialog: 299518:DeviousFollowers.esp
+PreviousDialog: 1EC35A:DeviousFollowers.esp
 FavorLevel: None
 Responses:
 - EmotionValue: 50
@@ -58,7 +58,7 @@ Conditions:
   Data:
     MutagenObjectType: GetVMQuestVariableConditionData
     Quest: 1BD274:DeviousFollowers.esp
-    SecondUnusedIntParameter: -741839904
+    SecondUnusedIntParameter: 8537824
     VariableName: ::BoundInTownRule_var
   ComparisonValue: 3
 - MutagenObjectType: ConditionFloat
@@ -70,7 +70,7 @@ Conditions:
   Data:
     MutagenObjectType: GetVMQuestVariableConditionData
     Quest: 010617:DeviousFollowers.esp
-    SecondUnusedIntParameter: -741839872
+    SecondUnusedIntParameter: 8537856
     VariableName: ::Suspend_var
 - MutagenObjectType: ConditionFloat
   CompareOperator: NotEqualTo

@@ -29,7 +29,7 @@ Conditions:
   Data:
     MutagenObjectType: GetVMQuestVariableConditionData
     Quest: 1BD274:DeviousFollowers.esp
-    SecondUnusedIntParameter: -741782912
+    SecondUnusedIntParameter: 8534688
     VariableName: ::SpankingRule_var
   ComparisonValue: 2
 - MutagenObjectType: ConditionGlobal
@@ -37,14 +37,14 @@ Conditions:
   Data:
     MutagenObjectType: GetVMQuestVariableConditionData
     Quest: 1BD274:DeviousFollowers.esp
-    SecondUnusedIntParameter: -741782880
+    SecondUnusedIntParameter: 8534720
     VariableName: ::SpankDealTimer_var
   ComparisonValue: 000039:Skyrim.esm
 - MutagenObjectType: ConditionFloat
   Data:
     MutagenObjectType: GetVMQuestVariableConditionData
     Quest: 1BD274:DeviousFollowers.esp
-    SecondUnusedIntParameter: -741782848
+    SecondUnusedIntParameter: 8534752
     VariableName: ::SpankDealDefaults_var
 Prompt:
   TargetLanguage: English

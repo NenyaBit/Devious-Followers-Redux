@@ -11,7 +11,7 @@ VirtualMachineAdapter:
       FragmentName: Fragment_0
 Flags: {}
 Topic: 29E626:DeviousFollowers.esp
-PreviousDialog: 2C6EF9:DeviousFollowers.esp
+PreviousDialog: 2C6EFB:DeviousFollowers.esp
 FavorLevel: None
 Responses:
 - EmotionValue: 50
@@ -41,14 +41,14 @@ Conditions:
   Data:
     MutagenObjectType: GetVMQuestVariableConditionData
     Quest: 1BD274:DeviousFollowers.esp
-    SecondUnusedIntParameter: -741806208
+    SecondUnusedIntParameter: 8529312
     VariableName: ::LactacidRule_var
   ComparisonValue: 2
 - MutagenObjectType: ConditionFloat
   Data:
     MutagenObjectType: GetVMQuestVariableConditionData
     Quest: 1BD274:DeviousFollowers.esp
-    SecondUnusedIntParameter: -741806176
+    SecondUnusedIntParameter: 8529344
     VariableName: ::LactacidDealDefaults_var
 - MutagenObjectType: ConditionFloat
   Data:

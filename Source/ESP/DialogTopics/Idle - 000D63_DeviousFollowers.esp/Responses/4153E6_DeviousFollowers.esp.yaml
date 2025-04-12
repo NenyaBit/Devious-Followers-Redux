@@ -4,11 +4,11 @@ VirtualMachineAdapter:
   - Name: DFRX_TIF_0A4153E6
     Properties:
     - MutagenObjectType: ScriptObjectProperty
-      Name: PlayerRef
-      Object: 000014:Skyrim.esm
-    - MutagenObjectType: ScriptObjectProperty
       Name: d
       Object: 039C7D:Devious Devices - Expansion.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: DE
+      Object: 02D9E1:Devious Devices - Expansion.esm
     - MutagenObjectType: ScriptObjectProperty
       Name: GameQ
       Object: 0110DC:DeviousFollowers.esp
@@ -16,8 +16,8 @@ VirtualMachineAdapter:
       Name: libs
       Object: 00F624:Devious Devices - Integration.esm
     - MutagenObjectType: ScriptObjectProperty
-      Name: DE
-      Object: 02D9E1:Devious Devices - Expansion.esm
+      Name: PlayerRef
+      Object: 000014:Skyrim.esm
   ScriptFragments:
     MutagenObjectType: ScriptFragments
     FileName: DFRX_TIF_0A4153E6

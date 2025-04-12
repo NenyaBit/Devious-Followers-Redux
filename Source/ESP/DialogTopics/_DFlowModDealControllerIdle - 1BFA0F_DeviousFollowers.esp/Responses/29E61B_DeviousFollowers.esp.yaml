@@ -12,7 +12,7 @@ VirtualMachineAdapter:
 Flags:
   Flags:
   - Random
-PreviousDialog: 38C745:DeviousFollowers.esp
+PreviousDialog: 38C747:DeviousFollowers.esp
 FavorLevel: None
 Responses:
 - EmotionValue: 50
@@ -48,13 +48,13 @@ Conditions:
   Data:
     MutagenObjectType: GetVMQuestVariableConditionData
     Quest: 010617:DeviousFollowers.esp
-    SecondUnusedIntParameter: -741832768
+    SecondUnusedIntParameter: 8540256
     VariableName: ::Suspend_var
 - MutagenObjectType: ConditionFloat
   Data:
     MutagenObjectType: GetVMQuestVariableConditionData
     Quest: 1BD274:DeviousFollowers.esp
-    SecondUnusedIntParameter: -741832736
+    SecondUnusedIntParameter: 8540288
     VariableName: ::SpankingRule_var
   ComparisonValue: 2
 - MutagenObjectType: ConditionFloat
@@ -62,7 +62,7 @@ Conditions:
   Data:
     MutagenObjectType: GetVMQuestVariableConditionData
     Quest: 1BD274:DeviousFollowers.esp
-    SecondUnusedIntParameter: -741832704
+    SecondUnusedIntParameter: 8540320
     VariableName: ::SpankDealDefaults_var
 - MutagenObjectType: ConditionFloat
   Data:

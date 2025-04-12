@@ -4,11 +4,11 @@ VirtualMachineAdapter:
   - Name: TIF_Dflow_0A0187A2
     Properties:
     - MutagenObjectType: ScriptObjectProperty
-      Name: TEMP
-      Object: 014172:DeviousFollowers.esp
-    - MutagenObjectType: ScriptObjectProperty
       Name: libs
       Object: 00F624:Devious Devices - Integration.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: TEMP
+      Object: 014172:DeviousFollowers.esp
   ScriptFragments:
     MutagenObjectType: ScriptFragments
     FileName: TIF_Dflow_0A0187A2

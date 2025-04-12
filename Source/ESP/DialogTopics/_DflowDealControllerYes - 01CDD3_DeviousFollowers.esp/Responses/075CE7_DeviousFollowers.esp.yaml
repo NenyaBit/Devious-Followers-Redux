@@ -3,7 +3,7 @@ Flags:
   Flags:
   - Random
   - WalkAway
-PreviousDialog: 0ECAB8:DeviousFollowers.esp
+PreviousDialog: 075CE8:DeviousFollowers.esp
 FavorLevel: None
 LinkTo:
 - 075CE5:DeviousFollowers.esp
@@ -38,7 +38,7 @@ Conditions:
   Data:
     MutagenObjectType: GetVMQuestVariableConditionData
     Quest: 01C86D:DeviousFollowers.esp
-    SecondUnusedIntParameter: -741889600
+    SecondUnusedIntParameter: 8492000
     VariableName: ::DealPMax_var
   ComparisonValue: 2
 - MutagenObjectType: ConditionFloat
@@ -46,7 +46,7 @@ Conditions:
   Data:
     MutagenObjectType: GetVMQuestVariableConditionData
     Quest: 1BD274:DeviousFollowers.esp
-    SecondUnusedIntParameter: -741889568
+    SecondUnusedIntParameter: 8492032
     VariableName: ::VPRule_var
   ComparisonValue: 2
 WalkAwayTopic: 075CE5:DeviousFollowers.esp

@@ -4,21 +4,21 @@ VirtualMachineAdapter:
   - Name: TIF_Dflow_0A00E5B9
     Properties:
     - MutagenObjectType: ScriptObjectProperty
-      Name: q
-      Object: 1B5B9E:DeviousFollowers.esp
-    - MutagenObjectType: ScriptObjectProperty
       Name: Fac
       Object: 015712:DeviousFollowers.esp
     - MutagenObjectType: ScriptObjectProperty
-      Name: ra
-      Object: 000D62:DeviousFollowers.esp
-      Alias: 1
+      Name: HasHirelingGV
+      Object: 0BCC98:Skyrim.esm
     - MutagenObjectType: ScriptObjectProperty
       Name: HirelingRecognizeJenassa
       Object: 104F38:Skyrim.esm
     - MutagenObjectType: ScriptObjectProperty
-      Name: HasHirelingGV
-      Object: 0BCC98:Skyrim.esm
+      Name: q
+      Object: 1B5B9E:DeviousFollowers.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: ra
+      Object: 000D62:DeviousFollowers.esp
+      Alias: 1
   ScriptFragments:
     MutagenObjectType: ScriptFragments
     FileName: TIF_Dflow_0A00E5B9

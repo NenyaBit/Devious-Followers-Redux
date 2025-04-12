@@ -8,12 +8,12 @@ VirtualMachineAdapter:
       Object: 186A9E:DeviousFollowers.esp
       Alias: 0
     - MutagenObjectType: ScriptObjectProperty
-      Name: tool
-      Object: 01210D:DeviousFollowers.esp
-    - MutagenObjectType: ScriptObjectProperty
       Name: PC
       Object: 186A9E:DeviousFollowers.esp
       Alias: 2
+    - MutagenObjectType: ScriptObjectProperty
+      Name: tool
+      Object: 01210D:DeviousFollowers.esp
   ScriptFragments:
     MutagenObjectType: ScriptFragments
     FileName: TIF_Dflow_081930EE
@@ -66,21 +66,21 @@ Conditions:
   Data:
     MutagenObjectType: GetVMQuestVariableConditionData
     Quest: 01C86D:DeviousFollowers.esp
-    SecondUnusedIntParameter: -741844992
+    SecondUnusedIntParameter: 8552640
     VariableName: ::Deals_var
   ComparisonValue: 1930E0:DeviousFollowers.esp
 - MutagenObjectType: ConditionFloat
   Data:
     MutagenObjectType: GetVMQuestVariableConditionData
     Quest: 186A9E:DeviousFollowers.esp
-    SecondUnusedIntParameter: -741844960
+    SecondUnusedIntParameter: 8552672
     VariableName: ::EnabledEvil_var
   ComparisonValue: 1
 - MutagenObjectType: ConditionFloat
   Data:
     MutagenObjectType: GetVMQuestVariableConditionData
     Quest: 010617:DeviousFollowers.esp
-    SecondUnusedIntParameter: -741844928
+    SecondUnusedIntParameter: 8552704
     VariableName: ::Suspend_var
 - MutagenObjectType: ConditionFloat
   CompareOperator: LessThan

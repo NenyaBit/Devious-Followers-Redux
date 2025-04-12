@@ -47,7 +47,7 @@ Conditions:
   Data:
     MutagenObjectType: GetVMQuestVariableConditionData
     Quest: 41F5F3:DeviousFollowers.esp
-    SecondUnusedIntParameter: -741770592
+    SecondUnusedIntParameter: 8474752
     VariableName: ::GaveSpecialLotion_var
   ComparisonValue: 1
 - MutagenObjectType: ConditionGlobal
@@ -57,14 +57,14 @@ Conditions:
   Data:
     MutagenObjectType: GetVMQuestVariableConditionData
     Quest: 41F5F3:DeviousFollowers.esp
-    SecondUnusedIntParameter: -741770560
+    SecondUnusedIntParameter: 8474784
     VariableName: ::LastGivenTimer_var
   ComparisonValue: 000039:Skyrim.esm
 - MutagenObjectType: ConditionFloat
   Data:
     MutagenObjectType: GetVMQuestVariableConditionData
     Quest: 41F5F3:DeviousFollowers.esp
-    SecondUnusedIntParameter: -741770528
+    SecondUnusedIntParameter: 8474816
     VariableName: ::FakeRanOut_var
   ComparisonValue: 1
 WalkAwayTopic: 41F607:DeviousFollowers.esp

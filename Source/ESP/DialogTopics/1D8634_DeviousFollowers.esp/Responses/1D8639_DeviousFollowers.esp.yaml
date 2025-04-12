@@ -13,7 +13,7 @@ Flags:
   Flags:
   - Random
   - ForceSubtitle
-PreviousDialog: 27AEBB:DeviousFollowers.esp
+PreviousDialog: 27AEBD:DeviousFollowers.esp
 FavorLevel: None
 Responses:
 - EmotionValue: 50

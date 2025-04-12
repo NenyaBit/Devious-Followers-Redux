@@ -4,14 +4,14 @@ VirtualMachineAdapter:
   - Name: TIF_Deal_08152AC9
     Properties:
     - MutagenObjectType: ScriptObjectProperty
+      Name: Dealq
+      Object: 01C868:DeviousFollowers.esp
+    - MutagenObjectType: ScriptObjectProperty
       Name: q
       Object: 000D62:DeviousFollowers.esp
     - MutagenObjectType: ScriptObjectProperty
       Name: tool
       Object: 01210D:DeviousFollowers.esp
-    - MutagenObjectType: ScriptObjectProperty
-      Name: Dealq
-      Object: 01C868:DeviousFollowers.esp
   ScriptFragments:
     MutagenObjectType: ScriptFragments
     FileName: TIF_Deal_08152AC9

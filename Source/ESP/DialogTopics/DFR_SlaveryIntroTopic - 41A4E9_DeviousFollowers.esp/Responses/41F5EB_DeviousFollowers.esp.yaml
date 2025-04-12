@@ -10,7 +10,7 @@ VirtualMachineAdapter:
       ScriptName: DFRX_TIF_0A41F5EB
       FragmentName: Fragment_0
 Flags: {}
-PreviousDialog: Null
+PreviousDialog: 433A8F:DeviousFollowers.esp
 FavorLevel: None
 LinkTo:
 - 41A4E9:DeviousFollowers.esp
@@ -42,7 +42,7 @@ Conditions:
   Data:
     MutagenObjectType: GetVMQuestVariableConditionData
     Quest: 38C70D:DeviousFollowers.esp
-    SecondUnusedIntParameter: -741772032
+    SecondUnusedIntParameter: 8475328
     VariableName: ::SlaveryMethod_var
   ComparisonValue: 1
 - MutagenObjectType: ConditionFloat

@@ -4,6 +4,18 @@ VirtualMachineAdapter:
   - Name: _Dx_TIF__0A23E268
     Properties:
     - MutagenObjectType: ScriptObjectProperty
+      Name: DC
+      Object: 01C86D:DeviousFollowers.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: I
+      Object: 02FA8B:Devious Devices - Expansion.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: libs
+      Object: 00F624:Devious Devices - Integration.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Lives
+      Object: 02DB9E:DeviousFollowers.esp
+    - MutagenObjectType: ScriptObjectProperty
       Name: PlayerRef
       Object: 000014:Skyrim.esm
     - MutagenObjectType: ScriptObjectProperty
@@ -12,18 +24,6 @@ VirtualMachineAdapter:
     - MutagenObjectType: ScriptObjectProperty
       Name: R
       Object: 02FA8A:Devious Devices - Expansion.esm
-    - MutagenObjectType: ScriptObjectProperty
-      Name: DC
-      Object: 01C86D:DeviousFollowers.esp
-    - MutagenObjectType: ScriptObjectProperty
-      Name: I
-      Object: 02FA8B:Devious Devices - Expansion.esm
-    - MutagenObjectType: ScriptObjectProperty
-      Name: Lives
-      Object: 02DB9E:DeviousFollowers.esp
-    - MutagenObjectType: ScriptObjectProperty
-      Name: libs
-      Object: 00F624:Devious Devices - Integration.esm
   ScriptFragments:
     MutagenObjectType: ScriptFragments
     FileName: _Dx_TIF__0A23E268
@@ -97,7 +97,7 @@ Conditions:
   Data:
     MutagenObjectType: GetVMQuestVariableConditionData
     Quest: 00C545:DeviousFollowers.esp
-    SecondUnusedIntParameter: -741900416
+    SecondUnusedIntParameter: 8481024
     VariableName: ::_DFRemovalMode_var
   ComparisonValue: 1
 Prompt:

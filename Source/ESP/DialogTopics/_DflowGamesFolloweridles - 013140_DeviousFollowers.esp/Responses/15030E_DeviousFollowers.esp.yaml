@@ -15,7 +15,7 @@ VirtualMachineAdapter:
       FragmentName: Fragment_2
 Flags:
   ResetHours: 11.999817
-PreviousDialog: 15030F:DeviousFollowers.esp
+PreviousDialog: Null
 FavorLevel: None
 Responses:
 - EmotionValue: 50

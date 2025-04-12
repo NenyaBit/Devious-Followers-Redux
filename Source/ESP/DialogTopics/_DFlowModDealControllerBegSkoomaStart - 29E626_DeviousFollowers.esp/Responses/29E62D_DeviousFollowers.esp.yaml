@@ -10,7 +10,7 @@ VirtualMachineAdapter:
       ScriptName: DFRX_TIF_0929E62A
       FragmentName: Fragment_0
 Flags: {}
-PreviousDialog: 2CC003:DeviousFollowers.esp
+PreviousDialog: Null
 FavorLevel: None
 Responses:
 - EmotionValue: 50
@@ -40,7 +40,7 @@ Conditions:
   Data:
     MutagenObjectType: GetVMQuestVariableConditionData
     Quest: 1BD274:DeviousFollowers.esp
-    SecondUnusedIntParameter: -741813120
+    SecondUnusedIntParameter: 8533440
     VariableName: ::SkoomaRule_var
   ComparisonValue: 2
 - MutagenObjectType: ConditionFloat

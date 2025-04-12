@@ -14,7 +14,7 @@ VirtualMachineAdapter:
       ScriptName: DFRX_TIF_090C016C
       FragmentName: Fragment_2
 Flags: {}
-PreviousDialog: Null
+PreviousDialog: 2F4833:DeviousFollowers.esp
 FavorLevel: None
 Responses:
 - EmotionValue: 50

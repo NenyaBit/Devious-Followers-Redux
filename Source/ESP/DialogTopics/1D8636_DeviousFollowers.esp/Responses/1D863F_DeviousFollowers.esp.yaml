@@ -13,7 +13,7 @@ Flags:
   Flags:
   - Random
   - ForceSubtitle
-PreviousDialog: 27AEBE:DeviousFollowers.esp
+PreviousDialog: 27AEC0:DeviousFollowers.esp
 FavorLevel: None
 Responses:
 - EmotionValue: 50
@@ -39,6 +39,6 @@ Conditions:
   Data:
     MutagenObjectType: GetVMQuestVariableConditionData
     Quest: 1BD274:DeviousFollowers.esp
-    SecondUnusedIntParameter: -741827200
+    SecondUnusedIntParameter: 8443072
     VariableName: ::InnKeeperRule_var
   ComparisonValue: 5

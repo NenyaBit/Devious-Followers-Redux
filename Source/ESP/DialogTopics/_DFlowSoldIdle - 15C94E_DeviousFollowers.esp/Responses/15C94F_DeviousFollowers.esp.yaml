@@ -20,7 +20,7 @@ VirtualMachineAdapter:
 Flags:
   Flags:
   - ForceSubtitle
-PreviousDialog: Null
+PreviousDialog: 3272C7:DeviousFollowers.esp
 FavorLevel: None
 Responses:
 - EmotionValue: 50
@@ -69,7 +69,7 @@ Conditions:
   Data:
     MutagenObjectType: GetVMQuestVariableConditionData
     Quest: 15A1A4:DeviousFollowers.esp
-    SecondUnusedIntParameter: -741852384
+    SecondUnusedIntParameter: 8562976
     VariableName: ::Enable_var
   ComparisonValue: 1
 - MutagenObjectType: ConditionGlobal
@@ -77,7 +77,7 @@ Conditions:
   Data:
     MutagenObjectType: GetVMQuestVariableConditionData
     Quest: 15A1A4:DeviousFollowers.esp
-    SecondUnusedIntParameter: -741852352
+    SecondUnusedIntParameter: 8563008
     VariableName: ::Timer_var
   ComparisonValue: 000039:Skyrim.esm
 - MutagenObjectType: ConditionFloat
@@ -85,7 +85,7 @@ Conditions:
   Data:
     MutagenObjectType: GetVMQuestVariableConditionData
     Quest: 010617:DeviousFollowers.esp
-    SecondUnusedIntParameter: -741852320
+    SecondUnusedIntParameter: 8563040
     VariableName: ::Suspend_var
   ComparisonValue: 1
 - MutagenObjectType: ConditionFloat

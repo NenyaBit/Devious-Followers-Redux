@@ -4,23 +4,23 @@ VirtualMachineAdapter:
   - Name: DFRX_TIF_0A38C738
     Properties:
     - MutagenObjectType: ScriptObjectProperty
-      Name: PlayerRef
-      Object: 000014:Skyrim.esm
-    - MutagenObjectType: ScriptObjectProperty
       Name: d
       Object: 02324D:Devious Devices - Expansion.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: DE
+      Object: 026FD0:DeviousFollowers.esp
     - MutagenObjectType: ScriptObjectProperty
       Name: GameQ
       Object: 0110DC:DeviousFollowers.esp
     - MutagenObjectType: ScriptObjectProperty
-      Name: msg
-      Object: 027539:DeviousFollowers.esp
-    - MutagenObjectType: ScriptObjectProperty
       Name: libs
       Object: 00F624:Devious Devices - Integration.esm
     - MutagenObjectType: ScriptObjectProperty
-      Name: DE
-      Object: 026FD0:DeviousFollowers.esp
+      Name: msg
+      Object: 027539:DeviousFollowers.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: PlayerRef
+      Object: 000014:Skyrim.esm
   ScriptFragments:
     MutagenObjectType: ScriptFragments
     FileName: DFRX_TIF_0A38C738
@@ -120,7 +120,7 @@ Conditions:
   Data:
     MutagenObjectType: GetVMQuestVariableConditionData
     Quest: 00C545:DeviousFollowers.esp
-    SecondUnusedIntParameter: -741906688
+    SecondUnusedIntParameter: 8479648
     VariableName: ::_DFAnimalCont_var
   ComparisonValue: 1
 - MutagenObjectType: ConditionGlobal

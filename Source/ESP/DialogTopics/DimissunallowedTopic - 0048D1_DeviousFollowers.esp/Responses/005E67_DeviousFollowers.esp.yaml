@@ -1,6 +1,6 @@
 FormKey: 005E67:DeviousFollowers.esp
 Flags: {}
-PreviousDialog: 21DBB1:DeviousFollowers.esp
+PreviousDialog: 018231:DeviousFollowers.esp
 FavorLevel: None
 Responses:
 - EmotionValue: 50
@@ -36,6 +36,6 @@ Conditions:
   Data:
     MutagenObjectType: GetVMQuestVariableConditionData
     Quest: 01C86D:DeviousFollowers.esp
-    SecondUnusedIntParameter: -741905824
+    SecondUnusedIntParameter: 8477728
     VariableName: ::Deals_var
   ComparisonValue: 1

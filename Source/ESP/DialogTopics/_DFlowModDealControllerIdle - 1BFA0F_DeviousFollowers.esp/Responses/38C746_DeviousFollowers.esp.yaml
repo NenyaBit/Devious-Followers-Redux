@@ -47,13 +47,13 @@ Conditions:
   Data:
     MutagenObjectType: GetVMQuestVariableConditionData
     Quest: 010617:DeviousFollowers.esp
-    SecondUnusedIntParameter: -741832544
+    SecondUnusedIntParameter: 8544288
     VariableName: ::Suspend_var
 - MutagenObjectType: ConditionFloat
   Data:
     MutagenObjectType: GetVMQuestVariableConditionData
     Quest: 1BD274:DeviousFollowers.esp
-    SecondUnusedIntParameter: -741832512
+    SecondUnusedIntParameter: 8544320
     VariableName: ::SpankingRule_var
   ComparisonValue: 2
 - MutagenObjectType: ConditionFloat
@@ -61,7 +61,7 @@ Conditions:
   Data:
     MutagenObjectType: GetVMQuestVariableConditionData
     Quest: 1BD274:DeviousFollowers.esp
-    SecondUnusedIntParameter: -741832480
+    SecondUnusedIntParameter: 8544352
     VariableName: ::SpankDealDefaults_var
 - MutagenObjectType: ConditionFloat
   Data:

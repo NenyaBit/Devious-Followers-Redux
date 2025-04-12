@@ -10,7 +10,7 @@ VirtualMachineAdapter:
       ScriptName: DFRX_TIF_09299511
       FragmentName: Fragment_0
 Flags: {}
-PreviousDialog: 299515:DeviousFollowers.esp
+PreviousDialog: 2CBFFF:DeviousFollowers.esp
 FavorLevel: None
 Responses:
 - EmotionValue: 50
@@ -44,7 +44,7 @@ Conditions:
   Data:
     MutagenObjectType: GetVMQuestVariableConditionData
     Quest: 1BD274:DeviousFollowers.esp
-    SecondUnusedIntParameter: -741814688
+    SecondUnusedIntParameter: 8531488
     VariableName: ::SexRule_var
   ComparisonValue: 2
 - MutagenObjectType: ConditionFloat

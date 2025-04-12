@@ -2,7 +2,7 @@ FormKey: 4153C0:DeviousFollowers.esp
 Flags:
   Flags:
   - Goodbye
-PreviousDialog: 4153E1:DeviousFollowers.esp
+PreviousDialog: Null
 FavorLevel: None
 Responses:
 - EmotionValue: 50

@@ -2,7 +2,7 @@ FormKey: 3A5CB1:DeviousFollowers.esp
 Flags:
   Flags:
   - Random
-PreviousDialog: Null
+PreviousDialog: 3A5CB6:DeviousFollowers.esp
 FavorLevel: None
 Responses:
 - EmotionValue: 50

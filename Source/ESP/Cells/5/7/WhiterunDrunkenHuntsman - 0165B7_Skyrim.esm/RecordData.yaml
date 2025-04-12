@@ -1,10 +1,6 @@
 FormKey: 0165B7:Skyrim.esm
-IsCompressed: True
-MajorRecordFlagsRaw: 262144
 EditorID: WhiterunDrunkenHuntsman
 Version2: 12
-SkyrimMajorRecordFlags:
-- Compressed
 Name:
   TargetLanguage: English
   Value: The Drunken Huntsman
@@ -60,8 +56,6 @@ Persistent:
   LocationReference: 01F872:Skyrim.esm
   Placement:
     Position: 230.47462, -1040.189, 69.99262
-    Rotation: 0, -0, 4.2000017
+    Rotation: 0, 0, 4.2000017
   MajorFlags:
   - Persistent
-MajorFlags:
-- 0x40000

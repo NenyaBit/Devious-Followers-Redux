@@ -21,7 +21,7 @@ Flags:
   Flags:
   - Random
   - WalkAway
-PreviousDialog: Null
+PreviousDialog: 26BB8D:DeviousFollowers.esp
 FavorLevel: None
 LinkTo:
 - 01E8CC:DeviousFollowers.esp

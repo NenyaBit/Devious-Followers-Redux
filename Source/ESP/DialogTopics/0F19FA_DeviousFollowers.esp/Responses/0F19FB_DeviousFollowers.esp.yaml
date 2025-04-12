@@ -3,7 +3,7 @@ Flags:
   Flags:
   - Random
   - ForceSubtitle
-PreviousDialog: Null
+PreviousDialog: 0F19FD:DeviousFollowers.esp
 FavorLevel: None
 Responses:
 - EmotionValue: 50

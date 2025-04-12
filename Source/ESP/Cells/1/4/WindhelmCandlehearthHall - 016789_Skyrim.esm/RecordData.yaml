@@ -1,10 +1,6 @@
 FormKey: 016789:Skyrim.esm
-IsCompressed: True
-MajorRecordFlagsRaw: 262144
 EditorID: WindhelmCandlehearthHall
 Version2: 2
-SkyrimMajorRecordFlags:
-- Compressed
 Name:
   TargetLanguage: English
   Value: Candlehearth Hall
@@ -49,8 +45,6 @@ Persistent:
   LocationReference: 0209EA:Skyrim.esm
   Placement:
     Position: 256, -3440, 320
-    Rotation: 0, -0, 5.1000247
+    Rotation: 0, 0, 5.1000247
   MajorFlags:
   - Persistent
-MajorFlags:
-- 0x40000

@@ -4,38 +4,38 @@ VirtualMachineAdapter:
   - Name: _Dx_TIF__093458D9
     Properties:
     - MutagenObjectType: ScriptObjectProperty
-      Name: TEMP
-      Object: 014172:DeviousFollowers.esp
+      Name: d
+      Object: 014929:Devious Devices - Expansion.esm
     - MutagenObjectType: ScriptObjectProperty
       Name: D2
       Object: 039C7D:Devious Devices - Expansion.esm
     - MutagenObjectType: ScriptObjectProperty
-      Name: Debt
-      Object: 00C54F:DeviousFollowers.esp
-    - MutagenObjectType: ScriptObjectProperty
       Name: DE
       Object: 014928:Devious Devices - Expansion.esm
     - MutagenObjectType: ScriptObjectProperty
-      Name: libs
-      Object: 00F624:Devious Devices - Integration.esm
+      Name: DE2
+      Object: 02D9E1:Devious Devices - Expansion.esm
     - MutagenObjectType: ScriptObjectProperty
-      Name: q
-      Object: 000D62:DeviousFollowers.esp
-    - MutagenObjectType: ScriptObjectProperty
-      Name: d
-      Object: 014929:Devious Devices - Expansion.esm
-    - MutagenObjectType: ScriptObjectProperty
-      Name: tool
-      Object: 01210D:DeviousFollowers.esp
+      Name: Debt
+      Object: 00C54F:DeviousFollowers.esp
     - MutagenObjectType: ScriptObjectProperty
       Name: GameQ
       Object: 000D62:DeviousFollowers.esp
     - MutagenObjectType: ScriptObjectProperty
+      Name: libs
+      Object: 00F624:Devious Devices - Integration.esm
+    - MutagenObjectType: ScriptObjectProperty
       Name: PlayerRef
       Object: 000014:Skyrim.esm
     - MutagenObjectType: ScriptObjectProperty
-      Name: DE2
-      Object: 02D9E1:Devious Devices - Expansion.esm
+      Name: q
+      Object: 000D62:DeviousFollowers.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: TEMP
+      Object: 014172:DeviousFollowers.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: tool
+      Object: 01210D:DeviousFollowers.esp
   ScriptFragments:
     MutagenObjectType: ScriptFragments
     FileName: _Dx_TIF__093458D9

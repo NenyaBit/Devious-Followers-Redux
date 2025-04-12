@@ -4,32 +4,32 @@ VirtualMachineAdapter:
   - Name: TIF_Dflow_070403E6
     Properties:
     - MutagenObjectType: ScriptObjectProperty
-      Name: _DflowDealOPTimer
-      Object: 03CDFD:DeviousFollowers.esp
+      Name: _DflowDealBaseDays
+      Object: 03CDFB:DeviousFollowers.esp
     - MutagenObjectType: ScriptObjectProperty
       Name: _DflowDealBaseDebt
       Object: 03CDFA:DeviousFollowers.esp
     - MutagenObjectType: ScriptObjectProperty
-      Name: q
-      Object: 000D62:DeviousFollowers.esp
-    - MutagenObjectType: ScriptObjectProperty
-      Name: _DflowDealBaseDays
-      Object: 03CDFB:DeviousFollowers.esp
-    - MutagenObjectType: ScriptObjectProperty
-      Name: tool
-      Object: 01210D:DeviousFollowers.esp
+      Name: _DflowDealBPTimer
+      Object: 03CDFF:DeviousFollowers.esp
     - MutagenObjectType: ScriptObjectProperty
       Name: _DflowDealHPTimer
       Object: 03CDFE:DeviousFollowers.esp
     - MutagenObjectType: ScriptObjectProperty
-      Name: _DflowDealBPTimer
-      Object: 03CDFF:DeviousFollowers.esp
+      Name: _DflowDealMulti
+      Object: 03CDFC:DeviousFollowers.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: _DflowDealOPTimer
+      Object: 03CDFD:DeviousFollowers.esp
     - MutagenObjectType: ScriptObjectProperty
       Name: GameDaysPassed
       Object: 000039:Skyrim.esm
     - MutagenObjectType: ScriptObjectProperty
-      Name: _DflowDealMulti
-      Object: 03CDFC:DeviousFollowers.esp
+      Name: q
+      Object: 000D62:DeviousFollowers.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: tool
+      Object: 01210D:DeviousFollowers.esp
   ScriptFragments:
     MutagenObjectType: ScriptFragments
     FileName: TIF_Dflow_070403E6

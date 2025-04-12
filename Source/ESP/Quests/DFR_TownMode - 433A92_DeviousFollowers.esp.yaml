@@ -5,39 +5,39 @@ VirtualMachineAdapter:
   - Name: DFR_TownMode
     Properties:
     - MutagenObjectType: ScriptObjectProperty
-      Name: Collar
-      Object: 3ECB48:DeviousFollowers.esp
+      Name: Alias_CurrentCity
+      Object: 433A92:DeviousFollowers.esp
+      Alias: 22
     - MutagenObjectType: ScriptObjectProperty
       Name: Alias_CurrentTown
       Object: 433A92:DeviousFollowers.esp
       Alias: 23
     - MutagenObjectType: ScriptObjectProperty
-      Name: StayScene
-      Object: 4613F8:DeviousFollowers.esp
+      Name: Alias_HoldTown
+      Object: 433A92:DeviousFollowers.esp
+      Alias: 19
     - MutagenObjectType: ScriptObjectProperty
       Name: Alias_Inn
       Object: 433A92:DeviousFollowers.esp
       Alias: 20
     - MutagenObjectType: ScriptObjectProperty
-      Name: Alias_Player
+      Name: Alias_InnCenterMarker
       Object: 433A92:DeviousFollowers.esp
-      Alias: 3
+      Alias: 21
     - MutagenObjectType: ScriptObjectProperty
       Name: Alias_master
       Object: 433A92:DeviousFollowers.esp
       Alias: 11
     - MutagenObjectType: ScriptObjectProperty
-      Name: Alias_InnCenterMarker
+      Name: Alias_Player
       Object: 433A92:DeviousFollowers.esp
-      Alias: 21
+      Alias: 3
     - MutagenObjectType: ScriptObjectProperty
-      Name: Alias_HoldTown
-      Object: 433A92:DeviousFollowers.esp
-      Alias: 19
+      Name: Collar
+      Object: 3ECB48:DeviousFollowers.esp
     - MutagenObjectType: ScriptObjectProperty
-      Name: Alias_CurrentCity
-      Object: 433A92:DeviousFollowers.esp
-      Alias: 22
+      Name: StayScene
+      Object: 4613F8:DeviousFollowers.esp
   FileName: DFR_TownMode
   Fragments:
   - Unknown2: 1

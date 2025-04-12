@@ -4,14 +4,14 @@ VirtualMachineAdapter:
   - Name: TIF_Dflow_Whore
     Properties:
     - MutagenObjectType: ScriptObjectProperty
+      Name: MCM
+      Object: 00C545:DeviousFollowers.esp
+    - MutagenObjectType: ScriptObjectProperty
       Name: TEMP
       Object: 014172:DeviousFollowers.esp
     - MutagenObjectType: ScriptObjectProperty
       Name: tool
       Object: 01210D:DeviousFollowers.esp
-    - MutagenObjectType: ScriptObjectProperty
-      Name: MCM
-      Object: 00C545:DeviousFollowers.esp
   ScriptFragments:
     MutagenObjectType: ScriptFragments
     FileName: TIF_Dflow_Whore
@@ -27,7 +27,7 @@ Flags:
   Flags:
   - Goodbye
   - Random
-PreviousDialog: Null
+PreviousDialog: 0CC78C:DeviousFollowers.esp
 FavorLevel: None
 Responses:
 - EmotionValue: 50

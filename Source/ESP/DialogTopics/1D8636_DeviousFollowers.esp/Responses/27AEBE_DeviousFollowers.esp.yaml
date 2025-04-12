@@ -38,6 +38,6 @@ Conditions:
   Data:
     MutagenObjectType: GetVMQuestVariableConditionData
     Quest: 1BD274:DeviousFollowers.esp
-    SecondUnusedIntParameter: -741827360
+    SecondUnusedIntParameter: 8443264
     VariableName: ::InnKeeperRule_var
   ComparisonValue: 4

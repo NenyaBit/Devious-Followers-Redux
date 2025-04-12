@@ -1,6 +1,6 @@
 FormKey: 00796C:DeviousFollowers.esp
 Flags: {}
-PreviousDialog: Null
+PreviousDialog: 0403F0:DeviousFollowers.esp
 FavorLevel: None
 LinkTo:
 - 00A4E2:DeviousFollowers.esp
@@ -80,6 +80,6 @@ Conditions:
   Data:
     MutagenObjectType: GetVMQuestVariableConditionData
     Quest: 00C545:DeviousFollowers.esp
-    SecondUnusedIntParameter: -741905376
+    SecondUnusedIntParameter: 8567392
     VariableName: ::_DFRemovalMode_var
   ComparisonValue: 1

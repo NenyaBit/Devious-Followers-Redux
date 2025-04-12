@@ -4,15 +4,15 @@ VirtualMachineAdapter:
   - Name: DFRX_TIF_080F19F8
     Properties:
     - MutagenObjectType: ScriptObjectProperty
+      Name: _DFlowDealSWhoreOut
+      Object: 0F19F9:DeviousFollowers.esp
+    - MutagenObjectType: ScriptObjectProperty
       Name: Client
       Object: 0E53C8:DeviousFollowers.esp
       Alias: 3
     - MutagenObjectType: ScriptObjectProperty
       Name: tool
       Object: 01210D:DeviousFollowers.esp
-    - MutagenObjectType: ScriptObjectProperty
-      Name: _DFlowDealSWhoreOut
-      Object: 0F19F9:DeviousFollowers.esp
   ScriptFragments:
     MutagenObjectType: ScriptFragments
     FileName: DFRX_TIF_080F19F8
@@ -71,7 +71,7 @@ Conditions:
   Data:
     MutagenObjectType: GetVMQuestVariableConditionData
     Quest: 0E53C8:DeviousFollowers.esp
-    SecondUnusedIntParameter: -741866208
+    SecondUnusedIntParameter: 8507616
     VariableName: ::Delay_var
   ComparisonValue: 000039:Skyrim.esm
 - MutagenObjectType: ConditionFloat
@@ -91,7 +91,7 @@ Conditions:
   Data:
     MutagenObjectType: GetVMQuestVariableConditionData
     Quest: 0E53C8:DeviousFollowers.esp
-    SecondUnusedIntParameter: -741866176
+    SecondUnusedIntParameter: 8507648
     VariableName: ::Stat_var
   ComparisonValue: 1
 - MutagenObjectType: ConditionFloat
@@ -129,7 +129,7 @@ Conditions:
   Data:
     MutagenObjectType: GetVMQuestVariableConditionData
     Quest: 010617:DeviousFollowers.esp
-    SecondUnusedIntParameter: -741866144
+    SecondUnusedIntParameter: 8507680
     VariableName: ::Suspend_var
 - MutagenObjectType: ConditionFloat
   CompareOperator: LessThan

@@ -13,7 +13,7 @@ Flags:
   Flags:
   - Goodbye
 Topic: 29E626:DeviousFollowers.esp
-PreviousDialog: 2C6EFA:DeviousFollowers.esp
+PreviousDialog: 2C6EF9:DeviousFollowers.esp
 FavorLevel: None
 Responses:
 - EmotionValue: 50
@@ -49,7 +49,7 @@ Conditions:
   Data:
     MutagenObjectType: GetVMQuestVariableConditionData
     Quest: 1BD274:DeviousFollowers.esp
-    SecondUnusedIntParameter: -741807136
+    SecondUnusedIntParameter: 8529568
     VariableName: ::LactacidRule_var
   ComparisonValue: 2
 - MutagenObjectType: ConditionGlobal
@@ -57,14 +57,14 @@ Conditions:
   Data:
     MutagenObjectType: GetVMQuestVariableConditionData
     Quest: 1BD274:DeviousFollowers.esp
-    SecondUnusedIntParameter: -741807104
+    SecondUnusedIntParameter: 8529600
     VariableName: ::LactacidDealTimer_var
   ComparisonValue: 000039:Skyrim.esm
 - MutagenObjectType: ConditionFloat
   Data:
     MutagenObjectType: GetVMQuestVariableConditionData
     Quest: 1BD274:DeviousFollowers.esp
-    SecondUnusedIntParameter: -741807072
+    SecondUnusedIntParameter: 8529632
     VariableName: ::LactacidDealDefaults_var
 - MutagenObjectType: ConditionFloat
   Flags:

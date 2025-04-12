@@ -4,11 +4,11 @@ VirtualMachineAdapter:
   - Name: TIF_Dflow_081A1EA3
     Properties:
     - MutagenObjectType: ScriptObjectProperty
-      Name: tool
-      Object: 01210D:DeviousFollowers.esp
-    - MutagenObjectType: ScriptObjectProperty
       Name: DC
       Object: 01C86D:DeviousFollowers.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: tool
+      Object: 01210D:DeviousFollowers.esp
   ScriptFragments:
     MutagenObjectType: ScriptFragments
     FileName: TIF_Dflow_081A1EA3
@@ -20,7 +20,7 @@ Flags:
   Flags:
   - Goodbye
   - Random
-PreviousDialog: Null
+PreviousDialog: 2EA620:DeviousFollowers.esp
 FavorLevel: None
 Responses:
 - EmotionValue: 50
@@ -60,20 +60,20 @@ Conditions:
   Data:
     MutagenObjectType: GetVMQuestVariableConditionData
     Quest: 00C545:DeviousFollowers.esp
-    SecondUnusedIntParameter: -741844032
+    SecondUnusedIntParameter: 8565632
     VariableName: ::SkipToTheEnd_var
 - MutagenObjectType: ConditionFloat
   CompareOperator: GreaterThanOrEqualTo
   Data:
     MutagenObjectType: GetVMQuestVariableConditionData
     Quest: 01C86D:DeviousFollowers.esp
-    SecondUnusedIntParameter: -741844000
+    SecondUnusedIntParameter: 8565664
     VariableName: ::Deals_var
 - MutagenObjectType: ConditionFloat
   CompareOperator: LessThan
   Data:
     MutagenObjectType: GetVMQuestVariableConditionData
     Quest: 01C86D:DeviousFollowers.esp
-    SecondUnusedIntParameter: -741843968
+    SecondUnusedIntParameter: 8565696
     VariableName: ::Deals_var
   ComparisonValue: 6

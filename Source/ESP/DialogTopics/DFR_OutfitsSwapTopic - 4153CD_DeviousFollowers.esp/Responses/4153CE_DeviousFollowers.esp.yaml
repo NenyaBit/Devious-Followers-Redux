@@ -36,7 +36,7 @@ Conditions:
   Data:
     MutagenObjectType: GetVMQuestVariableConditionData
     Quest: 4153B8:DeviousFollowers.esp
-    SecondUnusedIntParameter: -741773696
+    SecondUnusedIntParameter: 8464096
     VariableName: ::SwapOutfit_var
   ComparisonValue: 1
 - MutagenObjectType: ConditionFloat
@@ -49,7 +49,7 @@ Conditions:
   Data:
     MutagenObjectType: GetVMQuestVariableConditionData
     Quest: 4153B8:DeviousFollowers.esp
-    SecondUnusedIntParameter: -741773664
+    SecondUnusedIntParameter: 8464128
     VariableName: ::SwapCooldown_var
   ComparisonValue: 000039:Skyrim.esm
 - MutagenObjectType: ConditionFloat

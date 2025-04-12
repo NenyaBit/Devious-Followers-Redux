@@ -4,47 +4,47 @@ VirtualMachineAdapter:
   - Name: TIF_Dflow_081A1EA8
     Properties:
     - MutagenObjectType: ScriptObjectProperty
-      Name: Mitts
-      Object: 02324D:Devious Devices - Expansion.esm
-    - MutagenObjectType: ScriptObjectProperty
       Name: _DflowEndlessMode
       Object: 0403E7:DeviousFollowers.esp
-    - MutagenObjectType: ScriptObjectProperty
-      Name: Gold001
-      Object: 00000F:Skyrim.esm
     - MutagenObjectType: ScriptObjectProperty
       Name: _Dtats
       Object: 01A80B:DeviousFollowers.esp
     - MutagenObjectType: ScriptObjectProperty
-      Name: FreedomCost
-      Object: 00C549:DeviousFollowers.esp
-    - MutagenObjectType: ScriptObjectProperty
-      Name: PlayerRef
-      Object: 000014:Skyrim.esm
+      Name: boots
+      Object: 03D2D4:Devious Devices - Expansion.esm
     - MutagenObjectType: ScriptObjectProperty
       Name: Collar
       Object: 213D43:DeviousFollowers.esp
     - MutagenObjectType: ScriptObjectProperty
-      Name: q
-      Object: 000D62:DeviousFollowers.esp
+      Name: FreedomCost
+      Object: 00C549:DeviousFollowers.esp
     - MutagenObjectType: ScriptObjectProperty
-      Name: libs
-      Object: 00F624:Devious Devices - Integration.esm
-    - MutagenObjectType: ScriptObjectProperty
-      Name: SSO
-      Object: 02F68A:DeviousFollowers.esp
-    - MutagenObjectType: ScriptObjectProperty
-      Name: msg
-      Object: 00A4DF:DeviousFollowers.esp
-    - MutagenObjectType: ScriptObjectProperty
-      Name: R
-      Object: 0403E9:DeviousFollowers.esp
+      Name: Gold001
+      Object: 00000F:Skyrim.esm
     - MutagenObjectType: ScriptObjectProperty
       Name: I
       Object: 0403E8:DeviousFollowers.esp
     - MutagenObjectType: ScriptObjectProperty
-      Name: boots
-      Object: 03D2D4:Devious Devices - Expansion.esm
+      Name: libs
+      Object: 00F624:Devious Devices - Integration.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Mitts
+      Object: 02324D:Devious Devices - Expansion.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: msg
+      Object: 00A4DF:DeviousFollowers.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: PlayerRef
+      Object: 000014:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: q
+      Object: 000D62:DeviousFollowers.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: R
+      Object: 0403E9:DeviousFollowers.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: SSO
+      Object: 02F68A:DeviousFollowers.esp
   ScriptFragments:
     MutagenObjectType: ScriptFragments
     FileName: TIF_Dflow_081A1EA8
@@ -61,7 +61,7 @@ Flags:
   - Goodbye
   - Random
 Topic: 000D63:DeviousFollowers.esp
-PreviousDialog: 2EA61F:DeviousFollowers.esp
+PreviousDialog: 1A1EA9:DeviousFollowers.esp
 FavorLevel: None
 Responses:
 - EmotionValue: 50
@@ -108,7 +108,7 @@ Conditions:
   Data:
     MutagenObjectType: GetVMQuestVariableConditionData
     Quest: 01C86D:DeviousFollowers.esp
-    SecondUnusedIntParameter: -741842720
+    SecondUnusedIntParameter: 8566176
     VariableName: ::Deals_var
   ComparisonValue: 5
 - MutagenObjectType: ConditionFloat
@@ -140,7 +140,7 @@ Conditions:
   Data:
     MutagenObjectType: GetVMQuestVariableConditionData
     Quest: 112478:DeviousFollowers.esp
-    SecondUnusedIntParameter: -741842688
+    SecondUnusedIntParameter: 8566208
     VariableName: ::Enabled_var
   ComparisonValue: 1
 - MutagenObjectType: ConditionFloat
@@ -150,6 +150,6 @@ Conditions:
   Data:
     MutagenObjectType: GetVMQuestVariableConditionData
     Quest: 112478:DeviousFollowers.esp
-    SecondUnusedIntParameter: -741842656
+    SecondUnusedIntParameter: 8566240
     VariableName: ::active_var
   ComparisonValue: 1

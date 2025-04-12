@@ -1,5 +1,4 @@
 FormKey: 4613EC:DeviousFollowers.esp
-VersionControl: 12642
 Flags:
   Flags:
   - InvisibleContinue
@@ -24,13 +23,13 @@ Conditions:
   Data:
     MutagenObjectType: GetVMQuestVariableConditionData
     Quest: 433A83:DeviousFollowers.esp
-    SecondUnusedIntParameter: -741423776
+    SecondUnusedIntParameter: 8456672
     VariableName: ::ProvisionMode_var
   ComparisonValue: 2
 - MutagenObjectType: ConditionFloat
   Data:
     MutagenObjectType: GetVMQuestVariableConditionData
     Quest: 433A83:DeviousFollowers.esp
-    SecondUnusedIntParameter: -741423744
+    SecondUnusedIntParameter: 8456704
     VariableName: ::ContinuingNextJob_var
   ComparisonValue: 1

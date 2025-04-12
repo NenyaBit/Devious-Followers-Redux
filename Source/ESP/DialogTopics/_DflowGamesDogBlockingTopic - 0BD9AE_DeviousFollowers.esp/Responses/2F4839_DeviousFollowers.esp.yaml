@@ -2,7 +2,7 @@ FormKey: 2F4839:DeviousFollowers.esp
 Flags:
   Flags:
   - WalkAway
-PreviousDialog: 2F483B:DeviousFollowers.esp
+PreviousDialog: Null
 FavorLevel: None
 LinkTo:
 - 0BD9AF:DeviousFollowers.esp

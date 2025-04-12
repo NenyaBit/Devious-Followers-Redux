@@ -32,13 +32,13 @@ Conditions:
   Data:
     MutagenObjectType: GetVMQuestVariableConditionData
     Quest: 41F5F3:DeviousFollowers.esp
-    SecondUnusedIntParameter: -741769920
+    SecondUnusedIntParameter: 8474272
     VariableName: ::LastAppliedTimer_var
   ComparisonValue: 000039:Skyrim.esm
 - MutagenObjectType: ConditionFloat
   Data:
     MutagenObjectType: GetVMQuestVariableConditionData
     Quest: 41F5F3:DeviousFollowers.esp
-    SecondUnusedIntParameter: -741769888
+    SecondUnusedIntParameter: 8474304
     VariableName: ::WashedOff_var
   ComparisonValue: 1

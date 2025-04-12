@@ -23,7 +23,7 @@ Conditions:
   Data:
     MutagenObjectType: GetVMQuestVariableConditionData
     Quest: 4153B8:DeviousFollowers.esp
-    SecondUnusedIntParameter: -741774048
+    SecondUnusedIntParameter: 8462976
     VariableName: ::CurrArmorType_var
   ComparisonValue: 2
 - MutagenObjectType: ConditionGlobal

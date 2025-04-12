@@ -18,7 +18,7 @@ VirtualMachineAdapter:
       ScriptName: DFRX_TIF_0A38C72A
       FragmentName: Fragment_0
 Flags: {}
-PreviousDialog: 27AEAC:DeviousFollowers.esp
+PreviousDialog: 39BAAC:DeviousFollowers.esp
 FavorLevel: None
 LinkTo:
 - 0089D9:DeviousFollowers.esp

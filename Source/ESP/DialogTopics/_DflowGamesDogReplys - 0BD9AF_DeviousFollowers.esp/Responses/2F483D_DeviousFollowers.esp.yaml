@@ -4,11 +4,11 @@ VirtualMachineAdapter:
   - Name: _Dx_TIF__092F483D
     Properties:
     - MutagenObjectType: ScriptObjectProperty
-      Name: q
-      Object: 000D62:DeviousFollowers.esp
-    - MutagenObjectType: ScriptObjectProperty
       Name: _DflowGamesDogScene
       Object: 14DB55:DeviousFollowers.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: q
+      Object: 000D62:DeviousFollowers.esp
   ScriptFragments:
     MutagenObjectType: ScriptFragments
     FileName: _Dx_TIF__092F483D

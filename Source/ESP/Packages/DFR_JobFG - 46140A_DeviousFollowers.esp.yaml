@@ -1,5 +1,4 @@
 FormKey: 46140A:DeviousFollowers.esp
-VersionControl: 12642
 EditorID: DFR_JobFG
 VirtualMachineAdapter:
   Scripts:
@@ -96,21 +95,21 @@ Conditions:
   Data:
     MutagenObjectType: GetVMQuestVariableConditionData
     Quest: 433A83:DeviousFollowers.esp
-    SecondUnusedIntParameter: -741696864
+    SecondUnusedIntParameter: 8570464
     VariableName: ::RunningJob_var
   ComparisonValue: 1
 - MutagenObjectType: ConditionFloat
   Data:
     MutagenObjectType: GetVMQuestVariableConditionData
     Quest: 433A83:DeviousFollowers.esp
-    SecondUnusedIntParameter: -741696288
+    SecondUnusedIntParameter: 8570560
     VariableName: ::FoundJob_var
   ComparisonValue: 1
 - MutagenObjectType: ConditionFloat
   Data:
     MutagenObjectType: GetVMQuestVariableConditionData
     Quest: 433A83:DeviousFollowers.esp
-    SecondUnusedIntParameter: -741689536
+    SecondUnusedIntParameter: 8570592
     VariableName: ::FoundJob_var
   ComparisonValue: 1
 - MutagenObjectType: ConditionFloat
@@ -129,7 +128,7 @@ Conditions:
   Data:
     MutagenObjectType: GetVMQuestVariableConditionData
     Quest: 010617:DeviousFollowers.esp
-    SecondUnusedIntParameter: -740698528
+    SecondUnusedIntParameter: 8570624
     VariableName: ::Suspend_var
 - MutagenObjectType: ConditionGlobal
   Flags:
@@ -163,29 +162,6 @@ Data:
         MutagenObjectType: LocationTarget
         Link: 000014:Skyrim.esm
       Radius: 150
-- Key: 62
-  Value:
-    MutagenObjectType: PackageDataLocation
-    Location:
-      Target:
-        MutagenObjectType: LocationTarget
-        Link: 000014:Skyrim.esm
-      Radius: 2000
-- Key: 75
-  Value:
-    MutagenObjectType: PackageDataLocation
-    Location:
-      Target:
-        MutagenObjectType: LocationTarget
-        Link: 000014:Skyrim.esm
-      Radius: 150
-- Key: 79
-  Value:
-    MutagenObjectType: PackageDataBool
-- Key: 65
-  Value:
-    MutagenObjectType: PackageDataBool
-    Data: True
 - Key: 17
   Value:
     MutagenObjectType: PackageDataTarget
@@ -202,12 +178,6 @@ Data:
         Link: 000014:Skyrim.esm
       Radius: 5000
 - Key: 26
-  Value:
-    MutagenObjectType: PackageDataBool
-- Key: 81
-  Value:
-    MutagenObjectType: PackageDataBool
-- Key: 40
   Value:
     MutagenObjectType: PackageDataBool
 - Key: 29
@@ -231,11 +201,40 @@ Data:
 - Key: 36
   Value:
     MutagenObjectType: PackageDataBool
+- Key: 40
+  Value:
+    MutagenObjectType: PackageDataBool
+- Key: 62
+  Value:
+    MutagenObjectType: PackageDataLocation
+    Location:
+      Target:
+        MutagenObjectType: LocationTarget
+        Link: 000014:Skyrim.esm
+      Radius: 2000
+- Key: 65
+  Value:
+    MutagenObjectType: PackageDataBool
+    Data: True
 - Key: 67
   Value:
     MutagenObjectType: PackageDataFloat
     Data: 50
 - Key: 69
+  Value:
+    MutagenObjectType: PackageDataBool
+- Key: 75
+  Value:
+    MutagenObjectType: PackageDataLocation
+    Location:
+      Target:
+        MutagenObjectType: LocationTarget
+        Link: 000014:Skyrim.esm
+      Radius: 150
+- Key: 79
+  Value:
+    MutagenObjectType: PackageDataBool
+- Key: 81
   Value:
     MutagenObjectType: PackageDataBool
 XnamMarker: 0x52

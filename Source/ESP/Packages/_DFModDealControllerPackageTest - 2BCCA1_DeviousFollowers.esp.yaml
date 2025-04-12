@@ -29,22 +29,13 @@ Conditions:
 PackageTemplate: 0197F1:Skyrim.esm
 DataInputVersion: 7
 Data:
-- Key: 7
-  Value:
-    MutagenObjectType: PackageDataTarget
-    Target:
-      MutagenObjectType: PackageTargetObjectType
-- Key: 6
-  Value:
-    MutagenObjectType: PackageDataObjectList
-    Data: 0
-- Key: 1
-  Value:
-    MutagenObjectType: PackageDataFloat
 - Key: 0
   Value:
     MutagenObjectType: PackageDataBool
     Data: True
+- Key: 1
+  Value:
+    MutagenObjectType: PackageDataFloat
 - Key: 3
   Value:
     MutagenObjectType: PackageDataLocation
@@ -56,6 +47,15 @@ Data:
   Value:
     MutagenObjectType: PackageDataFloat
     Data: 200
+- Key: 6
+  Value:
+    MutagenObjectType: PackageDataObjectList
+    Data: 0
+- Key: 7
+  Value:
+    MutagenObjectType: PackageDataTarget
+    Target:
+      MutagenObjectType: PackageTargetObjectType
 - Key: 10
   Value:
     MutagenObjectType: PackageDataLocation

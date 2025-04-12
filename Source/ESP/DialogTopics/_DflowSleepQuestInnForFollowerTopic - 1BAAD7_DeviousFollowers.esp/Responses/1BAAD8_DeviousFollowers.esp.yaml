@@ -4,17 +4,17 @@ VirtualMachineAdapter:
   - Name: TIF_Dflow_081BAAD8
     Properties:
     - MutagenObjectType: ScriptObjectProperty
-      Name: Wait4Follower
-      Object: 1BAAD9:DeviousFollowers.esp
-    - MutagenObjectType: ScriptObjectProperty
       Name: GameHour
       Object: 000038:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Gold001
+      Object: 00000F:Skyrim.esm
     - MutagenObjectType: ScriptObjectProperty
       Name: MCM
       Object: 00C545:DeviousFollowers.esp
     - MutagenObjectType: ScriptObjectProperty
-      Name: Gold001
-      Object: 00000F:Skyrim.esm
+      Name: Wait4Follower
+      Object: 1BAAD9:DeviousFollowers.esp
   ScriptFragments:
     MutagenObjectType: ScriptFragments
     FileName: TIF_Dflow_081BAAD8

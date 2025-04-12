@@ -34,14 +34,14 @@ Conditions:
   Data:
     MutagenObjectType: GetVMQuestVariableConditionData
     Quest: 3ECB48:DeviousFollowers.esp
-    SecondUnusedIntParameter: -741758784
+    SecondUnusedIntParameter: 8451488
     VariableName: ::Enabled_var
   ComparisonValue: 1
 - MutagenObjectType: ConditionFloat
   Data:
     MutagenObjectType: GetVMQuestVariableConditionData
     Quest: 3ECB48:DeviousFollowers.esp
-    SecondUnusedIntParameter: -741758752
+    SecondUnusedIntParameter: 8451520
     VariableName: ::OnBreak_var
   ComparisonValue: 1
 Prompt:

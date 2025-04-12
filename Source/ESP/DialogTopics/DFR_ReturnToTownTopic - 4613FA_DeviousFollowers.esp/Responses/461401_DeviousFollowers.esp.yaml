@@ -1,5 +1,4 @@
 FormKey: 461401:DeviousFollowers.esp
-VersionControl: 12642
 VirtualMachineAdapter:
   Scripts:
   - Name: DFRX_TIF_0A4613FD
@@ -13,7 +12,7 @@ VirtualMachineAdapter:
 Flags:
   Flags:
   - Goodbye
-PreviousDialog: 46140B:DeviousFollowers.esp
+PreviousDialog: Null
 FavorLevel: None
 Responses:
 - EmotionValue: 50

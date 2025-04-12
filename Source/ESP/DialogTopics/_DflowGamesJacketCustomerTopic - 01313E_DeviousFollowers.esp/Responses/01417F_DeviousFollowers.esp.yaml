@@ -4,26 +4,26 @@ VirtualMachineAdapter:
   - Name: TIF_Dflow_0A01417F
     Properties:
     - MutagenObjectType: ScriptObjectProperty
-      Name: PlayerRef
-      Object: 000014:Skyrim.esm
-    - MutagenObjectType: ScriptObjectProperty
       Name: d
       Object: 034255:Devious Devices - Integration.esm
     - MutagenObjectType: ScriptObjectProperty
-      Name: tool
-      Object: 01210D:DeviousFollowers.esp
+      Name: DE
+      Object: 016154:Devious Devices - Assets.esm
     - MutagenObjectType: ScriptObjectProperty
       Name: GameQ
       Object: 0110DC:DeviousFollowers.esp
     - MutagenObjectType: ScriptObjectProperty
-      Name: TEMP
-      Object: 014172:DeviousFollowers.esp
-    - MutagenObjectType: ScriptObjectProperty
       Name: libs
       Object: 00F624:Devious Devices - Integration.esm
     - MutagenObjectType: ScriptObjectProperty
-      Name: DE
-      Object: 016154:Devious Devices - Assets.esm
+      Name: PlayerRef
+      Object: 000014:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: TEMP
+      Object: 014172:DeviousFollowers.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: tool
+      Object: 01210D:DeviousFollowers.esp
   ScriptFragments:
     MutagenObjectType: ScriptFragments
     FileName: TIF_Dflow_0A01417F

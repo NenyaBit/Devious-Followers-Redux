@@ -14,7 +14,7 @@ VirtualMachineAdapter:
       ScriptName: TIF_Dflow_080A4D86
       FragmentName: Fragment_0
 Flags: {}
-PreviousDialog: 39BAAC:DeviousFollowers.esp
+PreviousDialog: 27AEAC:DeviousFollowers.esp
 FavorLevel: None
 LinkTo:
 - 0089D9:DeviousFollowers.esp
@@ -95,7 +95,7 @@ Conditions:
   Data:
     MutagenObjectType: GetVMQuestVariableConditionData
     Quest: 01C86D:DeviousFollowers.esp
-    SecondUnusedIntParameter: -741874720
+    SecondUnusedIntParameter: 8527616
     VariableName: ::Deals_var
 - MutagenObjectType: ConditionFloat
   CompareOperator: GreaterThanOrEqualTo

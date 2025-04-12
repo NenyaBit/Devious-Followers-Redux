@@ -1,9 +1,5 @@
 FormKey: 0C0164:DeviousFollowers.esp
-IsCompressed: True
-MajorRecordFlagsRaw: 262144
 EditorID: _DFPlayer
-SkyrimMajorRecordFlags:
-- Compressed
 ObjectBounds:
   First: -22, -14, 0
   Second: 22, 14, 128
@@ -111,5 +107,3 @@ Height: 1
 Weight: 50
 SoundLevel: Normal
 TextureLighting: '#00D3D3D3'
-MajorFlags:
-- 0x40000

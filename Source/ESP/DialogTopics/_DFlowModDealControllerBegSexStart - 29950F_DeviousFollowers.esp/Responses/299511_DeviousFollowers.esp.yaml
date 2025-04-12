@@ -44,7 +44,7 @@ Conditions:
   Data:
     MutagenObjectType: GetVMQuestVariableConditionData
     Quest: 1BD274:DeviousFollowers.esp
-    SecondUnusedIntParameter: -741815008
+    SecondUnusedIntParameter: 8531264
     VariableName: ::SexRule_var
   ComparisonValue: 2
 - MutagenObjectType: ConditionFloat

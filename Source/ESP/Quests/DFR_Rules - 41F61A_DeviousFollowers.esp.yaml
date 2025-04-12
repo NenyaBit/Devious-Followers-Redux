@@ -5,14 +5,14 @@ VirtualMachineAdapter:
   - Name: DFR_Rules
     Properties:
     - MutagenObjectType: ScriptObjectProperty
-      Name: RelManager
-      Object: 38C70D:DeviousFollowers.esp
+      Name: Flow
+      Object: 000D62:DeviousFollowers.esp
     - MutagenObjectType: ScriptObjectProperty
       Name: GameDaysPassed
       Object: 000039:Skyrim.esm
     - MutagenObjectType: ScriptObjectProperty
-      Name: Flow
-      Object: 000D62:DeviousFollowers.esp
+      Name: RelManager
+      Object: 38C70D:DeviousFollowers.esp
   Versioning:
   - Break0
   ExtraBindDataVersion: 0

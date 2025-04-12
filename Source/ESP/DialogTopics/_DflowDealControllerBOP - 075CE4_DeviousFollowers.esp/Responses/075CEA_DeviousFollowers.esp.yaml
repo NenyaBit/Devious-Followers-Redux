@@ -4,8 +4,11 @@ VirtualMachineAdapter:
   - Name: TIF_DFlow_08075CEA
     Properties:
     - MutagenObjectType: ScriptObjectProperty
-      Name: R
-      Object: 02FA8A:Devious Devices - Expansion.esm
+      Name: _DFlowDealPP
+      Object: 075CEB:DeviousFollowers.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Dealq
+      Object: 06BE67:DeviousFollowers.esp
     - MutagenObjectType: ScriptObjectProperty
       Name: Gold001
       Object: 00000F:Skyrim.esm
@@ -16,20 +19,17 @@ VirtualMachineAdapter:
       Name: libs
       Object: 00F624:Devious Devices - Integration.esm
     - MutagenObjectType: ScriptObjectProperty
-      Name: q
-      Object: 000D62:DeviousFollowers.esp
-    - MutagenObjectType: ScriptObjectProperty
-      Name: _DFlowDealPP
-      Object: 075CEB:DeviousFollowers.esp
-    - MutagenObjectType: ScriptObjectProperty
       Name: PlayerRef
       Object: 000014:Skyrim.esm
     - MutagenObjectType: ScriptObjectProperty
       Name: PTool
       Object: 0409A4:Devious Devices - Integration.esm
     - MutagenObjectType: ScriptObjectProperty
-      Name: Dealq
-      Object: 06BE67:DeviousFollowers.esp
+      Name: q
+      Object: 000D62:DeviousFollowers.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: R
+      Object: 02FA8A:Devious Devices - Expansion.esm
   ScriptFragments:
     MutagenObjectType: ScriptFragments
     FileName: TIF_DFlow_08075CEA

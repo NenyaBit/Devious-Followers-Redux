@@ -1,5 +1,4 @@
 FormKey: 4613F5:DeviousFollowers.esp
-VersionControl: 12642
 Flags:
   Flags:
   - Goodbye
@@ -44,7 +43,7 @@ Conditions:
   Data:
     MutagenObjectType: GetVMQuestVariableConditionData
     Quest: 433A83:DeviousFollowers.esp
-    SecondUnusedIntParameter: -741416352
+    SecondUnusedIntParameter: 8457760
     VariableName: ::FoundJob_var
   ComparisonValue: 1
 - MutagenObjectType: ConditionFloat
@@ -52,6 +51,6 @@ Conditions:
   Data:
     MutagenObjectType: GetVMQuestVariableConditionData
     Quest: 433A83:DeviousFollowers.esp
-    SecondUnusedIntParameter: -741416320
+    SecondUnusedIntParameter: 8457792
     VariableName: ::RunningJob_var
   ComparisonValue: 1

@@ -4,20 +4,20 @@ VirtualMachineAdapter:
   - Name: TIF_DFlow_07039D7B
     Properties:
     - MutagenObjectType: ScriptObjectProperty
-      Name: q
-      Object: 000D62:DeviousFollowers.esp
-    - MutagenObjectType: ScriptObjectProperty
-      Name: MCM
-      Object: 00C545:DeviousFollowers.esp
+      Name: _DFlives
+      Object: 02DB9E:DeviousFollowers.esp
     - MutagenObjectType: ScriptObjectProperty
       Name: _DFlowGambleJPot
       Object: 03E8F6:DeviousFollowers.esp
     - MutagenObjectType: ScriptObjectProperty
-      Name: _DFlives
-      Object: 02DB9E:DeviousFollowers.esp
-    - MutagenObjectType: ScriptObjectProperty
       Name: Gold001
       Object: 00000F:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: MCM
+      Object: 00C545:DeviousFollowers.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: q
+      Object: 000D62:DeviousFollowers.esp
   ScriptFragments:
     MutagenObjectType: ScriptFragments
     FileName: TIF_DFlow_07039D7B

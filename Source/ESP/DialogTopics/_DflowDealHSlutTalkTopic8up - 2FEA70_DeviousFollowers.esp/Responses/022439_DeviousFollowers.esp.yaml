@@ -18,7 +18,7 @@ Flags:
   - Goodbye
   - Random
 Topic: 021EC7:DeviousFollowers.esp
-PreviousDialog: Null
+PreviousDialog: 2FEA74:DeviousFollowers.esp
 FavorLevel: None
 Responses:
 - EmotionValue: 50

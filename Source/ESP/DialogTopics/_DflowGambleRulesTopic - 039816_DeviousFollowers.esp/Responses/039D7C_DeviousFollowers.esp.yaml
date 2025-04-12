@@ -4,6 +4,9 @@ VirtualMachineAdapter:
   - Name: TIF_Dflow_07039D7C
     Properties:
     - MutagenObjectType: ScriptObjectProperty
+      Name: _DFlowGambleJPot
+      Object: 03E8F6:DeviousFollowers.esp
+    - MutagenObjectType: ScriptObjectProperty
       Name: _DFlowGambleRolls
       Object: 0E0483:DeviousFollowers.esp
     - MutagenObjectType: ScriptObjectProperty
@@ -12,9 +15,6 @@ VirtualMachineAdapter:
     - MutagenObjectType: ScriptObjectProperty
       Name: MCM
       Object: 00C545:DeviousFollowers.esp
-    - MutagenObjectType: ScriptObjectProperty
-      Name: _DFlowGambleJPot
-      Object: 03E8F6:DeviousFollowers.esp
     - MutagenObjectType: ScriptObjectProperty
       Name: NewProperty
   ScriptFragments:

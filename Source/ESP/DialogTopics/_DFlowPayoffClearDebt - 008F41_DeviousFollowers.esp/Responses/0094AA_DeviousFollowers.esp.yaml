@@ -4,11 +4,8 @@ VirtualMachineAdapter:
   - Name: DFRX_TIF_0B0094AA
     Properties:
     - MutagenObjectType: ScriptObjectProperty
-      Name: PlayerRef
-      Object: 000014:Skyrim.esm
-    - MutagenObjectType: ScriptObjectProperty
-      Name: q
-      Object: 000D62:DeviousFollowers.esp
+      Name: _DflowDebt
+      Object: 00C54F:DeviousFollowers.esp
     - MutagenObjectType: ScriptObjectProperty
       Name: Fac
       Object: 015712:DeviousFollowers.esp
@@ -16,11 +13,14 @@ VirtualMachineAdapter:
       Name: Gold001
       Object: 00000F:Skyrim.esm
     - MutagenObjectType: ScriptObjectProperty
-      Name: _DflowDebt
-      Object: 00C54F:DeviousFollowers.esp
-    - MutagenObjectType: ScriptObjectProperty
       Name: libs
       Object: 00F624:Devious Devices - Integration.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: PlayerRef
+      Object: 000014:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: q
+      Object: 000D62:DeviousFollowers.esp
   ScriptFragments:
     MutagenObjectType: ScriptFragments
     FileName: DFRX_TIF_0B0094AA
@@ -30,7 +30,7 @@ VirtualMachineAdapter:
       FragmentName: Fragment_3
 Flags: {}
 Topic: 0089D8:DeviousFollowers.esp
-PreviousDialog: Null
+PreviousDialog: 2FEA5D:DeviousFollowers.esp
 FavorLevel: None
 Responses:
 - EmotionValue: 50
@@ -81,7 +81,7 @@ Conditions:
   Data:
     MutagenObjectType: GetVMQuestVariableConditionData
     Quest: 01C86D:DeviousFollowers.esp
-    SecondUnusedIntParameter: -741902560
+    SecondUnusedIntParameter: 8549024
     VariableName: ::Deals_var
 - MutagenObjectType: ConditionFloat
   CompareOperator: GreaterThanOrEqualTo

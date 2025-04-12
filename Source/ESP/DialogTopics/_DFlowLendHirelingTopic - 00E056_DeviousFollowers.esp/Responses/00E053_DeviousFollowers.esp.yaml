@@ -4,21 +4,21 @@ VirtualMachineAdapter:
   - Name: TIF_Dflow_0A00E053
     Properties:
     - MutagenObjectType: ScriptObjectProperty
+      Name: Fac
+      Object: 015712:DeviousFollowers.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: HasHirelingGV
+      Object: 0BCC98:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
       Name: HirelingRecognizeBelrand
       Object: 104F39:Skyrim.esm
     - MutagenObjectType: ScriptObjectProperty
       Name: q
       Object: 1B5B9E:DeviousFollowers.esp
     - MutagenObjectType: ScriptObjectProperty
-      Name: Fac
-      Object: 015712:DeviousFollowers.esp
-    - MutagenObjectType: ScriptObjectProperty
       Name: ra
       Object: 000D62:DeviousFollowers.esp
       Alias: 1
-    - MutagenObjectType: ScriptObjectProperty
-      Name: HasHirelingGV
-      Object: 0BCC98:Skyrim.esm
   ScriptFragments:
     MutagenObjectType: ScriptFragments
     FileName: TIF_Dflow_0A00E053
@@ -28,7 +28,7 @@ VirtualMachineAdapter:
       FragmentName: Fragment_0
 Flags: {}
 Topic: 0BCC84:Skyrim.esm
-PreviousDialog: 00E054:DeviousFollowers.esp
+PreviousDialog: 0BDFB1:Skyrim.esm
 FavorLevel: None
 Responses:
 - EmotionValue: 50

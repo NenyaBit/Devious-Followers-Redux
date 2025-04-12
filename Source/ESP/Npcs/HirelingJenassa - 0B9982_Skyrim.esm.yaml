@@ -1,9 +1,5 @@
 FormKey: 0B9982:Skyrim.esm
-IsCompressed: True
-MajorRecordFlagsRaw: 262144
 EditorID: HirelingJenassa
-SkyrimMajorRecordFlags:
-- Compressed
 ObjectBounds:
   First: -22, -14, 0
   Second: 22, 14, 128
@@ -137,9 +133,9 @@ PlayerSkills:
   Health: 190
   Magicka: 50
   Stamina: 95
-  Unused: 16748
+  Unused: 16743
   GearedUpWeapons: 3
-  Unused2: 0xB86DED
+  Unused2: 0x3D9A1A
 HeadParts:
 - 0EC3C6:Skyrim.esm
 - 0EC1B2:Skyrim.esm
@@ -243,5 +239,3 @@ TintLayers:
   Color: '#00887402'
   InterpolationValue: 1
   Preset: 939
-MajorFlags:
-- 0x40000

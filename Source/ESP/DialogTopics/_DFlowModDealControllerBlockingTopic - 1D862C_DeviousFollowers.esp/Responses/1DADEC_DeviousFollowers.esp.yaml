@@ -4,11 +4,11 @@ VirtualMachineAdapter:
   - Name: TIF_Dflow_081DADEC
     Properties:
     - MutagenObjectType: ScriptObjectProperty
-      Name: Guard1
+      Name: Guard
       Object: 1ABD14:DeviousFollowers.esp
       Alias: 0
     - MutagenObjectType: ScriptObjectProperty
-      Name: Guard
+      Name: Guard1
       Object: 1ABD14:DeviousFollowers.esp
       Alias: 0
   ScriptFragments:
@@ -55,7 +55,7 @@ Conditions:
   Data:
     MutagenObjectType: GetVMQuestVariableConditionData
     Quest: 010617:DeviousFollowers.esp
-    SecondUnusedIntParameter: -741829568
+    SecondUnusedIntParameter: 8535200
     VariableName: ::Suspend_var
 - MutagenObjectType: ConditionFloat
   CompareOperator: LessThan
@@ -67,7 +67,7 @@ Conditions:
   Data:
     MutagenObjectType: GetVMQuestVariableConditionData
     Quest: 1BD274:DeviousFollowers.esp
-    SecondUnusedIntParameter: -741829536
+    SecondUnusedIntParameter: 8535232
     VariableName: ::InnKeeperRuleTimer_var
   ComparisonValue: 000039:Skyrim.esm
 - MutagenObjectType: ConditionGlobal
@@ -75,7 +75,7 @@ Conditions:
   Data:
     MutagenObjectType: GetVMQuestVariableConditionData
     Quest: 1BD274:DeviousFollowers.esp
-    SecondUnusedIntParameter: -741829504
+    SecondUnusedIntParameter: 8535264
     VariableName: ::MerchantRuleTimer_var
   ComparisonValue: 000039:Skyrim.esm
 - MutagenObjectType: ConditionFloat
@@ -84,7 +84,7 @@ Conditions:
   Data:
     MutagenObjectType: GetVMQuestVariableConditionData
     Quest: 1BD274:DeviousFollowers.esp
-    SecondUnusedIntParameter: -741829472
+    SecondUnusedIntParameter: 8535296
     VariableName: ::InnKeeperRule_var
   ComparisonValue: 2
 - MutagenObjectType: ConditionGlobal

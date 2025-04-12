@@ -44,5 +44,5 @@ Effects:
     Data:
       MutagenObjectType: GetVMQuestVariableConditionData
       Quest: 010617:DeviousFollowers.esp
-      SecondUnusedIntParameter: -741909504
+      SecondUnusedIntParameter: 8429504
       VariableName: ::Suspend_var

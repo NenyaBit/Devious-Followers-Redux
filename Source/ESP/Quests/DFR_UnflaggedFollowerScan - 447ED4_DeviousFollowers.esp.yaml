@@ -5,11 +5,11 @@ VirtualMachineAdapter:
   - Name: _dflowunflaggedfollowerscan
     Properties:
     - MutagenObjectType: ScriptObjectProperty
-      Name: _DFMaster
-      Object: 015712:DeviousFollowers.esp
-    - MutagenObjectType: ScriptObjectProperty
       Name: _DFDisable
       Object: 0B8A73:DeviousFollowers.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: _DFMaster
+      Object: 015712:DeviousFollowers.esp
   Versioning:
   - Break0
   ExtraBindDataVersion: 0

@@ -4,32 +4,32 @@ VirtualMachineAdapter:
   - Name: TIF_Dflow_081E9BB7
     Properties:
     - MutagenObjectType: ScriptObjectProperty
-      Name: R
-      Object: 02FA8A:Devious Devices - Expansion.esm
+      Name: _DflowDealOP
+      Object: 03C890:DeviousFollowers.esp
     - MutagenObjectType: ScriptObjectProperty
       Name: DealPrice
       Object: 1DD58C:DeviousFollowers.esp
     - MutagenObjectType: ScriptObjectProperty
+      Name: Dealq
+      Object: 1E24D2:DeviousFollowers.esp
+    - MutagenObjectType: ScriptObjectProperty
       Name: Gold001
       Object: 00000F:Skyrim.esm
     - MutagenObjectType: ScriptObjectProperty
-      Name: Dealq
-      Object: 1E24D2:DeviousFollowers.esp
+      Name: I
+      Object: 02FA8B:Devious Devices - Expansion.esm
     - MutagenObjectType: ScriptObjectProperty
       Name: libs
       Object: 00F624:Devious Devices - Integration.esm
     - MutagenObjectType: ScriptObjectProperty
-      Name: q
-      Object: 000D62:DeviousFollowers.esp
-    - MutagenObjectType: ScriptObjectProperty
-      Name: _DflowDealOP
-      Object: 03C890:DeviousFollowers.esp
-    - MutagenObjectType: ScriptObjectProperty
       Name: PlayerRef
       Object: 000014:Skyrim.esm
     - MutagenObjectType: ScriptObjectProperty
-      Name: I
-      Object: 02FA8B:Devious Devices - Expansion.esm
+      Name: q
+      Object: 000D62:DeviousFollowers.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: R
+      Object: 02FA8A:Devious Devices - Expansion.esm
   ScriptFragments:
     MutagenObjectType: ScriptFragments
     FileName: TIF_Dflow_081E9BB7

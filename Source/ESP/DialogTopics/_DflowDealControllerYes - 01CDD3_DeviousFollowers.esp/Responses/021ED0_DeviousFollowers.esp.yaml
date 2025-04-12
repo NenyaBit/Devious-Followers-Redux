@@ -3,7 +3,7 @@ Flags:
   Flags:
   - Random
   - WalkAway
-PreviousDialog: 0CC790:DeviousFollowers.esp
+PreviousDialog: 03FE82:DeviousFollowers.esp
 FavorLevel: None
 LinkTo:
 - 021ECC:DeviousFollowers.esp
@@ -31,7 +31,7 @@ Conditions:
   Data:
     MutagenObjectType: GetVMQuestVariableConditionData
     Quest: 01C86D:DeviousFollowers.esp
-    SecondUnusedIntParameter: -741890432
+    SecondUnusedIntParameter: 8491520
     VariableName: ::DealHMax_var
   ComparisonValue: 3
 - MutagenObjectType: ConditionFloat
@@ -39,7 +39,7 @@ Conditions:
   Data:
     MutagenObjectType: GetVMQuestVariableConditionData
     Quest: 01C86D:DeviousFollowers.esp
-    SecondUnusedIntParameter: -741890400
+    SecondUnusedIntParameter: 8491552
     VariableName: ::DealH1_var
   ComparisonValue: 1
 - MutagenObjectType: ConditionFloat
@@ -47,7 +47,7 @@ Conditions:
   Data:
     MutagenObjectType: GetVMQuestVariableConditionData
     Quest: 1BD274:DeviousFollowers.esp
-    SecondUnusedIntParameter: -741890368
+    SecondUnusedIntParameter: 8491584
     VariableName: ::CrawlInTownRule_var
   ComparisonValue: 2
 - MutagenObjectType: ConditionFloat
@@ -55,7 +55,7 @@ Conditions:
   Data:
     MutagenObjectType: GetVMQuestVariableConditionData
     Quest: 1BD274:DeviousFollowers.esp
-    SecondUnusedIntParameter: -741890336
+    SecondUnusedIntParameter: 8491616
     VariableName: ::JacketRule_var
   ComparisonValue: 2
 - MutagenObjectType: ConditionFloat
@@ -63,7 +63,7 @@ Conditions:
   Data:
     MutagenObjectType: GetVMQuestVariableConditionData
     Quest: 1BD274:DeviousFollowers.esp
-    SecondUnusedIntParameter: -741890304
+    SecondUnusedIntParameter: 8491648
     VariableName: ::PetSuitInTownRule_var
   ComparisonValue: 2
 - MutagenObjectType: ConditionFloat
@@ -71,7 +71,7 @@ Conditions:
   Data:
     MutagenObjectType: GetVMQuestVariableConditionData
     Quest: 1BD274:DeviousFollowers.esp
-    SecondUnusedIntParameter: -741890272
+    SecondUnusedIntParameter: 8491680
     VariableName: ::BoundInTownRule_var
   ComparisonValue: 2
 WalkAwayTopic: 021ECC:DeviousFollowers.esp

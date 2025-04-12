@@ -4,20 +4,20 @@ VirtualMachineAdapter:
   - Name: TIF_Dflow_0A00AA4A
     Properties:
     - MutagenObjectType: ScriptObjectProperty
+      Name: I
+      Object: 02FA8B:Devious Devices - Expansion.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: libs
+      Object: 00F624:Devious Devices - Integration.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Lives
+      Object: 02DB9E:DeviousFollowers.esp
+    - MutagenObjectType: ScriptObjectProperty
       Name: PlayerRef
       Object: 000014:Skyrim.esm
     - MutagenObjectType: ScriptObjectProperty
       Name: q
       Object: 000D62:DeviousFollowers.esp
-    - MutagenObjectType: ScriptObjectProperty
-      Name: libs
-      Object: 00F624:Devious Devices - Integration.esm
-    - MutagenObjectType: ScriptObjectProperty
-      Name: I
-      Object: 02FA8B:Devious Devices - Expansion.esm
-    - MutagenObjectType: ScriptObjectProperty
-      Name: Lives
-      Object: 02DB9E:DeviousFollowers.esp
     - MutagenObjectType: ScriptObjectProperty
       Name: R
       Object: 02FA8A:Devious Devices - Expansion.esm
@@ -96,7 +96,7 @@ Conditions:
   Data:
     MutagenObjectType: GetVMQuestVariableConditionData
     Quest: 00C545:DeviousFollowers.esp
-    SecondUnusedIntParameter: -741901280
+    SecondUnusedIntParameter: 8509920
     VariableName: ::_DFRemovalMode_var
 - MutagenObjectType: ConditionFloat
   CompareOperator: LessThan
@@ -109,6 +109,6 @@ Conditions:
   Data:
     MutagenObjectType: GetVMQuestVariableConditionData
     Quest: 1BD274:DeviousFollowers.esp
-    SecondUnusedIntParameter: -741901248
+    SecondUnusedIntParameter: 8509952
     VariableName: ::GagRule_var
   ComparisonValue: 2

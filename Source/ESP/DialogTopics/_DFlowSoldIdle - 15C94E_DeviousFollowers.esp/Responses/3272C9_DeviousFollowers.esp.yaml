@@ -43,14 +43,14 @@ Conditions:
   Data:
     MutagenObjectType: GetVMQuestVariableConditionData
     Quest: 15A1A4:DeviousFollowers.esp
-    SecondUnusedIntParameter: -741851776
+    SecondUnusedIntParameter: 8563712
     VariableName: ::Enable_var
   ComparisonValue: 1
 - MutagenObjectType: ConditionFloat
   Data:
     MutagenObjectType: GetVMQuestVariableConditionData
     Quest: 15A1A4:DeviousFollowers.esp
-    SecondUnusedIntParameter: -741851744
+    SecondUnusedIntParameter: 8563744
     VariableName: ::active_var
   ComparisonValue: 1
 - MutagenObjectType: ConditionFloat
@@ -58,7 +58,7 @@ Conditions:
   Data:
     MutagenObjectType: GetVMQuestVariableConditionData
     Quest: 010617:DeviousFollowers.esp
-    SecondUnusedIntParameter: -741851712
+    SecondUnusedIntParameter: 8563776
     VariableName: ::Suspend_var
   ComparisonValue: 1
 - MutagenObjectType: ConditionGlobal
@@ -66,6 +66,6 @@ Conditions:
   Data:
     MutagenObjectType: GetVMQuestVariableConditionData
     Quest: 15A1A4:DeviousFollowers.esp
-    SecondUnusedIntParameter: -741851680
+    SecondUnusedIntParameter: 8563808
     VariableName: ::Timer_var
   ComparisonValue: 000039:Skyrim.esm

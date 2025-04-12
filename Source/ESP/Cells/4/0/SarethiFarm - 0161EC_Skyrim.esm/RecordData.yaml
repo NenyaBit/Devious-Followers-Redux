@@ -1,10 +1,6 @@
 FormKey: 0161EC:Skyrim.esm
-IsCompressed: True
-MajorRecordFlagsRaw: 262144
 EditorID: SarethiFarm
 Version2: 14
-SkyrimMajorRecordFlags:
-- Compressed
 Name:
   TargetLanguage: English
   Value: Sarethi Farm
@@ -40,6 +36,7 @@ LockList: 06BBC3:Skyrim.esm
 AcousticSpace: 0C5B6B:Skyrim.esm
 Music: 06D546:Skyrim.esm
 ImageSpace: 0B215C:Skyrim.esm
+PersistentUnknownGroupData: 1
 Persistent:
 - MutagenObjectType: PlacedNpc
   FormKey: 0C0168:DeviousFollowers.esp
@@ -71,5 +68,3 @@ Persistent:
     Position: 441.58704, -272.14603, 48
   MajorFlags:
   - Persistent
-MajorFlags:
-- 0x40000

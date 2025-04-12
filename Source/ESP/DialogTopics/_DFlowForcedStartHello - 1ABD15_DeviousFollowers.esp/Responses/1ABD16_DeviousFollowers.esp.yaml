@@ -4,11 +4,11 @@ VirtualMachineAdapter:
   - Name: DFRX_TIF_081ABD16
     Properties:
     - MutagenObjectType: ScriptObjectProperty
-      Name: Guard1
+      Name: Guard
       Object: 1ABD14:DeviousFollowers.esp
       Alias: 0
     - MutagenObjectType: ScriptObjectProperty
-      Name: Guard
+      Name: Guard1
       Object: 1ABD14:DeviousFollowers.esp
       Alias: 0
   ScriptFragments:
@@ -76,7 +76,7 @@ Conditions:
   Data:
     MutagenObjectType: GetVMQuestVariableConditionData
     Quest: 010617:DeviousFollowers.esp
-    SecondUnusedIntParameter: -741842016
+    SecondUnusedIntParameter: 8508960
     VariableName: ::Suspend_var
 - MutagenObjectType: ConditionFloat
   CompareOperator: NotEqualTo

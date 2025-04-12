@@ -30,7 +30,7 @@ Conditions:
   Data:
     MutagenObjectType: GetVMQuestVariableConditionData
     Quest: 4153B8:DeviousFollowers.esp
-    SecondUnusedIntParameter: -741772256
+    SecondUnusedIntParameter: 8461952
     VariableName: ::BikiniArmor_var
   ComparisonValue: 1
 Prompt:

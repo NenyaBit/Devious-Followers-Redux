@@ -14,7 +14,7 @@ VirtualMachineAdapter:
       ScriptName: DFRX_TIF_093272C6
       FragmentName: Fragment_0
 Flags: {}
-PreviousDialog: 3272C9:DeviousFollowers.esp
+PreviousDialog: Null
 FavorLevel: None
 Responses:
 - EmotionValue: 50
@@ -43,14 +43,14 @@ Conditions:
   Data:
     MutagenObjectType: GetVMQuestVariableConditionData
     Quest: 15A1A4:DeviousFollowers.esp
-    SecondUnusedIntParameter: -741851552
+    SecondUnusedIntParameter: 8563520
     VariableName: ::Enable_var
   ComparisonValue: 1
 - MutagenObjectType: ConditionFloat
   Data:
     MutagenObjectType: GetVMQuestVariableConditionData
     Quest: 15A1A4:DeviousFollowers.esp
-    SecondUnusedIntParameter: -741851520
+    SecondUnusedIntParameter: 8563552
     VariableName: ::active_var
   ComparisonValue: 1
 - MutagenObjectType: ConditionFloat
@@ -58,7 +58,7 @@ Conditions:
   Data:
     MutagenObjectType: GetVMQuestVariableConditionData
     Quest: 010617:DeviousFollowers.esp
-    SecondUnusedIntParameter: -741851488
+    SecondUnusedIntParameter: 8563584
     VariableName: ::Suspend_var
   ComparisonValue: 1
 - MutagenObjectType: ConditionGlobal
@@ -66,6 +66,6 @@ Conditions:
   Data:
     MutagenObjectType: GetVMQuestVariableConditionData
     Quest: 15A1A4:DeviousFollowers.esp
-    SecondUnusedIntParameter: -741851456
+    SecondUnusedIntParameter: 8563616
     VariableName: ::Timer_var
   ComparisonValue: 000039:Skyrim.esm

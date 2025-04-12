@@ -5,21 +5,11 @@ VirtualMachineAdapter:
   - Name: DFR_Jobs
     Properties:
     - MutagenObjectType: ScriptObjectProperty
-      Name: PlayerRef
-      Object: 000014:Skyrim.esm
-    - MutagenObjectType: ScriptObjectProperty
-      Name: MasterAlias
-      Object: 433A83:DeviousFollowers.esp
-      Alias: 0
-    - MutagenObjectType: ScriptObjectProperty
-      Name: RelManager
-      Object: 38C70D:DeviousFollowers.esp
+      Name: Collar
+      Object: 3ECB48:DeviousFollowers.esp
     - MutagenObjectType: ScriptObjectProperty
       Name: config
       Object: 00C545:DeviousFollowers.esp
-    - MutagenObjectType: ScriptObjectProperty
-      Name: JobProvisionScene
-      Object: 433A93:DeviousFollowers.esp
     - MutagenObjectType: ScriptObjectProperty
       Name: Flow
       Object: 000D62:DeviousFollowers.esp
@@ -27,11 +17,21 @@ VirtualMachineAdapter:
       Name: GameDaysPassed
       Object: 000039:Skyrim.esm
     - MutagenObjectType: ScriptObjectProperty
-      Name: Collar
-      Object: 3ECB48:DeviousFollowers.esp
-    - MutagenObjectType: ScriptObjectProperty
       Name: GameHour
       Object: 000038:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: JobProvisionScene
+      Object: 433A93:DeviousFollowers.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: MasterAlias
+      Object: 433A83:DeviousFollowers.esp
+      Alias: 0
+    - MutagenObjectType: ScriptObjectProperty
+      Name: PlayerRef
+      Object: 000014:Skyrim.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: RelManager
+      Object: 38C70D:DeviousFollowers.esp
     - MutagenObjectType: ScriptObjectProperty
       Name: TownMode
       Object: 433A92:DeviousFollowers.esp

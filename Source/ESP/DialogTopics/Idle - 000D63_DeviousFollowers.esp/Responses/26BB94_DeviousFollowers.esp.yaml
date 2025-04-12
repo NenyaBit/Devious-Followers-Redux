@@ -16,7 +16,7 @@ VirtualMachineAdapter:
 Flags:
   Flags:
   - ForceSubtitle
-PreviousDialog: 26BB96:DeviousFollowers.esp
+PreviousDialog: Null
 FavorLevel: None
 Responses:
 - EmotionValue: 50
@@ -77,6 +77,6 @@ Conditions:
   Data:
     MutagenObjectType: GetVMQuestVariableConditionData
     Quest: 112478:DeviousFollowers.esp
-    SecondUnusedIntParameter: -741906944
+    SecondUnusedIntParameter: 8479264
     VariableName: ::Enabled_var
   ComparisonValue: 1

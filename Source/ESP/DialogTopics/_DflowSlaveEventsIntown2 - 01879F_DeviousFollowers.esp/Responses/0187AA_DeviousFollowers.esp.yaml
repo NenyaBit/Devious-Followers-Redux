@@ -4,14 +4,14 @@ VirtualMachineAdapter:
   - Name: DFRX_TIF_0A0187AA
     Properties:
     - MutagenObjectType: ScriptObjectProperty
+      Name: MCM
+      Object: 00C545:DeviousFollowers.esp
+    - MutagenObjectType: ScriptObjectProperty
       Name: TEMP
       Object: 014172:DeviousFollowers.esp
     - MutagenObjectType: ScriptObjectProperty
       Name: tool
       Object: 01210D:DeviousFollowers.esp
-    - MutagenObjectType: ScriptObjectProperty
-      Name: MCM
-      Object: 00C545:DeviousFollowers.esp
   ScriptFragments:
     MutagenObjectType: ScriptFragments
     FileName: DFRX_TIF_0A0187AA
@@ -27,7 +27,7 @@ Flags:
   Flags:
   - Goodbye
   - Random
-PreviousDialog: 0CC78B:DeviousFollowers.esp
+PreviousDialog: Null
 FavorLevel: None
 Responses:
 - EmotionValue: 50

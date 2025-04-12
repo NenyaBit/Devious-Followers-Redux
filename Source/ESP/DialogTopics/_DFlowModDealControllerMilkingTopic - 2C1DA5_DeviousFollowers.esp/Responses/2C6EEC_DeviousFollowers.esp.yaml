@@ -12,7 +12,7 @@ VirtualMachineAdapter:
 Flags:
   Flags:
   - Goodbye
-PreviousDialog: 2C6EF2:DeviousFollowers.esp
+PreviousDialog: Null
 FavorLevel: None
 Responses:
 - EmotionValue: 50
@@ -31,7 +31,7 @@ Conditions:
   Data:
     MutagenObjectType: GetVMQuestVariableConditionData
     Quest: 1BD274:DeviousFollowers.esp
-    SecondUnusedIntParameter: -741804128
+    SecondUnusedIntParameter: 8547200
     VariableName: ::MilkingRule_var
   ComparisonValue: 2
 - MutagenObjectType: ConditionFloat
@@ -39,5 +39,5 @@ Conditions:
   Data:
     MutagenObjectType: GetVMQuestVariableConditionData
     Quest: 1BD274:DeviousFollowers.esp
-    SecondUnusedIntParameter: -741804096
+    SecondUnusedIntParameter: 8547232
     VariableName: ::MilkDealDefaults_var

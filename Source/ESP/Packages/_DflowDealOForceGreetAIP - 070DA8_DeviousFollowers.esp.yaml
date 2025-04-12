@@ -114,14 +114,14 @@ Conditions:
   Data:
     MutagenObjectType: GetVMQuestVariableConditionData
     Quest: 06BE67:DeviousFollowers.esp
-    SecondUnusedIntParameter: -741755680
+    SecondUnusedIntParameter: 8571264
     VariableName: ::Delay_var
   ComparisonValue: 000039:Skyrim.esm
 - MutagenObjectType: ConditionFloat
   Data:
     MutagenObjectType: GetVMQuestVariableConditionData
     Quest: 010617:DeviousFollowers.esp
-    SecondUnusedIntParameter: -741755648
+    SecondUnusedIntParameter: 8571296
     VariableName: ::Suspend_var
 PackageTemplate: 03C1C4:Skyrim.esm
 DataInputVersion: 18
@@ -140,29 +140,6 @@ Data:
         MutagenObjectType: LocationTarget
         Link: 000014:Skyrim.esm
       Radius: 150
-- Key: 62
-  Value:
-    MutagenObjectType: PackageDataLocation
-    Location:
-      Target:
-        MutagenObjectType: LocationTarget
-        Link: 000014:Skyrim.esm
-      Radius: 150
-- Key: 75
-  Value:
-    MutagenObjectType: PackageDataLocation
-    Location:
-      Target:
-        MutagenObjectType: LocationTarget
-        Link: 000014:Skyrim.esm
-      Radius: 150
-- Key: 79
-  Value:
-    MutagenObjectType: PackageDataBool
-- Key: 65
-  Value:
-    MutagenObjectType: PackageDataBool
-    Data: True
 - Key: 17
   Value:
     MutagenObjectType: PackageDataTarget
@@ -179,12 +156,6 @@ Data:
         Link: 000014:Skyrim.esm
       Radius: 5000
 - Key: 26
-  Value:
-    MutagenObjectType: PackageDataBool
-- Key: 81
-  Value:
-    MutagenObjectType: PackageDataBool
-- Key: 40
   Value:
     MutagenObjectType: PackageDataBool
 - Key: 29
@@ -208,11 +179,40 @@ Data:
 - Key: 36
   Value:
     MutagenObjectType: PackageDataBool
+- Key: 40
+  Value:
+    MutagenObjectType: PackageDataBool
+- Key: 62
+  Value:
+    MutagenObjectType: PackageDataLocation
+    Location:
+      Target:
+        MutagenObjectType: LocationTarget
+        Link: 000014:Skyrim.esm
+      Radius: 150
+- Key: 65
+  Value:
+    MutagenObjectType: PackageDataBool
+    Data: True
 - Key: 67
   Value:
     MutagenObjectType: PackageDataFloat
     Data: 50
 - Key: 69
+  Value:
+    MutagenObjectType: PackageDataBool
+- Key: 75
+  Value:
+    MutagenObjectType: PackageDataLocation
+    Location:
+      Target:
+        MutagenObjectType: LocationTarget
+        Link: 000014:Skyrim.esm
+      Radius: 150
+- Key: 79
+  Value:
+    MutagenObjectType: PackageDataBool
+- Key: 81
   Value:
     MutagenObjectType: PackageDataBool
 XnamMarker: 0x52

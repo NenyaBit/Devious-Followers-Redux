@@ -4,32 +4,32 @@ VirtualMachineAdapter:
   - Name: DFRX_TIF_08073547
     Properties:
     - MutagenObjectType: ScriptObjectProperty
-      Name: _DWillMed
-      Object: 03E8F5:Update.esm
-    - MutagenObjectType: ScriptObjectProperty
-      Name: _DflowWill
-      Object: 01A2A7:Update.esm
-    - MutagenObjectType: ScriptObjectProperty
-      Name: _DFlowDealPMsgMWNo
-      Object: 095FE0:DeviousFollowers.esp
-    - MutagenObjectType: ScriptObjectProperty
-      Name: _DWillLow
-      Object: 03E8F4:Update.esm
-    - MutagenObjectType: ScriptObjectProperty
       Name: _DFlowDealPMsgHW
       Object: 095FD6:DeviousFollowers.esp
     - MutagenObjectType: ScriptObjectProperty
-      Name: tool
-      Object: 01210D:DeviousFollowers.esp
-    - MutagenObjectType: ScriptObjectProperty
-      Name: _DFlowDealPMsgMWYes
-      Object: 095FE1:DeviousFollowers.esp
+      Name: _DFlowDealPMsgLWNo
+      Object: 095FD9:DeviousFollowers.esp
     - MutagenObjectType: ScriptObjectProperty
       Name: _DFlowDealPMsgLWYes
       Object: 095FDC:DeviousFollowers.esp
     - MutagenObjectType: ScriptObjectProperty
-      Name: _DFlowDealPMsgLWNo
-      Object: 095FD9:DeviousFollowers.esp
+      Name: _DFlowDealPMsgMWNo
+      Object: 095FE0:DeviousFollowers.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: _DFlowDealPMsgMWYes
+      Object: 095FE1:DeviousFollowers.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: _DflowWill
+      Object: 01A2A7:Update.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: _DWillLow
+      Object: 03E8F4:Update.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: _DWillMed
+      Object: 03E8F5:Update.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: tool
+      Object: 01210D:DeviousFollowers.esp
   ScriptFragments:
     MutagenObjectType: ScriptFragments
     FileName: DFRX_TIF_08073547

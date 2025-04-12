@@ -2,7 +2,7 @@ FormKey: 02244D:DeviousFollowers.esp
 Flags:
   Flags:
   - Goodbye
-PreviousDialog: 152ACA:DeviousFollowers.esp
+PreviousDialog: Null
 FavorLevel: None
 Responses:
 - EmotionValue: 50

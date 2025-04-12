@@ -4,21 +4,21 @@ VirtualMachineAdapter:
   - Name: TIF_DFlow_0A00E04E
     Properties:
     - MutagenObjectType: ScriptObjectProperty
-      Name: q
-      Object: 1B5B9E:DeviousFollowers.esp
-    - MutagenObjectType: ScriptObjectProperty
       Name: Fac
       Object: 015712:DeviousFollowers.esp
     - MutagenObjectType: ScriptObjectProperty
-      Name: ra
-      Object: 000D62:DeviousFollowers.esp
-      Alias: 1
+      Name: HasHirelingGV
+      Object: 0BCC98:Skyrim.esm
     - MutagenObjectType: ScriptObjectProperty
       Name: HirelingRecognizeMarcurio
       Object: 104F3B:Skyrim.esm
     - MutagenObjectType: ScriptObjectProperty
-      Name: HasHirelingGV
-      Object: 0BCC98:Skyrim.esm
+      Name: q
+      Object: 1B5B9E:DeviousFollowers.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: ra
+      Object: 000D62:DeviousFollowers.esp
+      Alias: 1
   ScriptFragments:
     MutagenObjectType: ScriptFragments
     FileName: TIF_DFlow_0A00E04E
@@ -28,7 +28,7 @@ VirtualMachineAdapter:
       FragmentName: Fragment_1
 Flags: {}
 Topic: 0BCC84:Skyrim.esm
-PreviousDialog: 0BDFB1:Skyrim.esm
+PreviousDialog: 00E5B9:DeviousFollowers.esp
 FavorLevel: None
 Responses:
 - EmotionValue: 50

@@ -17,7 +17,7 @@ Flags:
   Flags:
   - Random
   - ForceSubtitle
-PreviousDialog: 294402:DeviousFollowers.esp
+PreviousDialog: 2B7B93:DeviousFollowers.esp
 FavorLevel: None
 Responses:
 - EmotionValue: 50
@@ -61,14 +61,14 @@ Conditions:
   Data:
     MutagenObjectType: GetVMQuestVariableConditionData
     Quest: 1BD274:DeviousFollowers.esp
-    SecondUnusedIntParameter: -741833408
+    SecondUnusedIntParameter: 8539296
     VariableName: ::AmuletRule_var
   ComparisonValue: 2
 - MutagenObjectType: ConditionFloat
   Data:
     MutagenObjectType: GetVMQuestVariableConditionData
     Quest: 010617:DeviousFollowers.esp
-    SecondUnusedIntParameter: -741833376
+    SecondUnusedIntParameter: 8539328
     VariableName: ::Suspend_var
 - MutagenObjectType: ConditionGlobal
   CompareOperator: LessThan

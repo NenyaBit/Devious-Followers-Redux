@@ -1,9 +1,5 @@
 FormKey: 3D871F:DeviousFollowers.esp
-IsCompressed: True
-MajorRecordFlagsRaw: 262144
 EditorID: DFR_Containers
-SkyrimMajorRecordFlags:
-- Compressed
 Name:
   TargetLanguage: English
   Value: Marker Storage Unit
@@ -34,7 +30,7 @@ Lighting:
   - FogFar
   - ClipDistance
 WaterHeight: 0
-UnknownGroupData: 1
+PersistentUnknownGroupData: 1
 Persistent:
 - MutagenObjectType: PlacedObject
   FormKey: 3D872C:DeviousFollowers.esp
@@ -44,5 +40,3 @@ Persistent:
   Base: 020673:Skyrim.esm
   Placement:
     Position: 399.43854, 30.254585, 1155.315
-MajorFlags:
-- 0x40000

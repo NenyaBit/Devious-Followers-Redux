@@ -21,7 +21,7 @@ Flags:
   Flags:
   - ForceSubtitle
 Topic: 000D63:DeviousFollowers.esp
-PreviousDialog: Null
+PreviousDialog: 00CAB8:DeviousFollowers.esp
 FavorLevel: None
 Responses:
 - EmotionValue: 50

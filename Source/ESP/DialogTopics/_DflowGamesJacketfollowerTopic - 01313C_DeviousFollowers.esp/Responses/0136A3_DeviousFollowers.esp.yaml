@@ -13,7 +13,7 @@ Flags:
   Flags:
   - Goodbye
 Topic: 01313E:DeviousFollowers.esp
-PreviousDialog: Null
+PreviousDialog: 0136A7:DeviousFollowers.esp
 FavorLevel: None
 Responses:
 - EmotionValue: 50
