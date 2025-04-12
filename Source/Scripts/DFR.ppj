@@ -12,7 +12,7 @@
         <Variable Name="ThisProject" Value="."/>
         <Variable Name="Rel" Value="..\..\.release"/>
         <Variable Name="MO2" Value="F:\Modding\MO2\mods\"/>
-        <Variable Name="Ver" Value="V.0.4.5-Debuggable"/>
+        <Variable Name="Ver" Value="V.0.4.5-Cleaned"/>
     </Variables>
     <Imports>
         <!-- Project and Resources -->
@@ -26,10 +26,8 @@
         <Import>@MO2\SRC_DD\Source\Scripts</Import>
         <Import>@MO2\SRC_DC\Source\Scripts</Import>
         <Import>@MO2\SRC_EFF\Source\Scripts</Import>
-        <Import>@MO2\SRC_HH\Source\Scripts</Import>
         <Import>@MO2\SRC_MME\Source\Scripts</Import>
         <Import>@MO2\SRC_PAPUTIL\Source\Scripts</Import>
-        <Import>@MO2\SRC_PDR\Source\Scripts</Import>
         <Import>@MO2\SRC_PO3\Source\Scripts</Import>
         <Import>@MO2\SRC_SKYUI\Source\Scripts</Import>
         <Import>@MO2\SRC_SLA\Source\Scripts</Import>
@@ -52,6 +50,7 @@
             <Include>Scripts</Include>
             <Include Path="Source/Scripts">*.psc</Include>
             <Include>SEQ</Include>
+            <Include>SKSE</Include>
             <Include>Textures</Include>
             <!-- <Include>Sound</Include>
             <Include>Meshes</Include> -->
