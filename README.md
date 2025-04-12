@@ -43,7 +43,8 @@ I plan to implement/maintain DFR this way:
 #### Tools
 
 * Your favorite papyrus compiler
-	* In my testing [Caprica](https://github.com/Orvid/Caprica) did not work, assumingly due to the amount of scripts
+	* I personally use [Caprica](https://github.com/Orvid/Caprica), but setting it up with the VSC Extension by JoelDay is some work.
+	* Despite having new constructs, I plan to stay Pyro/CK compatible.
 * [Git](https://git-scm.com/downloads)
 * [Spriggit](https://github.com/Mutagen-Modding/Spriggit)
 	* Instructions on usage for the CLI version are below
