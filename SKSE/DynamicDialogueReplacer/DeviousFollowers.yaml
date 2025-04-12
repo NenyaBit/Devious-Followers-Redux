@@ -101,14 +101,15 @@ topics:
 
 topicInfos:
 # BQ01
-- id: 0xBD733|Skyrim.esm
+- id: 0xBD733|Skyrim.esm # BQJarlReward
   responses:
     - subtitle: Good slave, here's your master's reward.
-- id: 0x95124|Skyrim.esm
-  responses:
-    - subtitle: Good slave, here's your master's reward.
-    
-# DEAL OFFERS
+# - id: 0x95124|Skyrim.esm            # TODO: nenya: failed to obtain topicinfo. this is probably a bad entry altogether(?)
+#   responses:
+#     - subtitle: Good slave, here's your master's reward.
+
+
+# DEAL OFFERS (yes, the fields are not "in order" in this section, but yaml doesn't care)
 - conditions:
   - GetGlobalValue DFR_Rule_Extend == Adv_Status_Selected AND
   id: 0x406065|DeviousFollowers.esp
@@ -610,42 +611,42 @@ topicInfos:
   responses:
   - subtitle: Can I draw some art on your body? Just for fun. 
 
-# JOB OFFERS
-- conditions:
-  - GetGlobalValue DFR_Job_BanditBounty == Adv_Status_Selected AND
-  id: 0x433A8B|DeviousFollowers.esp
-  random: true
-  responses:
-  - subtitle: I found this bounty letter for a bandit chief around here.
+# # JOB OFFERS
+# - conditions:  # TODO: nenya: failed to obtain topicinfo
+#   - GetGlobalValue DFR_Job_BanditBounty == Adv_Status_Selected AND
+#   id: 0x433A8B|DeviousFollowers.esp
+#   random: true
+#   responses:
+#   - subtitle: I found this bounty letter for a bandit chief around here.
 
 
-# JOB ACCEPT
-- id: 0x433A96|DeviousFollowers.esp
-  conditions:
-  - GetStage DFR_RelationshipManager == DFR_Rel_Slave
-  priority: 5
-  random: true
-  responses:
-  - subtitle: Good, slave.
+# # JOB ACCEPT
+# - id: 0x433A96|DeviousFollowers.esp # TODO: nenya: failed to obtain topicinfo
+#   conditions:
+#   - GetStage DFR_RelationshipManager == DFR_Rel_Slave
+#   priority: 5
+#   random: true
+#   responses:
+#   - subtitle: Good, slave.
 
-- id: 0x433A96|DeviousFollowers.esp
-  random: true
-  responses:
-  - subtitle: Sounds good.
+# - id: 0x433A96|DeviousFollowers.esp # TODO: nenya: failed to obtain topicinfo
+#   random: true
+#   responses:
+#   - subtitle: Sounds good.
 
-# JOB REFUSE
-- id: 0x433A97|DeviousFollowers.esp
-  conditions:
-  - GetStage DFR_RelationshipManager == DFR_Rel_Slave
-  priority: 5
-  random: true
-  responses:
-  - subtitle: Hmm, fine, I'll let this one go. Don't get used to it.
+# # JOB REFUSE
+# - id: 0x433A97|DeviousFollowers.esp # TODO: nenya: failed to obtain topicinfo
+#   conditions:
+#   - GetStage DFR_RelationshipManager == DFR_Rel_Slave
+#   priority: 5
+#   random: true
+#   responses:
+#   - subtitle: Hmm, fine, I'll let this one go. Don't get used to it.
 
-- id: 0x433A97|DeviousFollowers.esp
-  random: true
-  responses:
-  - subtitle: Suit yourself. 
+# - id: 0x433A97|DeviousFollowers.esp # TODO: nenya: failed to obtain topicinfo
+#   random: true
+#   responses:
+#   - subtitle: Suit yourself. 
 
 # DEAL ACCEPTANCE
 - id: 0x2AD947|DeviousFollowers.esp
@@ -666,7 +667,7 @@ topicInfos:
   - GetGlobalValue DFR_EventContext == 3
 
 - id: 0x2AD947|DeviousFollowers.esp
-  priority: 11
+  priority: 11 # TODO: nenya: get rid of priority?
   responses:
   - subtitle: Be quick about it.
   conditions:
@@ -754,362 +755,367 @@ topicInfos:
   responses:
   - subtitle: Well that's rude.
 
-# RULE REMOVAL ACCEPT
-- id: 0x429835|DeviousFollowers.esp
-  responses:
-  - subtitle: Fine.
-  conditions:
-  - GetGlobalValue DFR_Rule_Amulet == DFR_Status_Allow
-- id: 0x42986A|DeviousFollowers.esp
-  responses:
-  - subtitle: Fine.
-  conditions:
-  - GetGlobalValue DFR_Rule_AnalPlug == DFR_Status_Allow
-- id: 0x429831|DeviousFollowers.esp
-  responses:
-  - subtitle: Fine.
-  conditions:
-  - GetGlobalValue DFR_Rule_Armor == DFR_Status_Allow
-- id: 0x429838|DeviousFollowers.esp
-  responses:
-  - subtitle: Fine.
-  conditions:
-  - GetGlobalValue DFR_Rule_Blindfold == DFR_Status_Allow
-- id: 0x42983B|DeviousFollowers.esp
-  responses:
-  - subtitle: Fine.
-  conditions:
-  - GetGlobalValue DFR_Rule_Boots == DFR_Status_Allow
-- id: 0x42983E|DeviousFollowers.esp
-  responses:
-  - subtitle: Fine.
-  conditions:
-  - GetGlobalValue DFR_Rule_BoundInTown == DFR_Status_Allow
-- id: 0x429840|DeviousFollowers.esp
-  responses:
-  - subtitle: Fine.
-  conditions:
-  - GetGlobalValue DFR_Rule_Chastity == DFR_Status_Allow
-- id: 0x429842|DeviousFollowers.esp
-  responses:
-  - subtitle: Fine.
-  conditions:
-  - GetGlobalValue DFR_Rule_Circlet == DFR_Status_Allow
-- id: 0x429844|DeviousFollowers.esp
-  responses:
-  - subtitle: Fine.
-  conditions:
-  - GetGlobalValue DFR_Rule_Collar == DFR_Status_Allow
-- id: 0x429846|DeviousFollowers.esp
-  responses:
-  - subtitle: Fine.
-  conditions:
-  - GetGlobalValue DFR_Rule_Corset == DFR_Status_Allow
-- id: 0x429848|DeviousFollowers.esp
-  responses:
-  - subtitle: Fine.
-  conditions:
-  - GetGlobalValue DFR_Rule_Crawling == DFR_Status_Allow
-- id: 0x42984A|DeviousFollowers.esp
-  responses:
-  - subtitle: Fine.
-  conditions:
-  - GetGlobalValue DFR_Rule_Cuffs == DFR_Status_Allow
-- id: 0x41F627|DeviousFollowers.esp
-  responses:
-  - subtitle: Fine.
-  conditions:
-  - GetGlobalValue DFR_Rule_Gag == DFR_Status_Allow
-- id: 0x42984E|DeviousFollowers.esp
-  responses:
-  - subtitle: Fine.
-  conditions:
-  - GetGlobalValue DFR_Rule_Gloves == DFR_Status_Allow
-- id: 0x42986C|DeviousFollowers.esp
-  responses:
-  - subtitle: Fine.
-  conditions:
-  - GetGlobalValue DFR_Rule_Innkeeper == DFR_Status_Allow
-- id: 0x429850|DeviousFollowers.esp
-  responses:
-  - subtitle: Fine.
-  conditions:
-  - GetGlobalValue DFR_Rule_Jacket == DFR_Status_Allow
-- id: 0x429852|DeviousFollowers.esp
-  responses:
-  - subtitle: Fine.
-  conditions:
-  - GetGlobalValue DFR_Rule_Key == DFR_Status_Allow
-- id: 0x429854|DeviousFollowers.esp
-  responses:
-  - subtitle: Fine.
-  conditions:
-  - GetGlobalValue DFR_Rule_Lactacid == DFR_Status_Allow
-- id: 0x42986E|DeviousFollowers.esp
-  responses:
-  - subtitle: Fine.
-  conditions:
-  - GetGlobalValue DFR_Rule_Merchant == DFR_Status_Allow
-- id: 0x429856|DeviousFollowers.esp
-  responses:
-  - subtitle: Fine.
-  conditions:
-  - GetGlobalValue DFR_Rule_Milking == DFR_Status_Allow
-- id: 0x42985A|DeviousFollowers.esp
-  responses:
-  - subtitle: Fine.
-  conditions:
-  - GetGlobalValue DFR_Rule_NakedIntown == DFR_Status_Allow
-- id: 0x429858|DeviousFollowers.esp
-  responses:
-  - subtitle: Fine.
-  conditions:
-  - GetGlobalValue DFR_Rule_NipplePiercings == DFR_Status_Allow
-- id: 0x42985C|DeviousFollowers.esp
-  responses:
-  - subtitle: Fine.
-  conditions:
-  - GetGlobalValue DFR_Rule_Petsuit == DFR_Status_Allow
-- id: 0x42985E|DeviousFollowers.esp
-  responses:
-  - subtitle: Fine.
-  conditions:
-  - GetGlobalValue DFR_Rule_Ring == DFR_Status_Allow
-- id: 0x429860|DeviousFollowers.esp
-  responses:
-  - subtitle: Fine.
-  conditions:
-  - GetGlobalValue DFR_Rule_Sex == DFR_Status_Allow
-- id: 0x42984C|DeviousFollowers.esp
-  responses:
-  - subtitle: Fine.
-  conditions:
-  - GetGlobalValue DFR_Rule_Skincare == DFR_Status_Allow
-- id: 0x429862|DeviousFollowers.esp
-  responses:
-  - subtitle: Fine.
-  conditions:
-  - GetGlobalValue DFR_Rule_Skooma == DFR_Status_Allow
-- id: 0x429864|DeviousFollowers.esp
-  responses:
-  - subtitle: Fine.
-  conditions:
-  - GetGlobalValue DFR_Rule_Slut == DFR_Status_Allow
-- id: 0x429866|DeviousFollowers.esp
-  responses:
-  - subtitle: Fine.
-  conditions:
-  - GetGlobalValue DFR_Rule_Spanking == DFR_Status_Allow
+# TODO: nenyabit: These TopicInfos are not found by DDR, despite being in the esp
 
-# RULE REMOVAL REFUSAL
-- id: 0x429835|DeviousFollowers.esp
-  responses:
-  - subtitle: No.
-  conditions:
-  - GetGlobalValue DFR_Rule_Amulet == DFR_Status_Refuse
-- id: 0x42986A|DeviousFollowers.esp
-  responses:
-  - subtitle: No.
-  conditions:
-  - GetGlobalValue DFR_Rule_AnalPlug == DFR_Status_Refuse
-- id: 0x429831|DeviousFollowers.esp
-  responses:
-  - subtitle: No.
-  conditions:
-  - GetGlobalValue DFR_Rule_Armor == DFR_Status_Refuse
-- id: 0x429838|DeviousFollowers.esp
-  responses:
-  - subtitle: No.
-  conditions:
-  - GetGlobalValue DFR_Rule_Blindfold == DFR_Status_Refuse
-- id: 0x42983B|DeviousFollowers.esp
-  responses:
-  - subtitle: No.
-  conditions:
-  - GetGlobalValue DFR_Rule_Boots == DFR_Status_Refuse
-- id: 0x42983E|DeviousFollowers.esp
-  responses:
-  - subtitle: No.
-  conditions:
-  - GetGlobalValue DFR_Rule_BoundInTown == DFR_Status_Refuse
-- id: 0x429840|DeviousFollowers.esp
-  responses:
-  - subtitle: No.
-  conditions:
-  - GetGlobalValue DFR_Rule_Chastity == DFR_Status_Refuse
-- id: 0x429842|DeviousFollowers.esp
-  responses:
-  - subtitle: No.
-  conditions:
-  - GetGlobalValue DFR_Rule_Circlet == DFR_Status_Refuse
-- id: 0x429844|DeviousFollowers.esp
-  responses:
-  - subtitle: No.
-  conditions:
-  - GetGlobalValue DFR_Rule_Collar == DFR_Status_Refuse
-- id: 0x429846|DeviousFollowers.esp
-  responses:
-  - subtitle: No.
-  conditions:
-  - GetGlobalValue DFR_Rule_Corset == DFR_Status_Refuse
-- id: 0x429848|DeviousFollowers.esp
-  responses:
-  - subtitle: No.
-  conditions:
-  - GetGlobalValue DFR_Rule_Crawling == DFR_Status_Refuse
-- id: 0x42984A|DeviousFollowers.esp
-  responses:
-  - subtitle: No.
-  conditions:
-  - GetGlobalValue DFR_Rule_Cuffs == DFR_Status_Refuse
-- id: 0x41F627|DeviousFollowers.esp
-  responses:
-  - subtitle: No.
-  conditions:
-  - GetGlobalValue DFR_Rule_Gag == DFR_Status_Refuse
-- id: 0x42984E|DeviousFollowers.esp
-  responses:
-  - subtitle: No.
-  conditions:
-  - GetGlobalValue DFR_Rule_Gloves == DFR_Status_Refuse
-- id: 0x42986C|DeviousFollowers.esp
-  responses:
-  - subtitle: No.
-  conditions:
-  - GetGlobalValue DFR_Rule_Innkeeper == DFR_Status_Refuse
-- id: 0x429850|DeviousFollowers.esp
-  responses:
-  - subtitle: No.
-  conditions:
-  - GetGlobalValue DFR_Rule_Jacket == DFR_Status_Refuse
-- id: 0x429852|DeviousFollowers.esp
-  responses:
-  - subtitle: No.
-  conditions:
-  - GetGlobalValue DFR_Rule_Key == DFR_Status_Refuse
-- id: 0x429854|DeviousFollowers.esp
-  responses:
-  - subtitle: No.
-  conditions:
-  - GetGlobalValue DFR_Rule_Lactacid == DFR_Status_Refuse
-- id: 0x42986E|DeviousFollowers.esp
-  responses:
-  - subtitle: No.
-  conditions:
-  - GetGlobalValue DFR_Rule_Merchant == DFR_Status_Refuse
-- id: 0x429856|DeviousFollowers.esp
-  responses:
-  - subtitle: No.
-  conditions:
-  - GetGlobalValue DFR_Rule_Milking == DFR_Status_Refuse
-- id: 0x42985A|DeviousFollowers.esp
-  responses:
-  - subtitle: No.
-  conditions:
-  - GetGlobalValue DFR_Rule_NakedIntown == DFR_Status_Refuse
-- id: 0x429858|DeviousFollowers.esp
-  responses:
-  - subtitle: No.
-  conditions:
-  - GetGlobalValue DFR_Rule_NipplePiercings == DFR_Status_Refuse
-- id: 0x42985C|DeviousFollowers.esp
-  responses:
-  - subtitle: No.
-  conditions:
-  - GetGlobalValue DFR_Rule_Petsuit == DFR_Status_Refuse
-- id: 0x42985E|DeviousFollowers.esp
-  responses:
-  - subtitle: No.
-  conditions:
-  - GetGlobalValue DFR_Rule_Ring == DFR_Status_Refuse
-- id: 0x429860|DeviousFollowers.esp
-  responses:
-  - subtitle: No.
-  conditions:
-  - GetGlobalValue DFR_Rule_Sex == DFR_Status_Refuse
-- id: 0x42984C|DeviousFollowers.esp
-  responses:
-  - subtitle: No.
-  conditions:
-  - GetGlobalValue DFR_Rule_Skincare == DFR_Status_Refuse
-- id: 0x429862|DeviousFollowers.esp
-  responses:
-  - subtitle: No.
-  conditions:
-  - GetGlobalValue DFR_Rule_Skooma == DFR_Status_Refuse
-- id: 0x429864|DeviousFollowers.esp
-  responses:
-  - subtitle: No.
-  conditions:
-  - GetGlobalValue DFR_Rule_Slut == DFR_Status_Refuse
-- id: 0x429866|DeviousFollowers.esp
-  responses:
-  - subtitle: No.
-  conditions:
-  - GetGlobalValue DFR_Rule_Spanking == DFR_Status_Refuse
+# RULE REMOVAL ACCEPT
+# - id: 0x429835|DeviousFollowers.esp
+#   responses:
+#   - subtitle: Fine.
+#   conditions:
+#   - GetGlobalValue DFR_Rule_Amulet == DFR_Status_Allow
+# - id: 0x42986A|DeviousFollowers.esp
+#   responses:
+#   - subtitle: Fine.
+#   conditions:
+#   - GetGlobalValue DFR_Rule_AnalPlug == DFR_Status_Allow
+# - id: 0x429831|DeviousFollowers.esp
+#   responses:
+#   - subtitle: Fine.
+#   conditions:
+#   - GetGlobalValue DFR_Rule_Armor == DFR_Status_Allow
+# - id: 0x429838|DeviousFollowers.esp
+#   responses:
+#   - subtitle: Fine.
+#   conditions:
+#   - GetGlobalValue DFR_Rule_Blindfold == DFR_Status_Allow
+# - id: 0x42983B|DeviousFollowers.esp
+#   responses:
+#   - subtitle: Fine.
+#   conditions:
+#   - GetGlobalValue DFR_Rule_Boots == DFR_Status_Allow
+# - id: 0x42983E|DeviousFollowers.esp
+#   responses:
+#   - subtitle: Fine.
+#   conditions:
+#   - GetGlobalValue DFR_Rule_BoundInTown == DFR_Status_Allow
+# - id: 0x429840|DeviousFollowers.esp
+#   responses:
+#   - subtitle: Fine.
+#   conditions:
+#   - GetGlobalValue DFR_Rule_Chastity == DFR_Status_Allow
+# - id: 0x429842|DeviousFollowers.esp
+#   responses:
+#   - subtitle: Fine.
+#   conditions:
+#   - GetGlobalValue DFR_Rule_Circlet == DFR_Status_Allow
+# - id: 0x429844|DeviousFollowers.esp
+#   responses:
+#   - subtitle: Fine.
+#   conditions:
+#   - GetGlobalValue DFR_Rule_Collar == DFR_Status_Allow
+# - id: 0x429846|DeviousFollowers.esp
+#   responses:
+#   - subtitle: Fine.
+#   conditions:
+#   - GetGlobalValue DFR_Rule_Corset == DFR_Status_Allow
+# - id: 0x429848|DeviousFollowers.esp
+#   responses:
+#   - subtitle: Fine.
+#   conditions:
+#   - GetGlobalValue DFR_Rule_Crawling == DFR_Status_Allow
+# - id: 0x42984A|DeviousFollowers.esp
+#   responses:
+#   - subtitle: Fine.
+#   conditions:
+#   - GetGlobalValue DFR_Rule_Cuffs == DFR_Status_Allow
+# - id: 0x41F627|DeviousFollowers.esp
+#   responses:
+#   - subtitle: Fine.
+#   conditions:
+#   - GetGlobalValue DFR_Rule_Gag == DFR_Status_Allow
+# - id: 0x42984E|DeviousFollowers.esp
+#   responses:
+#   - subtitle: Fine.
+#   conditions:
+#   - GetGlobalValue DFR_Rule_Gloves == DFR_Status_Allow
+# - id: 0x42986C|DeviousFollowers.esp
+#   responses:
+#   - subtitle: Fine.
+#   conditions:
+#   - GetGlobalValue DFR_Rule_Innkeeper == DFR_Status_Allow
+# - id: 0x429850|DeviousFollowers.esp
+#   responses:
+#   - subtitle: Fine.
+#   conditions:
+#   - GetGlobalValue DFR_Rule_Jacket == DFR_Status_Allow
+# - id: 0x429852|DeviousFollowers.esp
+#   responses:
+#   - subtitle: Fine.
+#   conditions:
+#   - GetGlobalValue DFR_Rule_Key == DFR_Status_Allow
+# - id: 0x429854|DeviousFollowers.esp
+#   responses:
+#   - subtitle: Fine.
+#   conditions:
+#   - GetGlobalValue DFR_Rule_Lactacid == DFR_Status_Allow
+# - id: 0x42986E|DeviousFollowers.esp
+#   responses:
+#   - subtitle: Fine.
+#   conditions:
+#   - GetGlobalValue DFR_Rule_Merchant == DFR_Status_Allow
+# - id: 0x429856|DeviousFollowers.esp
+#   responses:
+#   - subtitle: Fine.
+#   conditions:
+#   - GetGlobalValue DFR_Rule_Milking == DFR_Status_Allow
+# - id: 0x42985A|DeviousFollowers.esp
+#   responses:
+#   - subtitle: Fine.
+#   conditions:
+#   - GetGlobalValue DFR_Rule_NakedIntown == DFR_Status_Allow
+# - id: 0x429858|DeviousFollowers.esp
+#   responses:
+#   - subtitle: Fine.
+#   conditions:
+#   - GetGlobalValue DFR_Rule_NipplePiercings == DFR_Status_Allow
+# - id: 0x42985C|DeviousFollowers.esp
+#   responses:
+#   - subtitle: Fine.
+#   conditions:
+#   - GetGlobalValue DFR_Rule_Petsuit == DFR_Status_Allow
+# - id: 0x42985E|DeviousFollowers.esp
+#   responses:
+#   - subtitle: Fine.
+#   conditions:
+#   - GetGlobalValue DFR_Rule_Ring == DFR_Status_Allow
+# - id: 0x429860|DeviousFollowers.esp
+#   responses:
+#   - subtitle: Fine.
+#   conditions:
+#   - GetGlobalValue DFR_Rule_Sex == DFR_Status_Allow
+# - id: 0x42984C|DeviousFollowers.esp
+#   responses:
+#   - subtitle: Fine.
+#   conditions:
+#   - GetGlobalValue DFR_Rule_Skincare == DFR_Status_Allow
+# - id: 0x429862|DeviousFollowers.esp
+#   responses:
+#   - subtitle: Fine.
+#   conditions:
+#   - GetGlobalValue DFR_Rule_Skooma == DFR_Status_Allow
+# - id: 0x429864|DeviousFollowers.esp
+#   responses:
+#   - subtitle: Fine.
+#   conditions:
+#   - GetGlobalValue DFR_Rule_Slut == DFR_Status_Allow
+# - id: 0x429866|DeviousFollowers.esp
+#   responses:
+#   - subtitle: Fine.
+#   conditions:
+#   - GetGlobalValue DFR_Rule_Spanking == DFR_Status_Allow
+
+# # RULE REMOVAL REFUSAL
+# - id: 0x429835|DeviousFollowers.esp
+#   responses:
+#   - subtitle: No.
+#   conditions:
+#   - GetGlobalValue DFR_Rule_Amulet == DFR_Status_Refuse
+# - id: 0x42986A|DeviousFollowers.esp
+#   responses:
+#   - subtitle: No.
+#   conditions:
+#   - GetGlobalValue DFR_Rule_AnalPlug == DFR_Status_Refuse
+# - id: 0x429831|DeviousFollowers.esp
+#   responses:
+#   - subtitle: No.
+#   conditions:
+#   - GetGlobalValue DFR_Rule_Armor == DFR_Status_Refuse
+# - id: 0x429838|DeviousFollowers.esp
+#   responses:
+#   - subtitle: No.
+#   conditions:
+#   - GetGlobalValue DFR_Rule_Blindfold == DFR_Status_Refuse
+# - id: 0x42983B|DeviousFollowers.esp
+#   responses:
+#   - subtitle: No.
+#   conditions:
+#   - GetGlobalValue DFR_Rule_Boots == DFR_Status_Refuse
+# - id: 0x42983E|DeviousFollowers.esp
+#   responses:
+#   - subtitle: No.
+#   conditions:
+#   - GetGlobalValue DFR_Rule_BoundInTown == DFR_Status_Refuse
+# - id: 0x429840|DeviousFollowers.esp
+#   responses:
+#   - subtitle: No.
+#   conditions:
+#   - GetGlobalValue DFR_Rule_Chastity == DFR_Status_Refuse
+# - id: 0x429842|DeviousFollowers.esp
+#   responses:
+#   - subtitle: No.
+#   conditions:
+#   - GetGlobalValue DFR_Rule_Circlet == DFR_Status_Refuse
+# - id: 0x429844|DeviousFollowers.esp
+#   responses:
+#   - subtitle: No.
+#   conditions:
+#   - GetGlobalValue DFR_Rule_Collar == DFR_Status_Refuse
+# - id: 0x429846|DeviousFollowers.esp
+#   responses:
+#   - subtitle: No.
+#   conditions:
+#   - GetGlobalValue DFR_Rule_Corset == DFR_Status_Refuse
+# - id: 0x429848|DeviousFollowers.esp
+#   responses:
+#   - subtitle: No.
+#   conditions:
+#   - GetGlobalValue DFR_Rule_Crawling == DFR_Status_Refuse
+# - id: 0x42984A|DeviousFollowers.esp
+#   responses:
+#   - subtitle: No.
+#   conditions:
+#   - GetGlobalValue DFR_Rule_Cuffs == DFR_Status_Refuse
+# - id: 0x41F627|DeviousFollowers.esp
+#   responses:
+#   - subtitle: No.
+#   conditions:
+#   - GetGlobalValue DFR_Rule_Gag == DFR_Status_Refuse
+# - id: 0x42984E|DeviousFollowers.esp
+#   responses:
+#   - subtitle: No.
+#   conditions:
+#   - GetGlobalValue DFR_Rule_Gloves == DFR_Status_Refuse
+# - id: 0x42986C|DeviousFollowers.esp
+#   responses:
+#   - subtitle: No.
+#   conditions:
+#   - GetGlobalValue DFR_Rule_Innkeeper == DFR_Status_Refuse
+# - id: 0x429850|DeviousFollowers.esp
+#   responses:
+#   - subtitle: No.
+#   conditions:
+#   - GetGlobalValue DFR_Rule_Jacket == DFR_Status_Refuse
+# - id: 0x429852|DeviousFollowers.esp
+#   responses:
+#   - subtitle: No.
+#   conditions:
+#   - GetGlobalValue DFR_Rule_Key == DFR_Status_Refuse
+# - id: 0x429854|DeviousFollowers.esp
+#   responses:
+#   - subtitle: No.
+#   conditions:
+#   - GetGlobalValue DFR_Rule_Lactacid == DFR_Status_Refuse
+# - id: 0x42986E|DeviousFollowers.esp
+#   responses:
+#   - subtitle: No.
+#   conditions:
+#   - GetGlobalValue DFR_Rule_Merchant == DFR_Status_Refuse
+# - id: 0x429856|DeviousFollowers.esp
+#   responses:
+#   - subtitle: No.
+#   conditions:
+#   - GetGlobalValue DFR_Rule_Milking == DFR_Status_Refuse
+# - id: 0x42985A|DeviousFollowers.esp
+#   responses:
+#   - subtitle: No.
+#   conditions:
+#   - GetGlobalValue DFR_Rule_NakedIntown == DFR_Status_Refuse
+# - id: 0x429858|DeviousFollowers.esp
+#   responses:
+#   - subtitle: No.
+#   conditions:
+#   - GetGlobalValue DFR_Rule_NipplePiercings == DFR_Status_Refuse
+# - id: 0x42985C|DeviousFollowers.esp
+#   responses:
+#   - subtitle: No.
+#   conditions:
+#   - GetGlobalValue DFR_Rule_Petsuit == DFR_Status_Refuse
+# - id: 0x42985E|DeviousFollowers.esp
+#   responses:
+#   - subtitle: No.
+#   conditions:
+#   - GetGlobalValue DFR_Rule_Ring == DFR_Status_Refuse
+# - id: 0x429860|DeviousFollowers.esp
+#   responses:
+#   - subtitle: No.
+#   conditions:
+#   - GetGlobalValue DFR_Rule_Sex == DFR_Status_Refuse
+# - id: 0x42984C|DeviousFollowers.esp
+#   responses:
+#   - subtitle: No.
+#   conditions:
+#   - GetGlobalValue DFR_Rule_Skincare == DFR_Status_Refuse
+# - id: 0x429862|DeviousFollowers.esp
+#   responses:
+#   - subtitle: No.
+#   conditions:
+#   - GetGlobalValue DFR_Rule_Skooma == DFR_Status_Refuse
+# - id: 0x429864|DeviousFollowers.esp
+#   responses:
+#   - subtitle: No.
+#   conditions:
+#   - GetGlobalValue DFR_Rule_Slut == DFR_Status_Refuse
+# - id: 0x429866|DeviousFollowers.esp
+#   responses:
+#   - subtitle: No.
+#   conditions:
+#   - GetGlobalValue DFR_Rule_Spanking == DFR_Status_Refuse
+
+
+# # TDOO: nenya: The usages of PlayerRef also need to be replaced to new syntax, but tbh the DDR wiki isn't clear enough for me 
 
 # service failure
-- id: 0x4102AA|DeviousFollowers.esp
-  responses:
-  - subtitle: Such a useless whore. I guess you're not good for much besides taking cock. And even then...
-  conditions:
-  - GetStage DFR_RelationshipManager == DFR_Rel_Slave
+# - id: 0x4102AA|DeviousFollowers.esp
+#   responses:
+#   - subtitle: Such a useless whore. I guess you're not good for much besides taking cock. And even then...
+#   conditions:
+#   - GetStage DFR_RelationshipManager == DFR_Rel_Slave
 
-- id: 0x4613F1|DeviousFollowers.esp
-  random: true
-  responses:
-  - subtitle: I know you're fantasising about taking bandit cock in every hole when we get there but try to stay focused. 
-- id: 0x4613F1|DeviousFollowers.esp
-  conditions:
-    - GetGlobalValue DFR_Outfit_Whore == Adv_Status_Active
-  random: true
-  responses:
-  - subtitle: That armour was a genius move on my part. Watching your ass jiggle with each step makes the trek far more entertaining.
-- id: 0x4613F1|DeviousFollowers.esp
-  random: true
-  responses:
-  - subtitle: Keep going, slave.
-- id: 0x4613F1|DeviousFollowers.esp
-  conditions:
-  - PlayerRef <> GetFactionRank slaAroused > 60
-  random: true
-  responses:
-  - subtitle: By Ysmir, the anticipation has really got you going! Don't worry I'll give you your release once we're done.
+# - id: 0x4613F1|DeviousFollowers.esp
+#   random: true
+#   responses:
+#   - subtitle: I know you're fantasising about taking bandit cock in every hole when we get there but try to stay focused. 
+# - id: 0x4613F1|DeviousFollowers.esp
+#   conditions:
+#     - GetGlobalValue DFR_Outfit_Whore == Adv_Status_Active
+#   random: true
+#   responses:
+#   - subtitle: That armour was a genius move on my part. Watching your ass jiggle with each step makes the trek far more entertaining.
+# - id: 0x4613F1|DeviousFollowers.esp
+#   random: true
+#   responses:
+#   - subtitle: Keep going, slave.
+# - id: 0x4613F1|DeviousFollowers.esp
+#   conditions:
+#   - PlayerRef <> GetFactionRank slaAroused > 60
+#   random: true
+#   responses:
+#   - subtitle: By Ysmir, the anticipation has really got you going! Don't worry I'll give you your release once we're done.
 
-- id: 0x4613F3|DeviousFollowers.esp
-  conditions:
-  - HasKeyword AcheronDefeated != 1
-  - PlayerRef <> HasKeyword AcheronDefeated == 1
-  random: true
-  responses:
-  - subtitle: You really are useless, you know that? I'll wait till you get up, don't worry.
-- id: 0x4613F3|DeviousFollowers.esp
-  conditions:
-  - GetGlobalValue DFR_Outfit_Whore == 1
-  - LocationHasKeyword LocTypeDungeon == 1
-  random: true
-  responses:
-  - subtitle: That outfit was a good choice. They're spending half the time staring at your tits.
-- id: 0x4613F3|DeviousFollowers.esp
-  conditions:
-  - GetFactionRank slaAroused > 60
-  - LocationHasKeyword LocTypeDungeon == 1
-  random: true
-  responses:
-  - subtitle: This fight's got my blood up. I'm looking forward to fucking you when we get back.
-- id: 0x4613F3|DeviousFollowers.esp
-  conditions:
-  - PlayerRef <> GetFactionRank slaAroused > 60
-  random: true
-  responses:
-  - subtitle: By Ysmir, the fight's really got you going! Don't worry I'll give you your release once we get back.
-- id: 0x4613F3|DeviousFollowers.esp
-  random: true
-  responses:
-  - subtitle: Remember anything you grab is mine.
-- id: 0x4613F3|DeviousFollowers.esp
-  conditions:
-  - GetGlobalValue DFR_Favour < 0
-  random: true
-  responses:
-  - subtitle: Maybe I should just knock you out and leave you here. It's what you deserve, after all.
+# - id: 0x4613F3|DeviousFollowers.esp
+#   conditions:
+#   - HasKeyword AcheronDefeated != 1
+#   - PlayerRef <> HasKeyword AcheronDefeated == 1
+#   random: true
+#   responses:
+#   - subtitle: You really are useless, you know that? I'll wait till you get up, don't worry.
+# - id: 0x4613F3|DeviousFollowers.esp
+#   conditions:
+#   - GetGlobalValue DFR_Outfit_Whore == 1
+#   - LocationHasKeyword LocTypeDungeon == 1
+#   random: true
+#   responses:
+#   - subtitle: That outfit was a good choice. They're spending half the time staring at your tits.
+# - id: 0x4613F3|DeviousFollowers.esp
+#   conditions:
+#   - GetFactionRank slaAroused > 60
+#   - LocationHasKeyword LocTypeDungeon == 1
+#   random: true
+#   responses:
+#   - subtitle: This fight's got my blood up. I'm looking forward to fucking you when we get back.
+# - id: 0x4613F3|DeviousFollowers.esp
+#   conditions:
+#   - PlayerRef <> GetFactionRank slaAroused > 60
+#   random: true
+#   responses:
+#   - subtitle: By Ysmir, the fight's really got you going! Don't worry I'll give you your release once we get back.
+# - id: 0x4613F3|DeviousFollowers.esp
+#   random: true
+#   responses:
+#   - subtitle: Remember anything you grab is mine.
+# - id: 0x4613F3|DeviousFollowers.esp
+#   conditions:
+#   - GetGlobalValue DFR_Favour < 0
+#   random: true
+#   responses:
+#   - subtitle: Maybe I should just knock you out and leave you here. It's what you deserve, after all.
