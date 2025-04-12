@@ -54,12 +54,6 @@ function Prep()
     int i = 0
     while i < ActiveOutfitRules.Length
         Adv_EventBase rule = Adversity.GetEvent(ActiveOutfitRules[i])
-        DFR_OutfitRuleBase outfitRule = rule as DFR_OutfitRuleBase
-        
-        if outfitRule
-            outfitRule.Prep()
-        endIf
-
         i += 1
     endWhile
 endFunction

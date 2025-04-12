@@ -42,7 +42,7 @@
     <Folders>
         <Folder>@ThisProject</Folder>
     </Folders>
-    <PreBuildEvent Description="Deserialize the ESP file" UseInBuild="true">
+    <PreBuildEvent Description="Deserialize the ESP file" UseInBuild="false">
         <Command>Spriggit.CLI.exe deserialize --InputPath .\..\ESP --OutputPath .\..\..\DeviousFollowers.esp</Command>
     </PreBuildEvent>
     <ZipFiles Output="@Rel">
