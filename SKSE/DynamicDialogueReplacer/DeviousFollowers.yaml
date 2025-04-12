@@ -99,7 +99,7 @@ topics:
   conditions:
   - GetStage DFR_RelationshipManager == DFR_Rel_Slave
 
-infos:
+topicInfos:
 # BQ01
 - id: 0xBD733|Skyrim.esm
   responses:
