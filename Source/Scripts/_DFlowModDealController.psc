@@ -1776,7 +1776,7 @@ Potion Function GetLeafSkooma()
     If 255 != Game.GetModByName("SexLabSkoomaWhore.esp")
         Potion shouldBeSkooma = _DF_SkoomaWhore.GetLeafSkooma() As Potion
         If shouldBeSkooma
-            Return shouldBeSkooma As Potion
+            Return shouldBeSkooma
         EndIf
     EndIf
     ; Return vanilla skooma instead
@@ -1787,7 +1787,7 @@ Potion Function GetLactacid()
     If 255 != Game.GetModByName("MilkModNEW.esp")
         Potion shouldBeLactacid = _DF_mme.GetLactacid() As Potion
         If shouldBeLactacid
-            Return shouldBeLactacid As Potion
+            Return shouldBeLactacid
         EndIf
     EndIf
     ; Could return a built-in replacement here.

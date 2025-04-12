@@ -1590,7 +1590,7 @@ Bool Function Spank(Actor spanker, Int severity = -1)
     ; Boredom only accumulates at 1.0 per X days - usually - it shouldn't be a big value
     ; Spanking reduces K*(2 + severity)  so K < 0.5 seems reasonable
     ; boredeom doesn't increase if will below 4
-    Float amusement = 0.4 * ((2.0 + severity) As Float)
+    Float amusement = 0.4 * ((2.0 + severity))
     AdjustBoredom(-amusement)
     
     ; Nice easter egg. You won't be punished for a While because you JUST GOT SPANKED!

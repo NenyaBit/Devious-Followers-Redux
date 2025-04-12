@@ -1066,7 +1066,7 @@ Float Function CalculateDeviceRemovalCost()
     Float currentPrice = baseRemovalPrice + (RemovedDevicesCount As Float) * increasePrice
 
     if DFR_RelationshipManager.Get().HasHighFavour()
-        currentPrice = Math.Floor(currentPrice as float * 0.5)
+        currentPrice = Math.Floor(currentPrice * 0.5)
     endIf
     
     Return currentPrice
@@ -1419,7 +1419,7 @@ EndFunction
 
 Function ExternalRemoveFollower()
 
-    Actor who = Alias__DMaster.GetActorRef() As Actor
+    Actor who = Alias__DMaster.GetActorRef()
     Q2.DFlowRemoveFollower()
     Q2.InternalRemoveFollower(who) ; Resets and sets stage 0
     Tool.MCM.ResetQuests() ; Reset all the other quests too.
@@ -1526,7 +1526,7 @@ Function RobPlayerItems(Bool voluntary = False)
 
     EndWhile
 
-    Int pcGold = PlayerRef.GetGoldAmount() As Int
+    Int pcGold = PlayerRef.GetGoldAmount()
     PlayerRef.RemoveItem(Gold001, pcGold)
     pcGold = (pcGold * 75) / 100
     

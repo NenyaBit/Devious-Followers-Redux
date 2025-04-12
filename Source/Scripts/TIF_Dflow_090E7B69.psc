@@ -6,7 +6,7 @@ Scriptname TIF_Dflow_090E7B69 Extends TopicInfo Hidden
 Function Fragment_4(ObjectReference akSpeakerRef)
 Actor akSpeaker = akSpeakerRef as Actor
 ;BEGIN CODE
-int a = Dealq.getstage() as int
+int a = Dealq.getstage()
 a += 2
 Dealq.setstage(a)
 (tool as _DFtools).ReduceResist(a)

@@ -2386,7 +2386,7 @@ Function MaidLevelCheck(Actor akActor)   ; maid progression levelup messages
 					String MaidName = akActor.GetLeveledActorBase().GetName()
 					debug.Notification(formatString(JsonUtil.StringListGet("/MME/Strings_Lvlup", "maidlevelup", 0), MaidName))
 					If Game.Getplayer().GetDistance(akActor) < 500
-						debug.messagebox(formatString(JsonUtil.StringListGet("/MME/Strings_Lvlup", "maidlevelup", MaidLevel as int + 1), MaidName, MaidName))
+						debug.messagebox(formatString(JsonUtil.StringListGet("/MME/Strings_Lvlup", "maidlevelup", MaidLevel + 1), MaidName, MaidName))
 					endif
 				endif
 			endif
