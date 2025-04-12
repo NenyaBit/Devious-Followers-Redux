@@ -3,96 +3,98 @@ Version: 1
 topics:
 
 # JOB REPLACEMENTS
-- id: BQ01MainTopic
-  replace: DFR_BQ01ReplacementTopic
+
+- id: 0x095122|Skyrim.esm # BQ01MainTopic
+  affects: 0x095122|Skyrim.esm # BQ01MainTopic
+  replace: 0x43DCB2|DeviousFollowers.esp # DFR_BQ01ReplacementTopic
   conditions:
   - GetStage DFR_RelationshipManager == DFR_Rel_Slave
-- id: BQ01RewardTopic
+
+- id: 0x095121|Skyrim.esm # BQ01RewardTopic   
   text: The bounty is complete. I'm here for my master's reward.
   conditions:
   - GetStage DFR_RelationshipManager == DFR_Rel_Slave
 
 # FOLLOWER GENERIC
-- id: DialogueFollowerTradeTopic
-  replace: DFR_RelReplaceTrade
+- id: 0x060020|Skyrim.esm # DialogueFollowerTradeTopic
+  affects: 0x060020|Skyrim.esm # DialogueFollowerTradeTopic
+  replace: 0x4102B5|DeviousFollowers.esp # DFR_RelReplaceTrade
   conditions:
   - GetInFaction _DMaster == 1 AND
   - GetStage DFR_RelationshipManager == DFR_Rel_Slave OR
   - GetGlobalValue DFR_Favour < DFR_Trade_FavourMin
-
-# DEAL REQUEST
-- id: DFR_EventsOffers
+- id: 0x2AD93D|DeviousFollowers.esp # DFR_EventsOffers
   text: I'm ready to make a deal. What will satisfy you?
   conditions: 
   - GetGlobalValue DFR_EventContext == 0
-- id: DFR_EventsOffers
+- id: 0x2AD93D|DeviousFollowers.esp # DFR_EventsOffers
   text: Can I do something for you, master?
   conditions: 
   - GetGlobalValue DFR_EventContext == 2
   - GetStage DFR_RelationshipManager == DFR_Rel_Slave
-- id: DFR_EventsOffers
+- id: 0x2AD93D|DeviousFollowers.esp # DFR_EventsOffers
   text: I'm sorry master, I need to be punished.
   conditions: 
   - GetGlobalValue DFR_EventContext == 3
   - GetStage DFR_RelationshipManager == DFR_Rel_Slave
+- id: 0x2AD93D|DeviousFollowers.esp # DFR_EventsOffers
+  text: Is there anything you need?
+  conditions: 
+  - GetGlobalValue DFR_EventContext == 2
+- id: 0x2AD93D|DeviousFollowers.esp # DFR_EventsOffers
+  text: I'm sorry, is there something I can do to make it up to you?
+  conditions: 
+  - GetGlobalValue DFR_EventContext == 3
 
-- id: DFR_JobsTopic
+# JOBS
+- id: 0x433A8A|DeviousFollowers.esp # DFR_JobsTopic
   text: Do you have any work for me, master?
   conditions: 
   - GetStage DFR_RelationshipManager == DFR_Rel_Slave
 
-- id: DFR_JobsAccept
+- id:  0x433A8C|DeviousFollowers.esp # DFR_JobsAccept
   text: Yes, master.
   conditions: 
   - GetStage DFR_RelationshipManager == DFR_Rel_Slave
 
-- id: DFR_JobsRefuse
+- id: 0x433A8D|DeviousFollowers.esp # DFR_JobsRefuse
   text: Please no, master.
   conditions: 
   - GetStage DFR_RelationshipManager == DFR_Rel_Slave
 
-- id: DFR_EventsOffers
-  text: Is there anything you need?
-  conditions: 
-  - GetGlobalValue DFR_EventContext == 2
-- id: DFR_EventsOffers
-  text: I'm sorry, is there something I can do to make it up to you?
-  conditions: 
-  - GetGlobalValue DFR_EventContext == 3
 # DEAL ACCEPTANCE
-- id: DFR_EventsAccept
+- id: 0x2AD946|DeviousFollowers.esp # DFR_EventsAccept
   text: Yes, master.
   conditions: 
   - GetStage DFR_RelationshipManager == DFR_Rel_Slave
-- id: DFR_EventsAccept
+- id: 0x2AD946|DeviousFollowers.esp # DFR_EventsAccept
   text: I'll do as you say.
   conditions: 
   - GetGlobalValue DFR_EventContext == 0
-- id: DFR_EventsAccept
+- id: 0x2AD946|DeviousFollowers.esp # DFR_EventsAccept
   text: Sure.
   conditions: 
   - GetGlobalValue DFR_EventContext == 2 OR
   - GetGlobalValue DFR_EventContext == 3
 # DEAL REFUSAL
-- id: DFR_EventsRefuse
+- id: 0x2AD944|DeviousFollowers.esp # DFR_EventsRefuse
   text: I'm not doing that.
   conditions:
   - GetGlobalValue DFR_EventContext == 0 OR
   - GetGlobalValue DFR_EventContext == 4 OR
-- id: DFR_EventsRefuse
+- id: 0x2AD944|DeviousFollowers.esp # DFR_EventsRefuse
   text: Please no, master.
   conditions:
   - GetStage DFR_RelationshipManager == DFR_Rel_Slave
   - GetGlobalValue DFR_EventContext == 2 OR
   - GetGlobalValue DFR_EventContext == 3 OR
-
-- id: DFR_EventsRefuse
+- id: 0x2AD944|DeviousFollowers.esp # DFR_EventsRefuse
   text: Not right now.
   conditions:
   - GetGlobalValue DFR_EventContext == 2 OR
   - GetGlobalValue DFR_EventContext == 3 OR
 
-- id: DFR_RulesTopic
+- id: 0x41F61C|DeviousFollowers.esp # DFR_RulesTopic
   text: About your expectations...
   conditions:
   - GetStage DFR_RelationshipManager == DFR_Rel_Slave
