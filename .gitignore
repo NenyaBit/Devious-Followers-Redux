@@ -1,6 +1,8 @@
 .vscode/
 .release/
+*.txt
+*.py
 *.pex
-*.esp
-meta.ini
 *.code-workspace
+meta.ini
+DeviousFollowers.esp
