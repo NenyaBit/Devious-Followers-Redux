@@ -1,17 +1,17 @@
 FormKey: 15030F:DeviousFollowers.esp
 VirtualMachineAdapter:
   Scripts:
-  - Name: TIF_Dflow_0815030F
+  - Name: DFRX_TIF_0815030F
   ScriptFragments:
     MutagenObjectType: ScriptFragments
-    FileName: TIF_Dflow_0815030F
+    FileName: DFRX_TIF_0815030F
     OnBegin:
       ExtraBindDataVersion: 1
-      ScriptName: TIF_Dflow_0815030F
+      ScriptName: DFRX_TIF_0815030F
       FragmentName: Fragment_1
     OnEnd:
       ExtraBindDataVersion: 1
-      ScriptName: TIF_Dflow_0815030F
+      ScriptName: DFRX_TIF_0815030F
       FragmentName: Fragment_2
 Flags:
   ResetHours: 11.999817

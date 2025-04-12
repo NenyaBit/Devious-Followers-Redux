@@ -1,7 +1,7 @@
 FormKey: 3221BC:DeviousFollowers.esp
 VirtualMachineAdapter:
   Scripts:
-  - Name: _Dx_TIF__0931D0B7
+  - Name: DFRX_TIF_092EA620
     Properties:
     - MutagenObjectType: ScriptObjectProperty
       Name: Mitts

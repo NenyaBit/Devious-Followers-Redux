@@ -1,17 +1,17 @@
 FormKey: 2115A3:DeviousFollowers.esp
 VirtualMachineAdapter:
   Scripts:
-  - Name: TIF__082115A3
+  - Name: DFRX_TIF_082115A2
     Properties:
     - MutagenObjectType: ScriptObjectProperty
       Name: FQ
       Object: 1ABD14:DeviousFollowers.esp
   ScriptFragments:
     MutagenObjectType: ScriptFragments
-    FileName: TIF__082115A3
+    FileName: DFRX_TIF_082115A2
     OnEnd:
       ExtraBindDataVersion: 1
-      ScriptName: TIF__082115A3
+      ScriptName: DFRX_TIF_082115A2
       FragmentName: Fragment_1
 Flags: {}
 PreviousDialog: 2115A2:DeviousFollowers.esp

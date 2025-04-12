@@ -1,7 +1,7 @@
 FormKey: 27AECB:DeviousFollowers.esp
 VirtualMachineAdapter:
   Scripts:
-  - Name: _Dx_TIF__0A27AECB
+  - Name: DFRX_TIF_09275D9E
     Properties:
     - MutagenObjectType: ScriptObjectProperty
       Name: tool
