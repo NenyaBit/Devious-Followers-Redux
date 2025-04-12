@@ -52,7 +52,7 @@ Conditions:
   Data:
     MutagenObjectType: GetVMQuestVariableConditionData
     Quest: 1BD274:DeviousFollowers.esp
-    SecondUnusedIntParameter: 8531584
+    SecondUnusedIntParameter: -27812224
     VariableName: ::SexRule_var
   ComparisonValue: 2
 - MutagenObjectType: ConditionGlobal
@@ -60,14 +60,14 @@ Conditions:
   Data:
     MutagenObjectType: GetVMQuestVariableConditionData
     Quest: 1BD274:DeviousFollowers.esp
-    SecondUnusedIntParameter: 8531616
+    SecondUnusedIntParameter: -27812192
     VariableName: ::SexDealTimer_var
   ComparisonValue: 000039:Skyrim.esm
 - MutagenObjectType: ConditionFloat
   Data:
     MutagenObjectType: GetVMQuestVariableConditionData
     Quest: 1BD274:DeviousFollowers.esp
-    SecondUnusedIntParameter: 8531648
+    SecondUnusedIntParameter: -27812160
     VariableName: ::SexDealDefaults_var
 - MutagenObjectType: ConditionFloat
   Flags:

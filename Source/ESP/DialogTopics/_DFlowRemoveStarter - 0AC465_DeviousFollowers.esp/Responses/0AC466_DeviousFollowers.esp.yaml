@@ -39,7 +39,7 @@ Conditions:
   Data:
     MutagenObjectType: GetVMQuestVariableConditionData
     Quest: 1C494F:DeviousFollowers.esp
-    SecondUnusedIntParameter: 8560992
+    SecondUnusedIntParameter: -27782816
     VariableName: ::FavourMinimum_var
   ComparisonValue: 3E293B:DeviousFollowers.esp
 - MutagenObjectType: ConditionGlobal
@@ -47,7 +47,7 @@ Conditions:
   Data:
     MutagenObjectType: GetVMQuestVariableConditionData
     Quest: 38C70D:DeviousFollowers.esp
-    SecondUnusedIntParameter: 8561024
+    SecondUnusedIntParameter: -27782784
     VariableName: ::RecentlyFavoured_var
   ComparisonValue: 000039:Skyrim.esm
 - MutagenObjectType: ConditionFloat

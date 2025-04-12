@@ -31,14 +31,14 @@ Conditions:
   Data:
     MutagenObjectType: GetVMQuestVariableConditionData
     Quest: 112478:DeviousFollowers.esp
-    SecondUnusedIntParameter: 8521344
+    SecondUnusedIntParameter: -27822464
     VariableName: ::AskForMore_var
   ComparisonValue: 3
 - MutagenObjectType: ConditionFloat
   Data:
     MutagenObjectType: GetVMQuestVariableConditionData
     Quest: 112478:DeviousFollowers.esp
-    SecondUnusedIntParameter: 8521376
+    SecondUnusedIntParameter: -27822432
     VariableName: ::CredToLeaveBool_var
   ComparisonValue: 1
 - MutagenObjectType: ConditionFloat

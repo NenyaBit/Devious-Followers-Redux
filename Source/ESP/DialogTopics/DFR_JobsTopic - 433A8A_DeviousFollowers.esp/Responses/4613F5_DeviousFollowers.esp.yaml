@@ -43,7 +43,7 @@ Conditions:
   Data:
     MutagenObjectType: GetVMQuestVariableConditionData
     Quest: 433A83:DeviousFollowers.esp
-    SecondUnusedIntParameter: 8457760
+    SecondUnusedIntParameter: -27886048
     VariableName: ::FoundJob_var
   ComparisonValue: 1
 - MutagenObjectType: ConditionFloat
@@ -51,6 +51,6 @@ Conditions:
   Data:
     MutagenObjectType: GetVMQuestVariableConditionData
     Quest: 433A83:DeviousFollowers.esp
-    SecondUnusedIntParameter: 8457792
+    SecondUnusedIntParameter: -27886016
     VariableName: ::RunningJob_var
   ComparisonValue: 1

@@ -46,13 +46,13 @@ Conditions:
   Data:
     MutagenObjectType: GetVMQuestVariableConditionData
     Quest: 010617:DeviousFollowers.esp
-    SecondUnusedIntParameter: 8541408
+    SecondUnusedIntParameter: -27802400
     VariableName: ::Suspend_var
 - MutagenObjectType: ConditionFloat
   Data:
     MutagenObjectType: GetVMQuestVariableConditionData
     Quest: 1BD274:DeviousFollowers.esp
-    SecondUnusedIntParameter: 8541440
+    SecondUnusedIntParameter: -27802368
     VariableName: ::MilkingRule_var
   ComparisonValue: 2
 - MutagenObjectType: ConditionFloat
@@ -60,7 +60,7 @@ Conditions:
   Data:
     MutagenObjectType: GetVMQuestVariableConditionData
     Quest: 1BD274:DeviousFollowers.esp
-    SecondUnusedIntParameter: 8541472
+    SecondUnusedIntParameter: -27802336
     VariableName: ::MilkDealDefaults_var
 - MutagenObjectType: ConditionGlobal
   CompareOperator: LessThan

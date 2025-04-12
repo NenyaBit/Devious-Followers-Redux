@@ -55,7 +55,7 @@ Conditions:
   Data:
     MutagenObjectType: GetVMQuestVariableConditionData
     Quest: 010617:DeviousFollowers.esp
-    SecondUnusedIntParameter: 8535200
+    SecondUnusedIntParameter: -27808608
     VariableName: ::Suspend_var
 - MutagenObjectType: ConditionFloat
   CompareOperator: LessThan
@@ -67,7 +67,7 @@ Conditions:
   Data:
     MutagenObjectType: GetVMQuestVariableConditionData
     Quest: 1BD274:DeviousFollowers.esp
-    SecondUnusedIntParameter: 8535232
+    SecondUnusedIntParameter: -27808576
     VariableName: ::InnKeeperRuleTimer_var
   ComparisonValue: 000039:Skyrim.esm
 - MutagenObjectType: ConditionGlobal
@@ -75,7 +75,7 @@ Conditions:
   Data:
     MutagenObjectType: GetVMQuestVariableConditionData
     Quest: 1BD274:DeviousFollowers.esp
-    SecondUnusedIntParameter: 8535264
+    SecondUnusedIntParameter: -27808544
     VariableName: ::MerchantRuleTimer_var
   ComparisonValue: 000039:Skyrim.esm
 - MutagenObjectType: ConditionFloat
@@ -84,7 +84,7 @@ Conditions:
   Data:
     MutagenObjectType: GetVMQuestVariableConditionData
     Quest: 1BD274:DeviousFollowers.esp
-    SecondUnusedIntParameter: 8535296
+    SecondUnusedIntParameter: -27808512
     VariableName: ::InnKeeperRule_var
   ComparisonValue: 2
 - MutagenObjectType: ConditionGlobal

@@ -48,7 +48,7 @@ Conditions:
   Data:
     MutagenObjectType: GetVMQuestVariableConditionData
     Quest: 1BD274:DeviousFollowers.esp
-    SecondUnusedIntParameter: 8542752
+    SecondUnusedIntParameter: -27801056
     VariableName: ::NPRule_var
   ComparisonValue: 2
 - MutagenObjectType: ConditionGlobal
@@ -60,7 +60,7 @@ Conditions:
   Data:
     MutagenObjectType: GetVMQuestVariableConditionData
     Quest: 010617:DeviousFollowers.esp
-    SecondUnusedIntParameter: 8542784
+    SecondUnusedIntParameter: -27801024
     VariableName: ::Suspend_var
 - MutagenObjectType: ConditionFloat
   CompareOperator: NotEqualTo

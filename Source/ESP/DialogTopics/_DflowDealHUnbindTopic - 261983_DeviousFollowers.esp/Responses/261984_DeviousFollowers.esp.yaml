@@ -131,11 +131,11 @@ Conditions:
   Data:
     MutagenObjectType: GetVMQuestVariableConditionData
     Quest: 010617:DeviousFollowers.esp
-    SecondUnusedIntParameter: 8500672
+    SecondUnusedIntParameter: -27843136
     VariableName: ::Suspend_var
 - MutagenObjectType: ConditionFloat
   Data:
     MutagenObjectType: GetVMQuestVariableConditionData
-    SecondUnusedIntParameter: 8500704
+    SecondUnusedIntParameter: -27843104
     VariableName: ::BoundHands_var
   ComparisonValue: 1

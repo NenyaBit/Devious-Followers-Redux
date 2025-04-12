@@ -41,14 +41,14 @@ Conditions:
   Data:
     MutagenObjectType: GetVMQuestVariableConditionData
     Quest: 1BD274:DeviousFollowers.esp
-    SecondUnusedIntParameter: 8529312
+    SecondUnusedIntParameter: -27814496
     VariableName: ::LactacidRule_var
   ComparisonValue: 2
 - MutagenObjectType: ConditionFloat
   Data:
     MutagenObjectType: GetVMQuestVariableConditionData
     Quest: 1BD274:DeviousFollowers.esp
-    SecondUnusedIntParameter: 8529344
+    SecondUnusedIntParameter: -27814464
     VariableName: ::LactacidDealDefaults_var
 - MutagenObjectType: ConditionFloat
   Data:

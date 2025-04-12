@@ -24,7 +24,7 @@ Conditions:
   Data:
     MutagenObjectType: GetVMQuestVariableConditionData
     Quest: 3B4FD7:DeviousFollowers.esp
-    SecondUnusedIntParameter: 8460864
+    SecondUnusedIntParameter: -27882944
     VariableName: ::HasGivenLicenses_var
   ComparisonValue: 1
 - MutagenObjectType: ConditionFloat

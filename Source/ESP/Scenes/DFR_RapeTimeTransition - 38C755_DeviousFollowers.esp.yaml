@@ -37,7 +37,7 @@ Phases:
     Data:
       MutagenObjectType: GetVMQuestVariableConditionData
       Quest: 01210D:DeviousFollowers.esp
-      SecondUnusedIntParameter: 8574720
+      SecondUnusedIntParameter: -27769088
       VariableName: ::FirstTime_var
     ComparisonValue: 1
   Unused2: {}

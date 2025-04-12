@@ -67,7 +67,7 @@ Conditions:
   Data:
     MutagenObjectType: GetVMQuestVariableConditionData
     Quest: 010617:DeviousFollowers.esp
-    SecondUnusedIntParameter: 8506784
+    SecondUnusedIntParameter: -27837024
     VariableName: ::Suspend_var
 - MutagenObjectType: ConditionFloat
   CompareOperator: LessThan

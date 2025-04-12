@@ -46,7 +46,7 @@ Conditions:
   Data:
     MutagenObjectType: GetVMQuestVariableConditionData
     Quest: 1BD274:DeviousFollowers.esp
-    SecondUnusedIntParameter: 8530624
+    SecondUnusedIntParameter: -27813184
     VariableName: ::LactacidRule_var
   ComparisonValue: 2
 - MutagenObjectType: ConditionGlobal
@@ -54,7 +54,7 @@ Conditions:
   Data:
     MutagenObjectType: GetVMQuestVariableConditionData
     Quest: 1BD274:DeviousFollowers.esp
-    SecondUnusedIntParameter: 8530656
+    SecondUnusedIntParameter: -27813152
     VariableName: ::LactacidDealTimer_var
   ComparisonValue: 000039:Skyrim.esm
 - MutagenObjectType: ConditionFloat
@@ -62,7 +62,7 @@ Conditions:
   Data:
     MutagenObjectType: GetVMQuestVariableConditionData
     Quest: 1BD274:DeviousFollowers.esp
-    SecondUnusedIntParameter: 8530688
+    SecondUnusedIntParameter: -27813120
     VariableName: ::LactacidDealDefaults_var
 Prompt:
   TargetLanguage: English

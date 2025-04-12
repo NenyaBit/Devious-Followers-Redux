@@ -19,6 +19,6 @@ Conditions:
   Data:
     MutagenObjectType: GetVMQuestVariableConditionData
     Quest: 1BD274:DeviousFollowers.esp
-    SecondUnusedIntParameter: 8547872
+    SecondUnusedIntParameter: -27795936
     VariableName: ::TimerStatus_var
   ComparisonValue: 1

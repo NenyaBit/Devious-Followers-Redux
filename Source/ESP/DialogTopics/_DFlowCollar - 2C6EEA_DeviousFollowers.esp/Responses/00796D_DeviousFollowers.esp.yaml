@@ -103,7 +103,7 @@ Conditions:
   Data:
     MutagenObjectType: GetVMQuestVariableConditionData
     Quest: 00C545:DeviousFollowers.esp
-    SecondUnusedIntParameter: 8484256
+    SecondUnusedIntParameter: -27859552
     VariableName: ::_DFRemovalMode_var
 - MutagenObjectType: ConditionFloat
   CompareOperator: LessThan
@@ -116,7 +116,7 @@ Conditions:
   Data:
     MutagenObjectType: GetVMQuestVariableConditionData
     Quest: 1BD274:DeviousFollowers.esp
-    SecondUnusedIntParameter: 8484288
+    SecondUnusedIntParameter: -27859520
     VariableName: ::CollarRule_var
   ComparisonValue: 2
 Prompt:

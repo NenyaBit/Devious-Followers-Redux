@@ -32,7 +32,7 @@ Conditions:
   Data:
     MutagenObjectType: GetVMQuestVariableConditionData
     Quest: 112478:DeviousFollowers.esp
-    SecondUnusedIntParameter: 8522304
+    SecondUnusedIntParameter: -27821504
     VariableName: ::AdditionalGold_var
 - MutagenObjectType: ConditionGlobal
   CompareOperator: LessThan
@@ -45,7 +45,7 @@ Conditions:
   Data:
     MutagenObjectType: GetVMQuestVariableConditionData
     Quest: 112478:DeviousFollowers.esp
-    SecondUnusedIntParameter: 8522336
+    SecondUnusedIntParameter: -27821472
     VariableName: ::AskForMore_var
   ComparisonValue: 1
 - MutagenObjectType: ConditionFloat

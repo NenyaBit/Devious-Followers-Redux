@@ -78,7 +78,7 @@ Conditions:
   Data:
     MutagenObjectType: GetVMQuestVariableConditionData
     Quest: 01C866:DeviousFollowers.esp
-    SecondUnusedIntParameter: 8485280
+    SecondUnusedIntParameter: -27858528
     VariableName: ::Said1_var
 Prompt:
   TargetLanguage: English

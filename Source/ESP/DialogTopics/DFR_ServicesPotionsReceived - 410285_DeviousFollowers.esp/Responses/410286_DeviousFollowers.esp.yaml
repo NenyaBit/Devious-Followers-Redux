@@ -22,6 +22,6 @@ Conditions:
   Data:
     MutagenObjectType: GetVMQuestVariableConditionData
     Quest: 40B16E:DeviousFollowers.esp
-    SecondUnusedIntParameter: 8471712
+    SecondUnusedIntParameter: -27872096
     VariableName: ::Received_var
   ComparisonValue: 1

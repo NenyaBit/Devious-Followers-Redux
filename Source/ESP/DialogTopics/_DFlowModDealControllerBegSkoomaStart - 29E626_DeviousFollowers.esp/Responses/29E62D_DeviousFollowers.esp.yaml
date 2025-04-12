@@ -40,7 +40,7 @@ Conditions:
   Data:
     MutagenObjectType: GetVMQuestVariableConditionData
     Quest: 1BD274:DeviousFollowers.esp
-    SecondUnusedIntParameter: 8533440
+    SecondUnusedIntParameter: -27810368
     VariableName: ::SkoomaRule_var
   ComparisonValue: 2
 - MutagenObjectType: ConditionFloat

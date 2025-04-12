@@ -30,7 +30,7 @@ Conditions:
   Data:
     MutagenObjectType: GetVMQuestVariableConditionData
     Quest: 01C86D:DeviousFollowers.esp
-    SecondUnusedIntParameter: 8490368
+    SecondUnusedIntParameter: -27853440
     VariableName: ::DealOMax_var
   ComparisonValue: 1
 - MutagenObjectType: ConditionFloat
@@ -38,7 +38,7 @@ Conditions:
   Data:
     MutagenObjectType: GetVMQuestVariableConditionData
     Quest: 1BD274:DeviousFollowers.esp
-    SecondUnusedIntParameter: 8490400
+    SecondUnusedIntParameter: -27853408
     VariableName: ::CuffsRule_var
   ComparisonValue: 2
 WalkAwayTopic: 01CDDB:DeviousFollowers.esp

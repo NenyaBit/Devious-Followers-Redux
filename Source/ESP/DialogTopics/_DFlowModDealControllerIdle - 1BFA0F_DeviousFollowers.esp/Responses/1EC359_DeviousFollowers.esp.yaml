@@ -54,7 +54,7 @@ Conditions:
   Data:
     MutagenObjectType: GetVMQuestVariableConditionData
     Quest: 1BD274:DeviousFollowers.esp
-    SecondUnusedIntParameter: 8538144
+    SecondUnusedIntParameter: -27805664
     VariableName: ::PetSuitInTownRule_var
   ComparisonValue: 4
 - MutagenObjectType: ConditionGlobal
@@ -62,7 +62,7 @@ Conditions:
   Data:
     MutagenObjectType: GetVMQuestVariableConditionData
     Quest: 1BD274:DeviousFollowers.esp
-    SecondUnusedIntParameter: 8538176
+    SecondUnusedIntParameter: -27805632
     VariableName: ::FastTravelTimer_var
   ComparisonValue: 000039:Skyrim.esm
 - MutagenObjectType: ConditionFloat
@@ -78,7 +78,7 @@ Conditions:
   Data:
     MutagenObjectType: GetVMQuestVariableConditionData
     Quest: 010617:DeviousFollowers.esp
-    SecondUnusedIntParameter: 8538208
+    SecondUnusedIntParameter: -27805600
     VariableName: ::Suspend_var
 - MutagenObjectType: ConditionFloat
   CompareOperator: NotEqualTo

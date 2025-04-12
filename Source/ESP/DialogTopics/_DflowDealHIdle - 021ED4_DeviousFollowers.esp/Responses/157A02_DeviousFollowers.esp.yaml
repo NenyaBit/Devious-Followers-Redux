@@ -66,7 +66,7 @@ Conditions:
   Data:
     MutagenObjectType: GetVMQuestVariableConditionData
     Quest: 010617:DeviousFollowers.esp
-    SecondUnusedIntParameter: 8496128
+    SecondUnusedIntParameter: -27847680
     VariableName: ::Suspend_var
 - MutagenObjectType: ConditionFloat
   Flags:
@@ -98,6 +98,6 @@ Conditions:
   Data:
     MutagenObjectType: GetVMQuestVariableConditionData
     Quest: 41F5F3:DeviousFollowers.esp
-    SecondUnusedIntParameter: 8496160
+    SecondUnusedIntParameter: -27847648
     VariableName: ::LastAppliedTimer_var
   ComparisonValue: 000039:Skyrim.esm

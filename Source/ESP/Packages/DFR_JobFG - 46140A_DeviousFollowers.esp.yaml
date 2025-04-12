@@ -95,21 +95,21 @@ Conditions:
   Data:
     MutagenObjectType: GetVMQuestVariableConditionData
     Quest: 433A83:DeviousFollowers.esp
-    SecondUnusedIntParameter: 8570464
+    SecondUnusedIntParameter: -27773344
     VariableName: ::RunningJob_var
   ComparisonValue: 1
 - MutagenObjectType: ConditionFloat
   Data:
     MutagenObjectType: GetVMQuestVariableConditionData
     Quest: 433A83:DeviousFollowers.esp
-    SecondUnusedIntParameter: 8570560
+    SecondUnusedIntParameter: -27773248
     VariableName: ::FoundJob_var
   ComparisonValue: 1
 - MutagenObjectType: ConditionFloat
   Data:
     MutagenObjectType: GetVMQuestVariableConditionData
     Quest: 433A83:DeviousFollowers.esp
-    SecondUnusedIntParameter: 8570592
+    SecondUnusedIntParameter: -27773216
     VariableName: ::FoundJob_var
   ComparisonValue: 1
 - MutagenObjectType: ConditionFloat
@@ -128,7 +128,7 @@ Conditions:
   Data:
     MutagenObjectType: GetVMQuestVariableConditionData
     Quest: 010617:DeviousFollowers.esp
-    SecondUnusedIntParameter: 8570624
+    SecondUnusedIntParameter: -27773184
     VariableName: ::Suspend_var
 - MutagenObjectType: ConditionGlobal
   Flags:

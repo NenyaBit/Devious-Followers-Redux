@@ -35,18 +35,18 @@ VirtualMachineAdapter:
     Unknown2: 1
     ScriptName: _Dx_QF__DFSlaveryWatcher_0931D0B2
     FragmentName: Fragment_0
-  - Stage: 100
-    Unknown2: 1
-    ScriptName: _Dx_QF__DFSlaveryWatcher_0931D0B2
-    FragmentName: Fragment_7
-  - Stage: 90
-    Unknown2: 1
-    ScriptName: _Dx_QF__DFSlaveryWatcher_0931D0B2
-    FragmentName: Fragment_6
   - Stage: 80
     Unknown2: 1
     ScriptName: _Dx_QF__DFSlaveryWatcher_0931D0B2
     FragmentName: Fragment_4
+  - Stage: 90
+    Unknown2: 1
+    ScriptName: _Dx_QF__DFSlaveryWatcher_0931D0B2
+    FragmentName: Fragment_6
+  - Stage: 100
+    Unknown2: 1
+    ScriptName: _Dx_QF__DFSlaveryWatcher_0931D0B2
+    FragmentName: Fragment_7
   Aliases:
   - Property:
       Name: ''

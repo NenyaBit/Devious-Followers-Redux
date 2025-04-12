@@ -107,18 +107,18 @@ VirtualMachineAdapter:
     Unknown2: 1
     ScriptName: QF__DflowGames_0A0110DC
     FragmentName: Fragment_11
-  - Stage: 9999
-    Unknown2: 1
-    ScriptName: QF__DflowGames_0A0110DC
-    FragmentName: Fragment_15
-  - Stage: 201
-    Unknown2: 1
-    ScriptName: QF__DflowGames_0A0110DC
-    FragmentName: Fragment_2
   - Stage: 399
     Unknown2: 1
     ScriptName: QF__DflowGames_0A0110DC
     FragmentName: Fragment_10
+  - Stage: 201
+    Unknown2: 1
+    ScriptName: QF__DflowGames_0A0110DC
+    FragmentName: Fragment_2
+  - Stage: 9999
+    Unknown2: 1
+    ScriptName: QF__DflowGames_0A0110DC
+    FragmentName: Fragment_15
   - Stage: 499
     Unknown2: 1
     ScriptName: QF__DflowGames_0A0110DC

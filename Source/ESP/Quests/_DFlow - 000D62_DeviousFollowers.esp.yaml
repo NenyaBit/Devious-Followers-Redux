@@ -341,18 +341,18 @@ VirtualMachineAdapter:
     Unknown2: 1
     ScriptName: QF__Gift_09000D62
     FragmentName: Fragment_12
-  - Stage: 1337
+  - Stage: 100
     Unknown2: 1
     ScriptName: QF__Gift_09000D62
-    FragmentName: Fragment_22
+    FragmentName: Fragment_8
   - Stage: 98
     Unknown2: 1
     ScriptName: QF__Gift_09000D62
     FragmentName: Fragment_32
-  - Stage: 1338
+  - Stage: 3
     Unknown2: 1
     ScriptName: QF__Gift_09000D62
-    FragmentName: Fragment_28
+    FragmentName: Fragment_34
   - Stage: 9
     Unknown2: 1
     ScriptName: QF__Gift_09000D62
@@ -369,14 +369,14 @@ VirtualMachineAdapter:
     Unknown2: 1
     ScriptName: QF__Gift_09000D62
     FragmentName: Fragment_14
-  - Stage: 3
+  - Stage: 1338
     Unknown2: 1
     ScriptName: QF__Gift_09000D62
-    FragmentName: Fragment_34
-  - Stage: 100
+    FragmentName: Fragment_28
+  - Stage: 1337
     Unknown2: 1
     ScriptName: QF__Gift_09000D62
-    FragmentName: Fragment_8
+    FragmentName: Fragment_22
   Aliases:
   - Property:
       Name: ''

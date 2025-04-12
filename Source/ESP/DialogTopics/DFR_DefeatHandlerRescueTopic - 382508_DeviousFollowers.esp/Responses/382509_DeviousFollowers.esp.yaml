@@ -36,14 +36,14 @@ Conditions:
   Data:
     MutagenObjectType: GetVMQuestVariableConditionData
     Quest: 38C70D:DeviousFollowers.esp
-    SecondUnusedIntParameter: 8452096
+    SecondUnusedIntParameter: -27891712
     VariableName: ::Favour_var
   ComparisonValue: 50
 - MutagenObjectType: ConditionFloat
   Data:
     MutagenObjectType: GetVMQuestVariableConditionData
     Quest: 382506:DeviousFollowers.esp
-    SecondUnusedIntParameter: 8452128
+    SecondUnusedIntParameter: -27891680
     VariableName: ::FollowerSavedPlayer_var
   ComparisonValue: 1
 - MutagenObjectType: ConditionFloat

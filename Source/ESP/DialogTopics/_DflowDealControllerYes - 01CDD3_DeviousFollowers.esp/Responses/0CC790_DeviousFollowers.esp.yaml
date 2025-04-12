@@ -37,7 +37,7 @@ Conditions:
   Data:
     MutagenObjectType: GetVMQuestVariableConditionData
     Quest: 01C86D:DeviousFollowers.esp
-    SecondUnusedIntParameter: 8492352
+    SecondUnusedIntParameter: -27851456
     VariableName: ::DealHMax_var
   ComparisonValue: 2
 - MutagenObjectType: ConditionFloat
@@ -45,7 +45,7 @@ Conditions:
   Data:
     MutagenObjectType: GetVMQuestVariableConditionData
     Quest: 1BD274:DeviousFollowers.esp
-    SecondUnusedIntParameter: 8492384
+    SecondUnusedIntParameter: -27851424
     VariableName: ::NakedRule_var
   ComparisonValue: 2
 - MutagenObjectType: ConditionFloat
@@ -53,7 +53,7 @@ Conditions:
   Data:
     MutagenObjectType: GetVMQuestVariableConditionData
     Quest: 1BD274:DeviousFollowers.esp
-    SecondUnusedIntParameter: 8492416
+    SecondUnusedIntParameter: -27851392
     VariableName: ::WhoreRule_var
   ComparisonValue: 2
 - MutagenObjectType: ConditionFloat
@@ -61,7 +61,7 @@ Conditions:
   Data:
     MutagenObjectType: GetVMQuestVariableConditionData
     Quest: 1BD274:DeviousFollowers.esp
-    SecondUnusedIntParameter: 8492448
+    SecondUnusedIntParameter: -27851360
     VariableName: ::JacketRule_var
   ComparisonValue: 2
 - MutagenObjectType: ConditionFloat
@@ -69,7 +69,7 @@ Conditions:
   Data:
     MutagenObjectType: GetVMQuestVariableConditionData
     Quest: 1BD274:DeviousFollowers.esp
-    SecondUnusedIntParameter: 8492480
+    SecondUnusedIntParameter: -27851328
     VariableName: ::PetSuitInTownRule_var
   ComparisonValue: 2
 WalkAwayTopic: 021ECC:DeviousFollowers.esp

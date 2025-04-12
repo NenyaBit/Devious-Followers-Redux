@@ -54,7 +54,7 @@ Conditions:
   Data:
     MutagenObjectType: GetVMQuestVariableConditionData
     Quest: 1BD274:DeviousFollowers.esp
-    SecondUnusedIntParameter: 8538816
+    SecondUnusedIntParameter: -27804992
     VariableName: ::JacketRule_var
   ComparisonValue: 4
 - MutagenObjectType: ConditionGlobal
@@ -62,7 +62,7 @@ Conditions:
   Data:
     MutagenObjectType: GetVMQuestVariableConditionData
     Quest: 1BD274:DeviousFollowers.esp
-    SecondUnusedIntParameter: 8538848
+    SecondUnusedIntParameter: -27804960
     VariableName: ::FastTravelTimer_var
   ComparisonValue: 000039:Skyrim.esm
 - MutagenObjectType: ConditionFloat
@@ -86,7 +86,7 @@ Conditions:
   Data:
     MutagenObjectType: GetVMQuestVariableConditionData
     Quest: 010617:DeviousFollowers.esp
-    SecondUnusedIntParameter: 8538880
+    SecondUnusedIntParameter: -27804928
     VariableName: ::Suspend_var
 - MutagenObjectType: ConditionFloat
   Flags:

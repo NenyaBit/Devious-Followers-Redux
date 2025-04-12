@@ -27,7 +27,7 @@ Conditions:
   Data:
     MutagenObjectType: GetVMQuestVariableConditionData
     Quest: 0559F0:DeviousFollowers.esp
-    SecondUnusedIntParameter: 8451744
+    SecondUnusedIntParameter: -27892064
     VariableName: ::NumTempConfiscated_var
   ComparisonValue: 1
 - MutagenObjectType: ConditionGlobal
@@ -37,7 +37,7 @@ Conditions:
   Data:
     MutagenObjectType: GetVMQuestVariableConditionData
     Quest: 0559F0:DeviousFollowers.esp
-    SecondUnusedIntParameter: 8451776
+    SecondUnusedIntParameter: -27892032
     VariableName: ::MinFavourRequired_var
   ComparisonValue: 3E293B:DeviousFollowers.esp
 - MutagenObjectType: ConditionGlobal
@@ -45,6 +45,6 @@ Conditions:
   Data:
     MutagenObjectType: GetVMQuestVariableConditionData
     Quest: 38C70D:DeviousFollowers.esp
-    SecondUnusedIntParameter: 8451808
+    SecondUnusedIntParameter: -27892000
     VariableName: ::RecentlyFavoured_var
   ComparisonValue: 3E293B:DeviousFollowers.esp

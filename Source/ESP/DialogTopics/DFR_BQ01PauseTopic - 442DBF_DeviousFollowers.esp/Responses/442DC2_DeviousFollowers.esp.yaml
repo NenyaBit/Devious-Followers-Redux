@@ -36,7 +36,7 @@ Conditions:
   Data:
     MutagenObjectType: GetVMQuestVariableConditionData
     Quest: 433A88:DeviousFollowers.esp
-    SecondUnusedIntParameter: 8450336
+    SecondUnusedIntParameter: -27893472
     VariableName: ::active_var
   ComparisonValue: 1
 - MutagenObjectType: ConditionFloat
@@ -49,6 +49,6 @@ Conditions:
   Data:
     MutagenObjectType: GetVMQuestVariableConditionData
     Quest: 433A88:DeviousFollowers.esp
-    SecondUnusedIntParameter: 8450368
+    SecondUnusedIntParameter: -27893440
     VariableName: ::PrepDelayActive_var
   ComparisonValue: 1

@@ -23,7 +23,7 @@ VirtualMachineAdapter:
 Flags:
   Flags:
   - Goodbye
-PreviousDialog: 0F11B2:Skyrim.esm
+PreviousDialog: 15F0EA:DeviousFollowers.esp
 FavorLevel: None
 Responses:
 - Emotion: Happy

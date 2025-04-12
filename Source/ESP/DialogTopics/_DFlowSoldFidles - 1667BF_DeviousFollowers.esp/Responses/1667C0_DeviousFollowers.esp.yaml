@@ -54,14 +54,14 @@ Conditions:
   Data:
     MutagenObjectType: GetVMQuestVariableConditionData
     Quest: 15A1A4:DeviousFollowers.esp
-    SecondUnusedIntParameter: 8562528
+    SecondUnusedIntParameter: -27781280
     VariableName: ::Enable_var
   ComparisonValue: 1
 - MutagenObjectType: ConditionFloat
   Data:
     MutagenObjectType: GetVMQuestVariableConditionData
     Quest: 15A1A4:DeviousFollowers.esp
-    SecondUnusedIntParameter: 8562560
+    SecondUnusedIntParameter: -27781248
     VariableName: ::active_var
   ComparisonValue: 1
 - MutagenObjectType: ConditionGlobal
@@ -69,6 +69,6 @@ Conditions:
   Data:
     MutagenObjectType: GetVMQuestVariableConditionData
     Quest: 01C86D:DeviousFollowers.esp
-    SecondUnusedIntParameter: 8562624
+    SecondUnusedIntParameter: -27781184
     VariableName: ::Deals_var
   ComparisonValue: 1667BE:DeviousFollowers.esp

@@ -23,13 +23,13 @@ Conditions:
   Data:
     MutagenObjectType: GetVMQuestVariableConditionData
     Quest: 433A83:DeviousFollowers.esp
-    SecondUnusedIntParameter: 8456672
+    SecondUnusedIntParameter: -27887136
     VariableName: ::ProvisionMode_var
   ComparisonValue: 2
 - MutagenObjectType: ConditionFloat
   Data:
     MutagenObjectType: GetVMQuestVariableConditionData
     Quest: 433A83:DeviousFollowers.esp
-    SecondUnusedIntParameter: 8456704
+    SecondUnusedIntParameter: -27887104
     VariableName: ::ContinuingNextJob_var
   ComparisonValue: 1

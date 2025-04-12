@@ -50,14 +50,14 @@ VirtualMachineAdapter:
     Unknown2: 1
     ScriptName: QF__DFlowForcedStart_081ABD14
     FragmentName: Fragment_1
-  - Stage: 100
-    Unknown2: 1
-    ScriptName: QF__DFlowForcedStart_081ABD14
-    FragmentName: Fragment_5
   - Stage: 30
     Unknown2: 1
     ScriptName: QF__DFlowForcedStart_081ABD14
     FragmentName: Fragment_6
+  - Stage: 100
+    Unknown2: 1
+    ScriptName: QF__DFlowForcedStart_081ABD14
+    FragmentName: Fragment_5
 Flags:
 - StartGameEnabled
 - AllowRepeatedStages

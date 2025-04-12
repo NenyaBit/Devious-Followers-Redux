@@ -82,7 +82,7 @@ Conditions:
   Data:
     MutagenObjectType: GetVMQuestVariableConditionData
     Quest: 0E53C8:DeviousFollowers.esp
-    SecondUnusedIntParameter: 8507456
+    SecondUnusedIntParameter: -27836352
     VariableName: ::Stat_var
   ComparisonValue: 1
 - MutagenObjectType: ConditionGlobal
@@ -90,7 +90,7 @@ Conditions:
   Data:
     MutagenObjectType: GetVMQuestVariableConditionData
     Quest: 0E53C8:DeviousFollowers.esp
-    SecondUnusedIntParameter: 8507488
+    SecondUnusedIntParameter: -27836320
     VariableName: ::Delay_var
   ComparisonValue: 000039:Skyrim.esm
 - MutagenObjectType: ConditionFloat
@@ -130,7 +130,7 @@ Conditions:
   Data:
     MutagenObjectType: GetVMQuestVariableConditionData
     Quest: 010617:DeviousFollowers.esp
-    SecondUnusedIntParameter: 8507520
+    SecondUnusedIntParameter: -27836288
     VariableName: ::Suspend_var
 - MutagenObjectType: ConditionFloat
   CompareOperator: NotEqualTo

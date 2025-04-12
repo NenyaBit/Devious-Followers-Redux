@@ -51,13 +51,13 @@ Conditions:
   Data:
     MutagenObjectType: GetVMQuestVariableConditionData
     Quest: 010617:DeviousFollowers.esp
-    SecondUnusedIntParameter: 8544512
+    SecondUnusedIntParameter: -27799296
     VariableName: ::Suspend_var
 - MutagenObjectType: ConditionFloat
   Data:
     MutagenObjectType: GetVMQuestVariableConditionData
     Quest: 1BD274:DeviousFollowers.esp
-    SecondUnusedIntParameter: 8544544
+    SecondUnusedIntParameter: -27799264
     VariableName: ::SkoomaRule_var
   ComparisonValue: 2
 - MutagenObjectType: ConditionFloat
@@ -65,7 +65,7 @@ Conditions:
   Data:
     MutagenObjectType: GetVMQuestVariableConditionData
     Quest: 1BD274:DeviousFollowers.esp
-    SecondUnusedIntParameter: 8544576
+    SecondUnusedIntParameter: -27799232
     VariableName: ::SkoomaDealDefaults_var
 - MutagenObjectType: ConditionGlobal
   CompareOperator: LessThan

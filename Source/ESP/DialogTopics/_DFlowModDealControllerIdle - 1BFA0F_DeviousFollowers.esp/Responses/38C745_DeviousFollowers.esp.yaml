@@ -47,13 +47,13 @@ Conditions:
   Data:
     MutagenObjectType: GetVMQuestVariableConditionData
     Quest: 010617:DeviousFollowers.esp
-    SecondUnusedIntParameter: 8544064
+    SecondUnusedIntParameter: -27799744
     VariableName: ::Suspend_var
 - MutagenObjectType: ConditionFloat
   Data:
     MutagenObjectType: GetVMQuestVariableConditionData
     Quest: 1BD274:DeviousFollowers.esp
-    SecondUnusedIntParameter: 8544096
+    SecondUnusedIntParameter: -27799712
     VariableName: ::SexRule_var
   ComparisonValue: 2
 - MutagenObjectType: ConditionFloat
@@ -61,7 +61,7 @@ Conditions:
   Data:
     MutagenObjectType: GetVMQuestVariableConditionData
     Quest: 1BD274:DeviousFollowers.esp
-    SecondUnusedIntParameter: 8544128
+    SecondUnusedIntParameter: -27799680
     VariableName: ::SexDealDefaults_var
 - MutagenObjectType: ConditionFloat
   Data:

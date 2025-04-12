@@ -29,7 +29,7 @@ Conditions:
   Data:
     MutagenObjectType: GetVMQuestVariableConditionData
     Quest: 0559F0:DeviousFollowers.esp
-    SecondUnusedIntParameter: 8451584
+    SecondUnusedIntParameter: -27892224
     VariableName: ::NumTempConfiscated_var
   ComparisonValue: 1
 - MutagenObjectType: ConditionGlobal
@@ -37,6 +37,6 @@ Conditions:
   Data:
     MutagenObjectType: GetVMQuestVariableConditionData
     Quest: 0559F0:DeviousFollowers.esp
-    SecondUnusedIntParameter: 8451616
+    SecondUnusedIntParameter: -27892192
     VariableName: ::ReturnTimer_var
   ComparisonValue: 000039:Skyrim.esm

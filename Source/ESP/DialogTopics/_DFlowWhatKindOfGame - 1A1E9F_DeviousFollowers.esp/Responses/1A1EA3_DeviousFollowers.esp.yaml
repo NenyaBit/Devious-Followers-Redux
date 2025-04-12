@@ -60,20 +60,20 @@ Conditions:
   Data:
     MutagenObjectType: GetVMQuestVariableConditionData
     Quest: 00C545:DeviousFollowers.esp
-    SecondUnusedIntParameter: 8565632
+    SecondUnusedIntParameter: -27778176
     VariableName: ::SkipToTheEnd_var
 - MutagenObjectType: ConditionFloat
   CompareOperator: GreaterThanOrEqualTo
   Data:
     MutagenObjectType: GetVMQuestVariableConditionData
     Quest: 01C86D:DeviousFollowers.esp
-    SecondUnusedIntParameter: 8565664
+    SecondUnusedIntParameter: -27778144
     VariableName: ::Deals_var
 - MutagenObjectType: ConditionFloat
   CompareOperator: LessThan
   Data:
     MutagenObjectType: GetVMQuestVariableConditionData
     Quest: 01C86D:DeviousFollowers.esp
-    SecondUnusedIntParameter: 8565696
+    SecondUnusedIntParameter: -27778112
     VariableName: ::Deals_var
   ComparisonValue: 6
