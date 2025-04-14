@@ -149,6 +149,7 @@ jobs:
       - name: Checkout TESV Flags File
         if: steps.cache-ss.outputs.cache-hit != 'true'
         run: |
+          mkdir .github/Papyrus/SRC
           cd .github/Papyrus/SRC
           mkdir temp
           cd temp
