@@ -164,7 +164,7 @@ jobs:
           Remove-Item temp -Recurse -Force
 
       - name: Run Caprica
-        run: .github/Caprica/Caprica.exe --game skyrim --import ".github/Papyrus/SRC/Source/Scripts;.github/Papyrus/DFR-SOURCES/*/Source/Scripts;" --output "Scripts" --flags=".github/Papyrus/SRC/TESV_Papyrus_Flags.flg" "${{ github.workspace }}/Source/Scripts" -R -q
+        run: .github/Caprica/Caprica.exe --game skyrim --import ".github/Papyrus/SRC;.github/Papyrus/DFR-SOURCES/*/Source/Scripts;" --output "Scripts" --flags=".github/Papyrus/SRC/TESV_Papyrus_Flags.flg" "${{ github.workspace }}/Source/Scripts" -R -q
 
       - name: Upload Compiled Scripts Artifact
         uses: actions/upload-artifact@v4
