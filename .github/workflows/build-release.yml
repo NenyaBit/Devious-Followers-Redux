@@ -167,75 +167,34 @@ jobs:
           Set-Location ..
           Remove-Item temp -Recurse -Force
 
-      - name: Verify Import Directories
-        run: |
-          if (-Not (Test-Path ".github/Papyrus/DFR-SOURCES/SRC_AF/Source/Scripts")) {
-              Write-Error "Directory .github/Papyrus/DFR-SOURCES/SRC_AF/Source/Scripts does not exist!"
-              exit 1
-          }
-          if (-Not (Test-Path ".github/Papyrus/DFR-SOURCES/SRC_DC/Source/Scripts")) {
-              Write-Error "Directory .github/Papyrus/DFR-SOURCES/SRC_DC/Source/Scripts does not exist!"
-              exit 1
-          }
-          if (-Not (Test-Path ".github/Papyrus/DFR-SOURCES/SRC_EFF/Source/Scripts")) {
-              Write-Error "Directory .github/Papyrus/DFR-SOURCES/SRC_EFF/Source/Scripts does not exist!"
-              exit 1
-          }
-          if (-Not (Test-Path ".github/Papyrus/DFR-SOURCES/SRC_MME/Source/Scripts")) {
-              Write-Error "Directory .github/Papyrus/DFR-SOURCES/SRC_MME/Source/Scripts does not exist!"
-              exit 1
-          }
-          if (-Not (Test-Path ".github/Papyrus/DFR-SOURCES/SRC_PAPUTIL/Source/Scripts")) {
-              Write-Error "Directory .github/Papyrus/DFR-SOURCES/SRC_PAPUTIL/Source/Scripts does not exist!"
-              exit 1
-          }
-          if (-Not (Test-Path ".github/Papyrus/DFR-SOURCES/SRC_PO3/Source/Scripts")) {
-              Write-Error "Directory .github/Papyrus/DFR-SOURCES/SRC_PO3/Source/Scripts does not exist!"
-              exit 1
-          }
-          if (-Not (Test-Path ".github/Papyrus/DFR-SOURCES/SRC_SKYUI/Source/Scripts")) {
-              Write-Error "Directory .github/Papyrus/DFR-SOURCES/SRC_SKYUI/Source/Scripts does not exist!"
-              exit 1
-          }
-          if (-Not (Test-Path ".github/Papyrus/DFR-SOURCES/SRC_SLA/Source/Scripts")) {
-              Write-Error "Directory .github/Papyrus/DFR-SOURCES/SRC_SLA/Source/Scripts does not exist!"
-              exit 1
-          }
-          if (-Not (Test-Path ".github/Papyrus/DFR-SOURCES/SRC_STA/Source/Scripts")) {
-              Write-Error "Directory .github/Papyrus/DFR-SOURCES/SRC_STA/Source/Scripts does not exist!"
-              exit 1
-          }
-          if (-Not (Test-Path ".github/Papyrus/DFR-SOURCES/SRC_SXL/Source/Scripts")) {
-              Write-Error "Directory .github/Papyrus/DFR-SOURCES/SRC_SXL/Source/Scripts does not exist!"
-              exit 1
-          }
-          if (-Not (Test-Path ".github/Papyrus/DFR-SOURCES/SRC_UIEXT/Source/Scripts")) {
-              Write-Error "Directory .github/Papyrus/DFR-SOURCES/SRC_UIEXT/Source/Scripts does not exist!"
-              exit 1
-          }
-
       - name: Run Caprica
         run: |
+            $importPaths = @(
+              ".github/Papyrus/SRC",
+              ".github/Papyrus/DFR-SOURCES/SRC_AF/Source/Scripts",
+              ".github/Papyrus/DFR-SOURCES/SRC_DC/Source/Scripts",
+              ".github/Papyrus/DFR-SOURCES/SRC_EFF/Source/Scripts",
+              ".github/Papyrus/DFR-SOURCES/SRC_MME/Source/Scripts",
+              ".github/Papyrus/DFR-SOURCES/SRC_PAPUTIL/Source/Scripts",
+              ".github/Papyrus/DFR-SOURCES/SRC_PO3/Source/Scripts",
+              ".github/Papyrus/DFR-SOURCES/SRC_SKYUI/Source/Scripts",
+              ".github/Papyrus/DFR-SOURCES/SRC_SLA/Source/Scripts",
+              ".github/Papyrus/DFR-SOURCES/SRC_STA/Source/Scripts",
+              ".github/Papyrus/DFR-SOURCES/SRC_SXL/Source/Scripts",
+              ".github/Papyrus/DFR-SOURCES/SRC_UIEXT/Source/Scripts"
+            ) -join ";"
+        
+            Write-Host "Import Paths: $importPaths"
+        
             & ".github/Caprica/Caprica.exe" `
               --game "skyrim" `
-              --import `
-                ".github/Papyrus/SRC; `
-                .github/Papyrus/DFR-SOURCES/SRC_AF/Source/Scripts; `
-                .github/Papyrus/DFR-SOURCES/SRC_DC/Source/Scripts; `
-                .github/Papyrus/DFR-SOURCES/SRC_EFF/Source/Scripts; `
-                .github/Papyrus/DFR-SOURCES/SRC_MME/Source/Scripts; `
-                .github/Papyrus/DFR-SOURCES/SRC_PAPUTIL/Source/Scripts; `
-                .github/Papyrus/DFR-SOURCES/SRC_PO3/Source/Scripts; `
-                .github/Papyrus/DFR-SOURCES/SRC_SKYUI/Source/Scripts; `
-                .github/Papyrus/DFR-SOURCES/SRC_SLA/Source/Scripts; `
-                .github/Papyrus/DFR-SOURCES/SRC_STA/Source/Scripts; `
-                .github/Papyrus/DFR-SOURCES/SRC_SXL/Source/Scripts; `
-                .github/Papyrus/DFR-SOURCES/SRC_UIEXT/Source/Scripts" `
+              --import $importPaths `
               --output "Scripts" `
               --flags ".github/Papyrus/SRC/TESV_Papyrus_Flags.flg" `
               "D:\a\Devious-Followers-Redux\Devious-Followers-Redux\Source\Scripts" `
               -R -q
         shell: pwsh
+        
 
       - name: Upload Compiled Scripts Artifact
         uses: actions/upload-artifact@v4
