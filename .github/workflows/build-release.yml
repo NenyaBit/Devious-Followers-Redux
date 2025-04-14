@@ -165,25 +165,27 @@ jobs:
 
       - name: Run Caprica
         run: |
-            .github/Caprica/Caprica.exe \
-              --game skyrim \
-              --import \
-                ".github/Papyrus/SRC; \
-                .github/Papyrus/DFR-SOURCES/SRC_AF/Source/Scripts; \
-                .github/Papyrus/DFR-SOURCES/SRC_DC/Source/Scripts; \
-                .github/Papyrus/DFR-SOURCES/SRC_EFF/Source/Scripts; \
-                .github/Papyrus/DFR-SOURCES/SRC_MME/Source/Scripts; \
-                .github/Papyrus/DFR-SOURCES/SRC_PAPUTIL/Source/Scripts; \
-                .github/Papyrus/DFR-SOURCES/SRC_PO3/Source/Scripts; \
-                .github/Papyrus/DFR-SOURCES/SRC_SKYUI/Source/Scripts; \
-                .github/Papyrus/DFR-SOURCES/SRC_SLA/Source/Scripts; \
-                .github/Papyrus/DFR-SOURCES/SRC_STA/Source/Scripts; \
-                .github/Papyrus/DFR-SOURCES/SRC_SXL/Source/Scripts; \
-                .github/Papyrus/DFR-SOURCES/SRC_UIEXT/Source/Scripts" \
-              --output "Scripts" \
-              --flags ".github/Papyrus/SRC/TESV_Papyrus_Flags.flg" \
-              "${{ github.workspace }}/Source/Scripts" \
+            & ".github/Caprica/Caprica.exe" `
+              --game "skyrim" `
+              --import `
+                ".github/Papyrus/SRC; `
+                .github/Papyrus/DFR-SOURCES/SRC_AF/Source/Scripts; `
+                .github/Papyrus/DFR-SOURCES/SRC_DC/Source/Scripts; `
+                .github/Papyrus/DFR-SOURCES/SRC_EFF/Source/Scripts; `
+                .github/Papyrus/DFR-SOURCES/SRC_MME/Source/Scripts; `
+                .github/Papyrus/DFR-SOURCES/SRC_PAPUTIL/Source/Scripts; `
+                .github/Papyrus/DFR-SOURCES/SRC_PO3/Source/Scripts; `
+                .github/Papyrus/DFR-SOURCES/SRC_SKYUI/Source/Scripts; `
+                .github/Papyrus/DFR-SOURCES/SRC_SLA/Source/Scripts; `
+                .github/Papyrus/DFR-SOURCES/SRC_STA/Source/Scripts; `
+                .github/Papyrus/DFR-SOURCES/SRC_SXL/Source/Scripts; `
+                .github/Papyrus/DFR-SOURCES/SRC_UIEXT/Source/Scripts" `
+              --output "Scripts" `
+              --flags ".github/Papyrus/SRC/TESV_Papyrus_Flags.flg" `
+              "D:\a\Devious-Followers-Redux\Devious-Followers-Redux\Source\Scripts" `
               -R -q
+        shell: pwsh
+        
         
       - name: Upload Compiled Scripts Artifact
         uses: actions/upload-artifact@v4
