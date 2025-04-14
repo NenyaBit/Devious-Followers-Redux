@@ -173,6 +173,7 @@ jobs:
             $importPaths = @(
               "${{ github.workspace }}/Source/Scripts",
               ".github/Papyrus/SRC",
+              ".github/Papyrus/DFR-SOURCES/SRC_BASE/Source/Scripts",
               ".github/Papyrus/DFR-SOURCES/SRC_AF/Source/Scripts",
               ".github/Papyrus/DFR-SOURCES/SRC_DC/Source/Scripts",
               ".github/Papyrus/DFR-SOURCES/SRC_EFF/Source/Scripts",
