@@ -149,7 +149,7 @@ jobs:
           git fetch origin master
           git checkout master
           Remove-Item .git -Recurse -Force
-          Set.Location ..
+          Set-Location ..
 
       - name: Checkout TESV Flags File
         if: steps.cache-ss.outputs.cache-hit != 'true'
