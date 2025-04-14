@@ -142,9 +142,14 @@ jobs:
       - name: Checkout Papyrus Sources
         if: steps.cache-ss.outputs.cache-hit != 'true'
         run: |
-          mkdir .github/Papyrus/DFR-SOURCES
-          cd .github/Papyrus/DFR-SOURCES
-          git clone https://github.com/MissCorruption/DFR-SOURCES .
+          mkdir .github/Papyrus/
+          Set-Location .github/Papyrus
+          git init
+          git remote add origin https://github.com/MissCorruption/DFR-SOURCES
+          git fetch origin master
+          git checkout master
+          Remove-Item .git -Recurse -Force
+          Set.Location ..
 
       - name: Checkout TESV Flags File
         if: steps.cache-ss.outputs.cache-hit != 'true'
