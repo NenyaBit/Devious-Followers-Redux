@@ -167,6 +167,11 @@ jobs:
           Set-Location ..
           Remove-Item temp -Recurse -Force
 
+      - name: List Directories for Debugging
+        run: |
+          Get-ChildItem -Recurse -Directory .github/Papyrus/DFR-SOURCES
+          Get-ChildItem -Recurse -Directory .github/Papyrus/SRC
+
       - name: Run Caprica
         run: |
             & ".github/Caprica/Caprica.exe" `
