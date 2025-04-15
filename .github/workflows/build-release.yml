@@ -195,7 +195,7 @@ jobs:
               --output "Scripts" `
               --flags ".github/Papyrus/SRC/TESV_Papyrus_Flags.flg" `
               "D:\a\Devious-Followers-Redux\Devious-Followers-Redux\Source\Scripts" `
-              -R -q
+              -R -q --allow-unknown-events=1
         shell: pwsh
         
 
