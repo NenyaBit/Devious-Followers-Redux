@@ -1,0 +1,312 @@
+name: Build Release
+
+on:
+  schedule:
+    - cron: '0 0 * * *'
+
+  push:
+    branches:
+      - "master"
+    paths-ignore:
+      - '.github/**/*.yaml'
+      - '*.txt'
+      - '*.md'
+  workflow_dispatch:
+    inputs:
+      version:
+        description: 'Release version (defaults to "Nightly" & always appends run ID)'
+        required: false
+        default: 'Nightly'
+      publish-release:
+        description: 'Publish Release?'
+        type: boolean
+        default: true
+      release-body:
+        description: 'Release body'
+        required: false
+        default: 'Latest nightly of Devious Followers Redux. These builds are untested and may contain bugs.'
+      spriggit_tool_version:
+        description: 'Spriggit version (optional)'
+        required: false
+
+jobs:
+  prepare:
+    name: Prepare and Check Changes
+    runs-on: ubuntu-latest
+    outputs:
+      date: ${{ steps.get-date.outputs.time }}
+      version: ${{ steps.get-version.outputs.VERSION }}
+      should_run: ${{ steps.should_run.outputs.should_run }}
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          submodules: recursive
+      - name: Get Date
+        id: get-date
+        uses: Kaven-Universe/github-action-current-date-time@v1
+        with:
+          format: "YYYY-MM-DD"
+      - name: Get version
+        id: get-version
+        shell: bash
+        run: echo "VERSION=${{ inputs.version || format('nightly-{0}', steps.get-date.outputs.time) }}" >> "$GITHUB_OUTPUT"
+      - name: Check for changes last 24 hours
+        id: should_run
+        shell: bash
+        run: |
+          git log --since="1 days ago" --name-only
+          echo "should_run=$(git log --since="1 days ago" --name-only | grep "" -c)" >> "$GITHUB_OUTPUT"
+
+  build-plugin:
+    name: Build ESP from Spriggit files
+    needs: prepare
+    if: ${{ needs.prepare.outputs.should_run >= 1 || github.event_name == 'workflow_dispatch' && always() }}
+    permissions: write-all
+    runs-on: windows-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Create Pack Folder
+        run: mkdir -p $env:GITHUB_WORKSPACE\\to-pack
+        shell: pwsh
+
+      - name: Cache Spriggit
+        id: cache-spriggit
+        uses: actions/cache@v4
+        with:
+          path: .github/spriggit
+          key: ${{ runner.os }}-spriggit-${{ inputs.spriggit_tool_version }}
+
+      - name: Fetch Spriggit
+        if: steps.cache-spriggit.outputs.cache-hit != 'true'
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          gh release download -R Mutagen-Modding/Spriggit --pattern "SpriggitCLI.zip" --dir .github
+
+          7z x .github/SpriggitCLI.zip -o".github/spriggit/"
+
+          if (Test-Path ".github/spriggit/Spriggit.CLI.exe") {
+              Write-Host "Spriggit.CLI.exe found and ready."
+          } else {
+              Write-Error "Spriggit.CLI.exe not found! Exiting."
+              exit 1
+          }
+        shell: pwsh
+
+      - name: Run Spriggit
+        run: .github\spriggit\Spriggit.CLI.exe deserialize --InputPath "Source/ESP" --OutputPath "Source/ESP/DeviousFollowers.esp"
+        shell: cmd
+
+      - name: Upload Plugin Artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: plugin
+          path: Source/ESP/DeviousFollowers.esp
+
+  compile-scripts:
+    name: Compile Papyrus scripts
+    needs: prepare
+    if: ${{ needs.prepare.outputs.should_run >= 1 || github.event_name == 'workflow_dispatch' && always() }}
+    runs-on: windows-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Cache Script Sources
+        id: cache-ss
+        uses: actions/cache@v4
+        with:
+          path: |
+            .github/Papyrus/SRC
+            .github/Papyrus/DFR-SOURCES
+          key: script-sources-clean
+
+      - name: Cache Compiler
+        id: cache-com
+        uses: actions/cache@v4
+        with:
+          path: .github/Caprica
+          key: ${{ runner.os }}-papyrus-compiler
+
+      - name: Fetch Caprica 0.3.0
+        if: steps.cache-com.outputs.cache-hit != 'true'
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+        run: |
+          gh release download -O .github/Caprica.7z -p '*.7z' -R Orvid/Caprica v0.3.0
+          7z x .github/Caprica.7z "-o.github\Caprica"
+
+      - name: Checkout Papyrus Sources
+        if: steps.cache-ss.outputs.cache-hit != 'true'
+        run: |
+          mkdir .github/Papyrus/DFR-SOURCES
+          Set-Location .github/Papyrus/DFR-SOURCES
+          git init
+          git remote add origin https://github.com/MissCorruption/DFR-SOURCES
+          git fetch origin master
+          git checkout master
+          Remove-Item .git -Recurse -Force
+          Set-Location ..
+
+      - name: Checkout TESV Flags File
+        if: steps.cache-ss.outputs.cache-hit != 'true'
+        run: |
+          mkdir .github/Papyrus/SRC
+          cd .github/Papyrus/SRC
+          mkdir temp
+          cd temp
+          git init
+          git remote add origin https://github.com/Rukan/Grimy-Skyrim-Papyrus-Source.git
+          git sparse-checkout set --no-cone 'TESV_Papyrus_Flags.flg'
+          git fetch --depth=1 origin master
+          git checkout master
+          Remove-Item .git -Recurse -Force
+          mv TESV_Papyrus_Flags.flg ../TESV_Papyrus_Flags.flg
+          Set-Location ..
+          Remove-Item temp -Recurse -Force
+
+      - name: Run Caprica
+        run: |
+            $importPaths = @(
+              "${{ github.workspace }}/Source/Scripts",
+              ".github/Papyrus/SRC",
+              ".github/Papyrus/DFR-SOURCES/SRC_BASE/Source/Scripts",
+              ".github/Papyrus/DFR-SOURCES/SRC_AF/Source/Scripts",
+              ".github/Papyrus/DFR-SOURCES/SRC_DC/Source/Scripts",
+              ".github/Papyrus/DFR-SOURCES/SRC_EFF/Source/Scripts",
+              ".github/Papyrus/DFR-SOURCES/SRC_MME/Source/Scripts",
+              ".github/Papyrus/DFR-SOURCES/SRC_PAPUTIL/Source/Scripts",
+              ".github/Papyrus/DFR-SOURCES/SRC_PO3/Source/Scripts",
+              ".github/Papyrus/DFR-SOURCES/SRC_SKYUI/Source/Scripts",
+              ".github/Papyrus/DFR-SOURCES/SRC_SLA/Source/Scripts",
+              ".github/Papyrus/DFR-SOURCES/SRC_STA/Source/Scripts",
+              ".github/Papyrus/DFR-SOURCES/SRC_SXL/Source/Scripts",
+              ".github/Papyrus/DFR-SOURCES/SRC_UIEXT/Source/Scripts"
+            ) -join ";"
+        
+            Write-Host "Import Paths: $importPaths"
+        
+            & ".github/Caprica/Caprica.exe" `
+              --game "skyrim" `
+              --import $importPaths `
+              --output "Scripts" `
+              --flags ".github/Papyrus/SRC/TESV_Papyrus_Flags.flg" `
+              "D:\a\Devious-Followers-Redux\Devious-Followers-Redux\Source\Scripts" `
+              -R -q --allow-unknown-events=1
+        shell: pwsh
+        
+
+      - name: Upload Compiled Scripts Artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: compiled-scripts
+          path: Scripts
+
+
+  package-mod:
+    name: Package all necessary files
+    runs-on: ubuntu-latest
+    needs: [build-plugin, compile-scripts, prepare]
+    if: ${{ needs.prepare.outputs.should_run >= 1 || github.event_name == 'workflow_dispatch' && always() }}
+    steps:
+
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Download Artifacts
+        uses: actions/download-artifact@v4
+        with:
+          name: plugin
+          path: Source/ESP
+      - name: Download Compiled Scripts Artifact
+        uses: actions/download-artifact@v4
+        with:
+          name: compiled-scripts
+          path: Scripts
+
+      - name: Create Release and Dev SDK Folders
+        run: |
+          mkdir -p "${{ github.workspace }}/to-pack/Source/Scripts"
+          mkdir -p "${{ github.workspace }}/to-pack/SKSE/Plugins"
+          mkdir -p "${{ github.workspace }}/to-pack/Interface"
+          mkdir -p "${{ github.workspace }}/to-pack/Textures"
+          mkdir -p "${{ github.workspace }}/to-pack/Scripts"
+          mkdir -p "${{ github.workspace }}/to-pack/SKSE"
+          mkdir -p "${{ github.workspace }}/to-pack/SEQ"
+          cp -a "DFR-LICENSE" "${{ github.workspace }}/to-pack/DFR-LICENSE.md"
+          cp -a "SKSE/." "${{ github.workspace }}/to-pack/SKSE/"
+          cp -a "Source/ESP/DeviousFollowers.esp" "${{ github.workspace }}/to-pack/DeviousFollowers.esp"
+          cp -a "Scripts/." "${{ github.workspace }}/to-pack/Scripts"
+          cp -a "Source/Scripts/." "${{ github.workspace }}/to-pack/Source/Scripts"
+          cp -a "Interface/." "${{ github.workspace }}/to-pack/Interface"
+          cp -a "Textures/." "${{ github.workspace }}/to-pack/Textures"
+          cp -a "Textures/." "${{ github.workspace }}/to-pack/SEQ"
+          
+      - name: Zip Release Files
+        uses: vimtor/action-zip@v1.2
+        with:
+          files: to-pack/.
+          dest: DeviousFollowersRedux-${{ needs.prepare.outputs.version }}.zip
+
+      - name: Upload Artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: DeviousFollowersRedux-${{ needs.prepare.outputs.version }}
+          path: DeviousFollowersRedux-${{ needs.prepare.outputs.version }}.zip
+
+      - name: Remove Temporary Artifacts
+        uses: geekyeggo/delete-artifact@v4
+        with:
+          name: |
+            plugin
+            compiled-scripts
+
+  share-release:
+    name: Share release
+    needs: [package-mod, prepare]
+    if: ${{ inputs.publish-release == true && (needs.prepare.outputs.should_run >= 1 || github.event_name == 'workflow_dispatch' && always()) }}
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Download Release Artifact
+        uses: actions/download-artifact@v4
+        with:
+          name: DeviousFollowersRedux-${{ needs.prepare.outputs.version }}
+
+      - name: Delete Existing Release
+        uses: dev-drprasad/delete-tag-and-release@v1.0
+        with:
+          tag_name: ${{ needs.prepare.outputs.version }}
+          github_token: ${{ github.token }}
+          delete_release: true
+
+      - name: Create Release
+        id: create_release
+        uses: ncipollo/release-action@v1.13.0
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+        with:
+          allowUpdates: true
+          name: Devious Followers Redux-${{ needs.prepare.outputs.version }} @ ${{ needs.prepare.outputs.date }}
+          draft: false
+          body: ${{ inputs.release-body }}
+          tag: ${{ needs.prepare.outputs.version }}
+          prerelease: true
+          makeLatest: false
+          removeArtifacts: true
+          replacesArtifacts: true
+          artifactErrorsFailBuild: true
+          artifacts: |
+            DeviousFollowersRedux-${{ needs.prepare.outputs.version }}.zip
+
+      - name: Remove Temporary Artifacts
+        uses: geekyeggo/delete-artifact@v2
+        with:
+          name: |
+            DeviousFollowersRedux-${{ needs.prepare.outputs.version }}.zip
+          failOnError: false
