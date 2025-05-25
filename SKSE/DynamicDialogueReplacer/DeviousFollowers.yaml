@@ -6,13 +6,13 @@ Version: 1
 
 # TODO: 
 # - tidy up and confirm conditions for "Service" and "EventContext=3" replacements - are they correct?
-# - faction lookup by editorid seems to fail
 
 
-# Eventually, replace EditorIDs with references to refMap keys like below
-# refMap:
+# Eventually, replace EditorIDs with references to refMap keys as below
+refMap:
+  ref_slaArousal: 0x03FC36|SexLabAroused.esm
+  ref_DMaster: 0x015712|DeviousFollowers.esp
 # ref_EventContext: 0x406068|DeviousFollowers.esp #DFR_EventContext
-
 
 topics:
 
@@ -48,7 +48,7 @@ topics:
   affects: 0x060020|Skyrim.esm # DialogueFollowerTradeTopic
   replace: 0x4102B5|DeviousFollowers.esp # DFR_RelReplaceTrade
   conditions:
-  - GetInFaction _DMaster == 1 AND
+  - GetInFaction ref_DMaster == 1 AND
   - GetStage DFR_RelationshipManager == DFR_Rel_Slave OR
   - GetGlobalValue DFR_Favour < DFR_Trade_FavourMin
 
@@ -1235,7 +1235,7 @@ topicInfos:
 
 - id: 0x4613F1|DeviousFollowers.esp # to DFR_BQ01Idles (not at event location)
   conditions:
-  - Player <> GetFactionRank sla_Arousal > 60
+  - Player <> GetFactionRank ref_slaArousal > 60
   random: true
   responses:
   - subtitle: By Ysmir, the anticipation has really got you going! Don't worry, I'll give you your release once we're done.
@@ -1258,7 +1258,7 @@ topicInfos:
 
 - id: 0x4613F3|DeviousFollowers.esp # to DFR_BQ01Idles (at event location)
   conditions:
-  - GetFactionRank sla_Arousal > 60
+  - GetFactionRank ref_slaArousal > 60
   - LocationHasKeyword LocTypeDungeon == 1
   random: true
   responses:
@@ -1266,7 +1266,7 @@ topicInfos:
 
 - id: 0x4613F3|DeviousFollowers.esp # to DFR_BQ01Idles (at event location)
   conditions:
-  - PLAYER <> GetFactionRank sla_Arousal > 60
+  - Player <> GetFactionRank ref_slaArousal > 60
   random: true
   responses:
   - subtitle: By Ysmir, the fight's really got you going! Don't worry I'll give you your release once we get back.
