@@ -46,7 +46,7 @@ topics:
   affects: 0x060020|Skyrim.esm # DialogueFollowerTradeTopic
   replace: 0x4102B5|DeviousFollowers.esp # DFR_RelReplaceTrade
   conditions:
-  - Target <> GetInFaction ref_DMaster == 1 AND
+  - GetInFaction ref_DMaster == 1 AND
   - GetStage DFR_RelationshipManager == DFR_Rel_Slave OR
   - GetGlobalValue DFR_Favour < DFR_Trade_FavourMin
 
