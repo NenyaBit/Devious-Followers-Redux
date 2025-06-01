@@ -6,13 +6,11 @@ Version: 1
 
 # TODO: 
 # - tidy up and confirm conditions for "Service" and "EventContext=3" replacements - are they correct?
+# - DFR_ForceEvents / DFR_ForcedEvents seems to be used nowhere in this file or in scripts. Is it used in CK?
 
-
-# Eventually, replace EditorIDs with references to refMap keys as below
 refMap:
   ref_slaArousal: 0x03FC36|SexLabAroused.esm
   ref_DMaster: 0x015712|DeviousFollowers.esp
-# ref_EventContext: 0x406068|DeviousFollowers.esp #DFR_EventContext
 
 topics:
 
@@ -48,7 +46,7 @@ topics:
   affects: 0x060020|Skyrim.esm # DialogueFollowerTradeTopic
   replace: 0x4102B5|DeviousFollowers.esp # DFR_RelReplaceTrade
   conditions:
-  - GetInFaction ref_DMaster == 1 AND
+  - Target <> GetInFaction ref_DMaster == 1 AND
   - GetStage DFR_RelationshipManager == DFR_Rel_Slave OR
   - GetGlobalValue DFR_Favour < DFR_Trade_FavourMin
 
@@ -793,6 +791,7 @@ topicInfos:
   - subtitle: Good, next...
   conditions:
   - GetGlobalValue DFR_EventContext == 4
+
 - id: 0x406067|DeviousFollowers.esp # to DFR_EventsRefuse
   responses:
   - subtitle: Wrong answer, whore, try to get it right on the next one.
