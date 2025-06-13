@@ -171,7 +171,6 @@ jobs:
       - name: Run Caprica
         run: |
             $importPaths = @(
-              "${{ github.workspace }}/Source/Scripts",
               ".github/Papyrus/SRC",
               ".github/Papyrus/DFR-SOURCES/SRC_BASE/Source/Scripts",
               ".github/Papyrus/DFR-SOURCES/SRC_AF/Source/Scripts",
@@ -194,6 +193,7 @@ jobs:
               --import $importPaths `
               --output "Scripts" `
               --flags ".github/Papyrus/SRC/TESV_Papyrus_Flags.flg" `
+              "${{ github.workspace }}/Source/Scripts", `
               -R -q --allow-unknown-events=1
         shell: pwsh
         
