@@ -193,10 +193,9 @@ jobs:
               --import $importPaths `
               --output "Scripts" `
               --flags ".github/Papyrus/SRC/TESV_Papyrus_Flags.flg" `
-              "${{ github.workspace }}/Source/Scripts", `
-              -R -q --allow-unknown-events=1
+              "${{ github.workspace }}\Source\Scripts", `
+              -R -q
         shell: pwsh
-        
 
       - name: Upload Compiled Scripts Artifact
         uses: actions/upload-artifact@v4
