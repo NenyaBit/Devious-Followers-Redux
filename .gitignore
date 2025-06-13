@@ -2,6 +2,7 @@
 .release/
 *.txt
 *.py
+*.ppj
 *.pex
 *.code-workspace
 meta.ini
