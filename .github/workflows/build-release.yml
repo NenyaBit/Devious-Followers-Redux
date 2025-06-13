@@ -131,13 +131,13 @@ jobs:
           path: .github/Caprica
           key: ${{ runner.os }}-papyrus-compiler
 
-      - name: Fetch Caprica 0.3.0
+      - name: Fetch Caprica Fork
         if: steps.cache-com.outputs.cache-hit != 'true'
         env:
-          GITHUB_TOKEN: ${{ github.token }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
-          gh release download -O .github/Caprica.7z -p '*.7z' -R Orvid/Caprica v0.3.0
-          7z x .github/Caprica.7z "-o.github\Caprica"
+          gh release download -O .github/Caprica.zip -p '*.zip' -R XxX-Daniil-underscore-Zaikin-XxX/Caprica v0.0.0
+          7z x .github/Caprica.zip "-o.github\Caprica"
 
       - name: Checkout Papyrus Sources
         if: steps.cache-ss.outputs.cache-hit != 'true'
